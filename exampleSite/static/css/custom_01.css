@@ -1,6 +1,14 @@
 .your-custom-class-01 {
   display: block;
 }
+ /* For CV icon */
+.icon {
+  background: url('https://gazikabas.netlify.app/nasa-images/CV.png');
+  height: 50px;
+  width: 50px;
+  display: block;
+  /* Other styles here */
+}
 
  /* Style all font awesome icons */
 .fa {
