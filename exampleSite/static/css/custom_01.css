@@ -4,8 +4,11 @@
  /* For CV icon */
 .icon {
   background: url('https://gazikabas.netlify.app/nasa-images/CV.png');
-  height: 50px;
+  padding: 10px;
+  font-size: 20px;
   width: 50px;
+  text-align: center;
+  text-decoration: none;
   display: block;
   /* Other styles here */
 }
