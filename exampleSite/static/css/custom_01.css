@@ -106,27 +106,33 @@ br {
 h1  {
    padding: 5px;
    margin: 5px;
+  border-color: red;
 }
 h2  {
    padding: 5px;
   margin: 5px;
+  border-color: red;
 }
 h3  {
    padding: 5px;
   margin: 5px;
+  border-color: red;
 }
 h4  {
    padding: 5px;
   margin: 5px;
+  border-color: red;
 }
 
 h5  {
    padding: 5px;
   margin: 5px;
+  border-color: red;
 }
 
 h6  {
    padding: 5px;
   margin: 5px;
+  border-color: red;
 }
 
