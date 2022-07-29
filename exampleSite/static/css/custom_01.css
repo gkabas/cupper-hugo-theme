@@ -69,7 +69,17 @@
   color: white;
 }
 
+.fa-download {
+  background: #007bb5;
+  color: white;
+}
+
 .ai-cv-square {
+  background: #3B5998;
+  color: white;
+}
+
+.ai-ssrn {
   background: #3B5998;
   color: white;
 }
