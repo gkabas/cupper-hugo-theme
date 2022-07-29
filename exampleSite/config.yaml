@@ -1,4 +1,4 @@
-baseURL: https://example.com
+baseURL: gkabas.netlify.app
 languageCode: en-us
 defaultContentLanguage: en
 title: Cupper
@@ -17,10 +17,9 @@ imaging:
   quality: 99
 
 params:
-  description: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
-  homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
-  # For more date formats see https://gohugo.io/functions/format/
+  description: Household Finance<br> Banking<br> Empirical Corporate Finance <p> Assistant Professor <br> Tilburg University <p> CV(https://gkabas.netlify.app/files/KabasCV.pdf) <br><script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62e38eb801f23300194c70e2&product=inline-follow-buttons" async="async"></script><div class="sharethis-inline-follow-buttons"></div>
+  homeMetaContent: Personal webpage of Gazi Kabas
+  footer: 
   dateFormat: Jan 2, 2006
   codePenUser: someUser
   katex: true
@@ -29,7 +28,7 @@ params:
   showThemeSwitcher: true
   defaultDarkTheme: false
   moveFooterToHeader: false
-  # navTitleText: Cupper Theme
+  navTitleText: Gazi Kabas
   logoAlt: An alternative text description of the logo
   customCss:
     - css/custom_01.css
@@ -40,21 +39,12 @@ params:
 
 menu:
   nav:
-    - name: Home
-      url: /
+    - name: Working Papers
+      url: /#working-papers
       weight: 1
-    - name: Blog
-      url: /post/
+    - name: In progress
+      url: /#in-progress
       weight: 2
-    - name: Tags
-      url: /tags/
-      weight: 3
-    - name: About
-      url: /about/
-      weight: 4
-    - name: RSS
-      url: /index.xml
-      weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark
