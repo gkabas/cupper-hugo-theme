@@ -102,7 +102,7 @@ br {
   margin-top: 0; /* change this to whatever height you want it */
   margin-bottom: 0em ;
   padding: 0;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 h1  {
