@@ -37,7 +37,7 @@ params:
     - js/custom_01.js
     - js/custom_02.js
 
-# menu:
+menu:
   nav:
     - name: Working Papers
       url: /#working-papers
