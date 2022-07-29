@@ -84,6 +84,9 @@
   color: white;
 }
 
-
+#accordion{
+    width: 700px;
+    white-space: nowrap;
+}
 
 
