@@ -2,8 +2,8 @@
 date: "2017-06-26T18:27:58+01:00"
 title: 
 ---
-##### Working Papers 
----
+# Working Papers 
+
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with [Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/) and [Steven Ongena](https://sites.google.com/site/stevenongena/), [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4075737), [Download](https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf)
 <details><summary>Abstract</summary>
@@ -30,8 +30,8 @@ with [Yavuz Arslan](https://yavuzarslan.org/) and [Ahmet Degerli](https://sites.
 
 <br> </br>
 
-##### In Progress
----
+# In Progress
+
 
 **Do UI Policies Really Stabilize Economic Fluctuations? Evidence from Mortgage and Housing Markets**
 with [Yavuz Arslan](https://yavuzarslan.org/), [Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home), [Bulent Guler](https://bguler.pages.iu.edu/), and [Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)
