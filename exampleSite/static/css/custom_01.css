@@ -104,19 +104,29 @@ br {
 }
 
 h1  {
-   padding: 10px;
-   margin: 20px;
+   padding: 5px;
+   margin: 5px;
 }
 h2  {
-   padding: 10px;
-  margin: 20px;
+   padding: 5px;
+  margin: 5px;
 }
 h3  {
-   padding: 10px;
-  margin: 20px;
+   padding: 5px;
+  margin: 5px;
 }
 h4  {
-   padding: 10px;
-  margin: 20px;
+   padding: 5px;
+  margin: 5px;
+}
+
+h5  {
+   padding: 5px;
+  margin: 5px;
+}
+
+h6  {
+   padding: 5px;
+  margin: 5px;
 }
 
