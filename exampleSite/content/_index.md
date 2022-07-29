@@ -1,14 +1,40 @@
 ---
 date: "2017-06-26T18:27:58+01:00"
-title: "Home"
+title: 
+---
+##### Working Papers 
 ---
 
-Welcome to **Cupper**: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project. Here are some of its features:
+**"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**
+with [Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/) and [Steven Ongena](https://sites.google.com/site/stevenongena/)
+<details><summary>Abstract</summary>
+<br>We provide evidence that banks increase cross-border lending in response to higher climate policy stringency in their home countries. Saturating with granular set of fixed effects and including a rich set of control variables, we show that the increase in cross-border lending is not driven by loan demand and/or other bank home country characteristics. In line with banks use cross-border lending as a regulatory arbitrage tool, the increase in cross-border lending occurs only if banks' home countries have more stringent climate policy compared to their borrowers' countries. The effect is stronger for large, lowly capitalized banks with high NPL ratios and for banks with more experience in cross-border lending. Our results suggest that without a global cooperation, cross-border lending can be a channel that reduces the effectiveness of climate policies. </br></details>
 
-{{< ticks >}}
-* Screen reader and keyboard accessible
-* Responsive
-* Numerous shortcodes
-* Toggleable dark theme
-* Toggleable table of contents per blog post
-{{< /ticks >}}
+**Household Leverage and Labor Market Outcomes: Evidence from a Macroprudential Mortgage Restriction**
+with [Kasper Roszbach](https://sites.google.com/view/kasperroszbach)
+
+<details><summary>Abstract</summary>
+<br>Does households' leverage matter for their job search, matching in the labor market, and wages? To answer this question we exploit a loan-to-value ratio restriction in Norway that exogenously reduces household leverage and a sample of displaced workers who lost their jobs due to mass layoffs. We find that a reduction in leverage improves the starting wages of displaced workers. Lower leverage allows workers to prolong their unemployment duration, find jobs in higher paying firms, and switch into new occupations and industries. The positive effects are long-lasting and more pronounced for young and higher educated workers. Our results indicate that policies aimed at limiting households' leverage have the potential to substantially improve their labor market outcomes by reducing the frictions that leverage creates in the job search.</br></details>
+
+**Population Aging and Bank Risk-Taking**
+with [Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm) and [Steven Ongena](https://sites.google.com/site/stevenongena/)
+
+<details><summary>Abstract</summary>
+<br>Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging. </br></details>
+
+
+**Unintended Consequences of Unemployment Insurance Benefits: the Role of Banks**
+with [Yavuz Arslan](https://yavuzarslan.org/) and [Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)
+
+<details><summary>Abstract</summary>
+<br>We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth. </br></details>
+
+<br> </br>
+
+##### In Progress
+---
+
+**Do UI Policies Really Stabilize Economic Fluctuations? Evidence from Mortgage and Housing Markets**
+with [Yavuz Arslan](https://yavuzarslan.org/), [Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home), [Bulent Guler](https://bguler.pages.iu.edu/), and [Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)
+<details><summary>Abstract</summary>
+<br>We question the predominantly held view that unemployment insurance (UI) policies automatically stabilize economic fluctuations. We argue that, while UI policies may stabilize downturns ex-post, ex-ante it amplifies the upswings. As a result, in many cases, such policies may increase the volatility. The underlying mechanism is that when UI benefits become more generous left tail income risk declines. As a result household reduce their savings and increase borrowing. In particular, we show that down payment ratios decline, mortgage credit volume, hence household leverage increases. As households demand more credit, the size of bank assets, in particular the size of mortgage portfolio increases. The weakening of balance sheet strength in return increases the vulnerability to shocks that works against the stabilization effects UI benefits. On top of these, more generous UI benefits enable consumers to increase their debt more during favorable times. As a result booms get amplified with higher UI benefits. </br></details>
