@@ -25,7 +25,7 @@ params:
   katex: true
   hideHeaderLinks: false
   search: true
-  showThemeSwitcher: true
+  showThemeSwitcher: false
   defaultDarkTheme: false
   moveFooterToHeader: false
   navTitleText: Gazi Kabas
@@ -37,7 +37,7 @@ params:
     - js/custom_01.js
     - js/custom_02.js
 
-menu:
+# menu:
   nav:
     - name: Working Papers
       url: /#working-papers
