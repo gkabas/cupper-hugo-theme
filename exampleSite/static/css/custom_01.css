@@ -107,32 +107,38 @@ h1  {
    padding: 5px;
    margin: 5px;
   border-color: red;
+  border-style: dashed;
 }
 h2  {
    padding: 5px;
   margin: 5px;
   border-color: red;
+  border-style: dashed;
 }
 h3  {
    padding: 5px;
   margin: 5px;
   border-color: red;
+  border-style: dashed;
 }
 h4  {
    padding: 5px;
   margin: 5px;
   border-color: red;
+  border-style: dashed;
 }
 
 h5  {
    padding: 5px;
   margin: 5px;
   border-color: red;
+  border-style: dashed;
 }
 
 h6  {
    padding: 5px;
   margin: 5px;
   border-color: red;
+  border-style: dashed;
 }
 
