@@ -93,7 +93,7 @@ p {
   margin-top: 1em ;
   margin-bottom: 0em ;
   padding: 0;
-  line-height: 1.5;
+  line-height: 2;
 } 
 
 br {
@@ -102,45 +102,33 @@ br {
   margin-top: 0; /* change this to whatever height you want it */
   margin-bottom: 0em ;
   padding: 0;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 h1  {
    padding: 0px;
    margin: 0px;
-  border-color: red;
-  border-style: dashed;
 }
 h2  {
    padding: 0px;
   margin: 0px;
-  border-color: red;
-  border-style: dashed;
 }
 h3  {
    padding: 0px;
   margin: 0px;
-  border-color: red;
-  border-style: dashed;
 }
 h4  {
    padding: 0px;
   margin: 0px;
-  border-color: red;
-  border-style: dashed;
 }
 
 h5  {
    padding: 0px;
   margin: 0px;
-  border-color: red;
-  border-style: dashed;
 }
 
 h6  {
    padding: 0px;
   margin: 0px;
-  border-color: red;
-  border-style: dashed;
 }
 
