@@ -1,11 +1,10 @@
 ---
 date: "2017-06-26T18:27:58+01:00"
 title: 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"><script src="https://kit.fontawesome.com/e8af4e8f43.js" crossorigin="anonymous"></script>
 ---
 ##### Working Papers 
 ---
-
+<a href="https://www.linkedin.com/in/gazi-kaba%C5%9F-14456612a/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**
 with [Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/) and [Steven Ongena](https://sites.google.com/site/stevenongena/)
 <details><summary>Abstract</summary>
