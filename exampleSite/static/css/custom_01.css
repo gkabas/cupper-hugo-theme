@@ -108,14 +108,15 @@ br {
 h1  {
    padding: 0px;
    margin: 0px;
+   border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
 }
 h2  {
    padding: 0px;
   margin: 0px;
-      border-width: 3px;
-    border-left-width: 10px;
-    border-right-width: 10px;
-    border-color: red;
+
 }
 h3  {
    padding: 0px;
