@@ -133,3 +133,23 @@ h6  {
   margin: 0px;
 }
 
+details {
+  display: inline;
+  color: red;
+  padding: 0;
+  background-color: #d3d3d3;
+  cursor: help;
+  
+}
+details > summary {
+  display: inline;
+  background: none;
+  color: green;
+  list-style: none; /* to remove triangle */
+  outline:none; /* to remove blue border */
+}
+details > summary::-webkit-details-marker { /* to remove triangle */
+  display: inline;
+  display: none;
+}
+
