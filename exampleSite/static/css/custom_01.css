@@ -92,14 +92,14 @@
 p {
   margin-top: 1em ;
   margin-bottom: 0em ;
-  padding: 0;
-  line-height: 1.5;
+  padding: 0em;
+  line-height: 1.5em;
 } 
 
 br {
   display: block; /* makes it have a width */
   content: ""; /* clears default height */
-  margin-top: 0; /* change this to whatever height you want it */
+  margin-top: 0em; /* change this to whatever height you want it */
   margin-bottom: 0em ;
   padding: 0;
   line-height: 1.5;
