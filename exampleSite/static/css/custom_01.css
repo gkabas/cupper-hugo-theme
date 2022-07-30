@@ -99,7 +99,7 @@ p {
 br {
   display: block; /* makes it have a width */
   content: ""; /* clears default height */
-  margin-top: 1em; /* change this to whatever height you want it */
+  margin-top: 0.5em; /* change this to whatever height you want it */
   margin-bottom: 0em ;
   padding: 0em;
   line-height: 1.5em;
