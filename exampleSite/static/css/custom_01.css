@@ -142,8 +142,10 @@ details > summary {
   background: none;
   outline:none; /* to remove blue border */
 }
-details > summary::-webkit-details-marker { /* to remove triangle */
+/*
+details > summary::-webkit-details-marker { 
   display: inline;
   display: none;
 }
+*/
 
