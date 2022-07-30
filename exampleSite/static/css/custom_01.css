@@ -136,13 +136,10 @@ h6  {
 details {
   display: inline;
   padding: 0;
-  cursor: help;
-  
 }
 details > summary {
   display: inline;
   background: none;
-  list-style: none; /* to remove triangle */
   outline:none; /* to remove blue border */
 }
 details > summary::-webkit-details-marker { /* to remove triangle */
