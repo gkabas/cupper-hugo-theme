@@ -133,6 +133,11 @@ h6  {
   margin: 0px;
 }
 
+summary {
+  display: inline;
+  padding: 0;
+}
+
 details {
   display: inline;
   padding: 0;
