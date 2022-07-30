@@ -143,14 +143,22 @@ details {
   padding: 0;
 }
 details > summary {
+  list-style-type: none;
+  cursor: pointer;
   display: inline;
   background: none;
   outline:none; /* to remove blue border */
 }
-/*
+
 details > summary::-webkit-details-marker { 
   display: inline;
   display: none;
 }
-*/
+details>summary::before {
+  content: '+ ';
+}
+
+details[open]>summary::before {
+  content: '- ';
+}
 
