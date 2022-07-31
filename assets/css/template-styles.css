@@ -949,13 +949,12 @@ h1 svg {
         border-top: 1px solid;
         margin-top: 0;
     }
-    /*
+   
     #menu-button {
-        display: block;
-    }
-    */
-    #patterns-list {
         display: none;
+    }
+    #patterns-list {
+        display: block;
     }
     .toc-link {
       display: none;
