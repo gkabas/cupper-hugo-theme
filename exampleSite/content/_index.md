@@ -1,4 +1,5 @@
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"><script src="https://kit.fontawesome.com/e8af4e8f43.js" crossorigin="anonymous"></script>
 date: "2017-06-26T18:27:58+01:00"
 title: 
 ---
