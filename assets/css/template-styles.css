@@ -46,10 +46,12 @@ p + p {
 .priority {
   margin-top: 0;
 }
+/*  
 a {
     text-decoration: none;
     border-bottom: 2.5px solid;
 }
+*/
 abbr {
     text-decoration: none;
     cursor: help;
