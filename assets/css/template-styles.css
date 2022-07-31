@@ -52,6 +52,9 @@ a {
     border-bottom: 2.5px solid;
 }
 */
+a:hover {
+  color: grey;
+}
 abbr {
     text-decoration: none;
     cursor: help;
