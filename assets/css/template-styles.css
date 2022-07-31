@@ -48,7 +48,7 @@ p + p {
 }
 a {
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 0.25px solid;
 }
 abbr {
     text-decoration: none;
