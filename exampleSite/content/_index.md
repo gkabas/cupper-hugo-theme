@@ -3,7 +3,7 @@ date: "2017-06-26T18:27:58+01:00"
 title: 
 
 ---
-# Working Papers 
+## Working Papers 
 
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with [Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/) and [Steven Ongena](https://sites.google.com/site/stevenongena/) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4075737" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><a href="https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf" target="_blank" rel="noopener noreferrer" class="fa fa-download"></a> <details><summary>Abstract: </summary>
@@ -32,7 +32,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 <br> </br>
 <br> </br>
 
-# In Progress
+## In Progress
 
 
 **Do UI Policies Really Stabilize Economic Fluctuations? Evidence from Mortgage and Housing Markets**
