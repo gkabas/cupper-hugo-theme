@@ -72,6 +72,9 @@
 .fa-download {
   background: #007bb5;
   color: white;
+  padding: 0px;
+  font-size: 25px;
+  width: 40px;
 }
 
 .ai-cv-square {
@@ -82,6 +85,9 @@
 .ai-ssrn {
   background: #3B5998;
   color: white;
+  padding: 0px;
+  font-size: 25px;
+  width: 40px;
 }
 
 #accordion{
