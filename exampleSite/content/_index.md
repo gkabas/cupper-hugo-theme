@@ -24,7 +24,7 @@ Does population aging affect bank lending? To answer this question we exploit ge
 
 
 **Unintended Consequences of Unemployment Insurance Benefits: the Role of Banks**<br>
-with <u>[Yavuz Arslan](https://yavuzarslan.org/)<u> and </u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><details><summary>Abstract: </summary>
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><details><summary>Abstract: </summary>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</details>
 
 
