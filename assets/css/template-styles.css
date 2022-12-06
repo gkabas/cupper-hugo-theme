@@ -1,6 +1,6 @@
 /* Fonts */
 @font-face {
-    font-family: 'Miriam Libre';
+    font-family: 'Helvetica Neue';
     src: url('{{ "css/fonts/miriamlibre-bold.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/miriamlibre-bold.woff" | absURL }}') format('woff');
     font-weight: bold;
     font-style: normal;
