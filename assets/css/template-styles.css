@@ -10,7 +10,7 @@
 *,
 *::before,
 *::after {
-    font-family: inherit;
+    font-family: Helvetica Neue;
     background-color: inherit;
     color: inherit;
     margin: 0;
@@ -125,7 +125,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: Miriam Libre, serif;
+    font-family: Helvetica Neue, serif;
     line-height: 1.125;
 }
 h1 {
