@@ -201,7 +201,7 @@ main dt {
     font-weight: bold;
 }
 main dd {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 dd ul {
   margin-left: 0;
