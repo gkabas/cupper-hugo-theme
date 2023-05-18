@@ -171,6 +171,4 @@ details>summary::after {
 details[open]>summary::after {
   content: '- ';
 }
-details[open] summary {
-  display: none;
-}
+
