@@ -144,6 +144,10 @@ summary {
   padding: 0;
 }
 
+blockquote {
+  display: inline;
+} 
+
 details {
   display: inline;
   padding: 0;
@@ -167,4 +171,6 @@ details>summary::before {
 details[open]>summary::before {
   content: '- ';
 }
-
+details[open] summary {
+  display: none;
+}
