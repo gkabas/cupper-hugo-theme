@@ -139,38 +139,18 @@ h6  {
   margin: 0px;
 }
 
-summary {
-  display: inline;
-  padding: 0;
-}
-
 blockquote {
   display: inline;
 } 
-
+ 
 details {
   display: inline;
-  padding: 0;
-}
-details > summary {
-  list-style-type: none;
-  cursor: pointer;
-  display: inline;
-  background: none;
-  outline:none; /* to remove blue border */
 }
 
-details > summary::-webkit-details-marker { 
+summary {
   display: inline;
-  display: none;
-}
-details>summary::before {
-  content: '+ ';
 }
 
-details[open]>summary::before {
-  content: '- ';
-}
 details[open] summary {
   display: none;
 }
