@@ -28,7 +28,7 @@ params:
   showThemeSwitcher: false
   defaultDarkTheme: false
   moveFooterToHeader: false
-  navTitleText:
+  navTitleText: Gazi Kabas
   logoAlt: An alternative text description of the logo
   customCss:
     - css/custom_01.css
