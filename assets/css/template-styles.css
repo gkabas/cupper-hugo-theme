@@ -123,7 +123,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: Helvetica Neue, serif;
+    font-family: "Times New Roman", Times, serif;
     line-height: 1.125;
 }
 h1 {
@@ -132,14 +132,16 @@ h1 {
 }
 h2 {
     font-size: 1.66rem;
+    font-family: "Times New Roman", Times, serif;
 }
 h3 {
     font-size: 1.25rem;
+    font-family: "Times New Roman", Times, serif;
 }
 h4,
 h5 {
     font-size: 1rem;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 h5 {
     font-size: 0.85rem;
