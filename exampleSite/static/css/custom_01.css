@@ -164,11 +164,5 @@ details > summary::-webkit-details-marker {
   display: inline;
   display: none;
 }
-details>summary::after {
-  content: '+ ';
-}
 
-details[open]>summary::after {
-  content: '- ';
-}
 
