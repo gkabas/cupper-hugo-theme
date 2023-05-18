@@ -222,6 +222,7 @@ dd li + li {
 blockquote {
   border-left: 0.5rem solid;
   padding-left: 0.75rem;
+  display: inline;  
 }
 blockquote .author {
   font-size: 0.85rem;
