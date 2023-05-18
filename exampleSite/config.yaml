@@ -42,9 +42,12 @@ menu:
     - name: Working Papers
       url: /#working-papers
       weight: 1
+    - name: Publications
+      url: /#publications
+      weight: 2
     - name: In progress
       url: /#in-progress
-      weight: 2
+      weight: 3
 
 markup:
   defaultMarkdownHandler: goldmark
