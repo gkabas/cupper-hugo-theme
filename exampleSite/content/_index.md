@@ -4,7 +4,7 @@ title:
 
 ---
 ## Working Papers 
-<p style="color:#585757;font-weight: bold;">"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending</p><br>
+**"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4075737" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><a href="https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf" target="_blank" rel="noopener noreferrer" class="fa fa-download"></a> <details><summary>Abstract: </summary>
 We provide evidence that banks increase cross-border lending in response to higher climate policy stringency in their home countries. Saturating with granular set of fixed effects and including a rich set of control variables, we show that the increase in cross-border lending is not driven by loan demand and/or other bank home country characteristics. In line with banks use cross-border lending as a regulatory arbitrage tool, the increase in cross-border lending occurs only if banks' home countries have more stringent climate policy compared to their borrowers' countries. The effect is stronger for large, lowly capitalized banks with high NPL ratios and for banks with more experience in cross-border lending. Our results suggest that without a global cooperation, cross-border lending can be a channel that reduces the effectiveness of climate policies.</details><div class="clear"></div>
 
@@ -14,7 +14,7 @@ with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> <a h
 **Unintended Consequences of Unemployment Insurance Benefits: the Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, R&R@<i>Management Science</i> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><details><summary>Abstract: </summary>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</details>
-
+<hr class="solid">
 <div class="clear"></div>
 <br><br />
 <br><br />
@@ -24,7 +24,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><details><summary>Abstract: </summary>
 Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging.</details>
-
+<hr class="solid">
 <div class="clear"></div>
 <br><br />
 <br><br />
