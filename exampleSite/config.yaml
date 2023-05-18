@@ -28,7 +28,7 @@ params:
   showThemeSwitcher: false
   defaultDarkTheme: false
   moveFooterToHeader: false
-  navTitleText: &nbsp 
+  navTitleText:
   logoAlt: An alternative text description of the logo
   customCss:
     - css/custom_01.css
