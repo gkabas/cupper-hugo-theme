@@ -19,6 +19,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 <br><br />
 <br><br />
 <hr class="solid">
+
 ## Publications
 
 **Population Aging and Bank Risk-Taking**<br>
