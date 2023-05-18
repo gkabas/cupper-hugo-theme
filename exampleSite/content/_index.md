@@ -23,7 +23,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 ## Publications
 
 **Population Aging and Bank Risk-Taking**<br>
-with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><details><summary>Abstract: </summary>
+w/ <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><details><summary>Abstract: </summary>
 Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging.</details>
 
 <div class="clear"></div>
