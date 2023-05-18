@@ -373,9 +373,10 @@ caption {
 .main-and-footer {
     margin-left: 6rem;
     padding-left: 0.5rem;
+    padding-left: 0rem;
 }
 .main-and-footer > div {
-    max-width: 43rem;
+    max-width: 42rem;
     margin: 0 auto;
     padding: 2.25rem;
 }
