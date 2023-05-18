@@ -5,7 +5,7 @@ title:
 ---
 ## Working Papers 
 
-**"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
+<h1>"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending</h1><br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4075737" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><a href="https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf" target="_blank" rel="noopener noreferrer" class="fa fa-download"></a> <details><summary>Abstract: </summary>
 We provide evidence that banks increase cross-border lending in response to higher climate policy stringency in their home countries. Saturating with granular set of fixed effects and including a rich set of control variables, we show that the increase in cross-border lending is not driven by loan demand and/or other bank home country characteristics. In line with banks use cross-border lending as a regulatory arbitrage tool, the increase in cross-border lending occurs only if banks' home countries have more stringent climate policy compared to their borrowers' countries. The effect is stronger for large, lowly capitalized banks with high NPL ratios and for banks with more experience in cross-border lending. Our results suggest that without a global cooperation, cross-border lending can be a channel that reduces the effectiveness of climate policies.</details><div class="clear"></div>
 
