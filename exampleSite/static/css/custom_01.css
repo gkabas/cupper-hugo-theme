@@ -162,7 +162,6 @@ details > summary {
 
 details > summary::-webkit-details-marker { 
   display: inline;
-  display: none;
 }
 
 
