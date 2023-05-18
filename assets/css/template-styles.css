@@ -226,6 +226,7 @@ blockquote {
 }
 blockquote .author {
   font-size: 0.85rem;
+  display: inline; 
 }
 
 /* Buttons */
