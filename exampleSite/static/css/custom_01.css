@@ -168,10 +168,14 @@ details>summary::before {
   content: '▶️';
   background: #3B5998;
   border-color: #3B5998;
+  color: #3B5998;
 }
 
 details[open]>summary::before {
   content: '🔽';
+  background: #3B5998;
+  border-color: #3B5998;
+  color: #3B5998;
 }
 
 
