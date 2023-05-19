@@ -165,11 +165,11 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 details>summary::before {
-  content: '+ ';
+  content: '▶️';
 }
 
 details[open]>summary::before {
-  content: 'x ';
+  content: '🔽';
 }
 
 
