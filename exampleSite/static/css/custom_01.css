@@ -156,7 +156,7 @@ details > summary {
   list-style-type: none;
   cursor: pointer;
   display: inline;
-  background: none;
+  ackground: none:
   outline:none; /* to remove blue border */
 }
 
@@ -166,6 +166,8 @@ details > summary::-webkit-details-marker {
 }
 details>summary::before {
   content: '▶️';
+  background: #3B5998;
+  border-color: #3B5998;
 }
 
 details[open]>summary::before {
