@@ -142,6 +142,7 @@ h6  {
 summary {
   display: inline;
   padding: 0;
+  margin-bottom: 0rem;
 }
 
 blockquote {
@@ -151,6 +152,7 @@ blockquote {
 details {
   display: inline;
   padding: 0;
+  margin-bottom: 0rem;
 }
 details > summary {
   list-style-type: none;
