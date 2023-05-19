@@ -166,16 +166,10 @@ details > summary::-webkit-details-marker {
 }
 details>summary::before {
   content: '&#x21B7';
-  background: #3B5998;
-  border-color: #3B5998;
-  color: #3B5998;
 }
 
 details[open]>summary::before {
   content: '&#8634';
-  background: #3B5998;
-  border-color: #3B5998;
-  color: #3B5998;
 }
 
 
