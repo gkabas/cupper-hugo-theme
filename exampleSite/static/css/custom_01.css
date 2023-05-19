@@ -153,6 +153,7 @@ details {
   display: inline;
   padding: 0;
   margin-bottom: 0rem;
+  margin-bottom: 0rem;
 }
 details > summary {
   list-style-type: none;
