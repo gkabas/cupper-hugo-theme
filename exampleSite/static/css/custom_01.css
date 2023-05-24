@@ -83,6 +83,12 @@
   width: 40px;
 }
 
+.ai-file-pdf {
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+}
+
 .ai-cv-square {
   background: #3B5998;
   color: white;
