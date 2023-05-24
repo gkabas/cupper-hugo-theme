@@ -70,14 +70,14 @@
 }
 
 .fa-download {
+  background: #007bb5;
+  color: white;
   padding: 1px;
   font-size: 25px;
   width: 40px;
 }
 
 .fa-file-pdf {
-  background: #007bb5;
-  color: white;
   padding: 1px;
   font-size: 25px;
   width: 40px;
