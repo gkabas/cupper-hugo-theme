@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
   {{ partial "head.html" . }}
+  <head>
+  {{ if .Site.Params.GoogleAnalyticsID }}
+  {{ partial "analytics-gtag.html" . }}
+  {{ end }}
+  ...
+ </head>
   <body>
     <a href="#main">{{ T "skip_to_content" }}</a>
     {{ partial "noscript.html" . }}
