@@ -122,8 +122,9 @@ br {
   padding: 0em;
   line-height: 1.5em;
 }
+
 hr {
-  max-width: 50em;
+  max-width: 45em;
 }
 
 h1  {
