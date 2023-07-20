@@ -348,7 +348,7 @@ caption {
 }
 .intro-and-nav > div {
     padding: 2.25rem;
-    padding-right: 1.25rem;
+    padding-right: 2.25rem;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -378,9 +378,10 @@ caption {
     padding-left: 0rem;
 }
 .main-and-footer > div {
-    max-width: 42rem;
+    /*max-width: 42rem;*/
+    width: 100%;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: 2.25rem;
 }
 [role="contentinfo"] {
     font-size: 0.85rem;
