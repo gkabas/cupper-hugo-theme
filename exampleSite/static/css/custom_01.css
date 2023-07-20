@@ -121,6 +121,7 @@ br {
   margin-bottom: 0em ;
   padding: 0em;
   line-height: 1.5em;
+  max-width: 42em;
 }
 
 h1  {
