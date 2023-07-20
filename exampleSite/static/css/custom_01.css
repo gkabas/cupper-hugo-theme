@@ -166,13 +166,13 @@ details {
   padding: 0;
   margin-bottom: 0rem;
   margin-bottom: 0rem;
-  max-width: 40em;
+  max-width: 42em;
 }
 details > summary {
   list-style-type: none;
   cursor: pointer;
   display: inline;
-  max-width: 40em;
+  max-width: 42em;
   background: none:
   outline:none; /* to remove blue border */
 }
@@ -180,7 +180,7 @@ details > summary {
 details > summary::-webkit-details-marker { 
   display: inline;
   display: none;
-  max-width: 40em;
+  max-width: 42em;
 }
 details>summary::before {
   content: '▷';
