@@ -171,6 +171,7 @@ details > summary {
   list-style-type: none;
   cursor: pointer;
   display: inline;
+  max-width: 50em;
   background: none:
   outline:none; /* to remove blue border */
 }
