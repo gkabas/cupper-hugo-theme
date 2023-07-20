@@ -166,6 +166,7 @@ details {
   padding: 0;
   margin-bottom: 0rem;
   margin-bottom: 0rem;
+  max-width: 50em;
 }
 details > summary {
   list-style-type: none;
