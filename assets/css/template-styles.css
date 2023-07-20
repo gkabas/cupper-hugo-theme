@@ -338,7 +338,7 @@ caption {
 }
 .intro-and-nav {
     font-size: 0.8rem;
-    width: 15rem;
+    width: 16rem;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -373,7 +373,7 @@ caption {
     max-width: 25rem;
 }
 .main-and-footer {
-    margin-left: 16rem;
+    margin-left: 17rem;
     padding-left: 0.5rem;
     padding-left: 0rem;
 }
