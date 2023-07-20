@@ -231,7 +231,7 @@ blockquote .author {
 
 /* Buttons */
 button {
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 0.33em;
     font-family: inherit;
     background: #111;
