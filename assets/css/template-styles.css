@@ -373,14 +373,14 @@ caption {
     max-width: 25rem;
 }
 .main-and-footer {
-    margin-left: 6rem;
+    margin-left: 6rem auto;
     padding-left: 0.5rem;
     padding-left: 0rem;
 }
 .main-and-footer > div {
-    max-width: 40rem;
+    max-width: 42rem auto;
     margin: 0 auto;
-    padding: 2.25rem;
+    padding: 1.25rem;
 }
 [role="contentinfo"] {
     font-size: 0.85rem;
