@@ -337,7 +337,7 @@ caption {
     overflow-x: hidden;
 }
 .intro-and-nav {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 15rem;
     height: 100vh;
     position: fixed;
