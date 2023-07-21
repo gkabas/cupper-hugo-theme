@@ -15,7 +15,7 @@
 
  /* Style all font awesome icons */
 .fa {
-  padding: 5px;
+  padding: 0px;
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -95,8 +95,8 @@
 }
 
 .ai-ssrn {
-  background: white;
-  color: #3B5998;
+  background: #3B5998;
+  color: white;
   padding: 1px;
   font-size: 25px;
   width: 40px;
