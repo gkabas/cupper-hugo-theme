@@ -10,6 +10,7 @@
   text-align: center;
   text-decoration: none;
   display: block;
+  background-size: 0px;
   /* Other styles here */
 }
 
@@ -53,6 +54,7 @@
   background: white;
   color: #55ACEE;
   border-radius: 50%;
+  background-size: 0px;
 } 
 
 .fa-linkedin {
