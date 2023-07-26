@@ -11,6 +11,7 @@
   text-decoration: none;
   display: block;
   background-size: 0px;
+  border: none;
   /* Other styles here */
 }
 
@@ -34,6 +35,7 @@
   width: 50px;
   text-align: center;
   text-decoration: none;
+  border: none;
 }
 
 /* Add a hover effect if you want */
@@ -47,6 +49,7 @@
 .fa-facebook {
   background: #3B5998;
   color: white;
+  border: none;
 }
 
 /* Twitter */
@@ -55,24 +58,28 @@
   color: #55ACEE;
   border-radius: 50%;
   background-size: 0px;
+  border: none;
 } 
 
 .fa-linkedin {
   background: white;
   color: #007bb5;
   border-radius: 50%;
+  border: none;
 }
 
 .fa-solid {
   background: #007bb5;
   color: white;
   border-radius: 50%;
+  border: none;
 }
 
 .fa-envelope {
   background: white;
   color: #007bb5;
   border-radius: 50%;
+  border: none;
 }
 
 .fa-download {
@@ -81,12 +88,14 @@
   padding: 1px;
   font-size: 25px;
   width: 40px;
+  border: none;
 }
 
 .fa-file-pdf {
   padding: 1px;
   font-size: 25px;
   width: 40px;
+  border: none;
 }
 
 .ai-file-pdf {
@@ -99,6 +108,7 @@
   background: white;
   color: #3B5998;
   border-radius: 50%;
+  border: none;
 }
 
 .ai-ssrn {
