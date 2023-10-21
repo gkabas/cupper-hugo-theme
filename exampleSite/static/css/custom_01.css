@@ -191,7 +191,7 @@ blockquote {
 } 
 
 details {
-  display: block;
+  display: inline;
   padding: 0;
   margin-bottom: 0rem;
   margin-bottom: 0rem;
@@ -200,7 +200,7 @@ details {
 details > summary {
   list-style-type: none;
   cursor: pointer;
-  display: inline;
+  display: block;
   max-width: 42em;
   background: none:
   outline:none; /* to remove blue border */
