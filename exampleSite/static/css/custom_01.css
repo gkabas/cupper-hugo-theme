@@ -196,6 +196,7 @@ blockquote {
 details {
   display: block;
   vertical-align: top;
+  max-width: 42em;
 }
 details > summary {
   list-style-type: none;
