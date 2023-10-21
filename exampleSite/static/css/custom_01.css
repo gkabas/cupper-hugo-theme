@@ -213,9 +213,7 @@ details > summary {
 }
 
 details > summary::-webkit-details-marker { 
-  display: inline;
   display: none;
-  max-width: 42em;
 }
 details>summary::before {
   content: '▷';
