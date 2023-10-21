@@ -8,7 +8,7 @@ with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <
 We provide evidence that banks increase cross-border lending in response to higher climate policy stringency in their home countries. Saturating with granular set of fixed effects and including a rich set of control variables, we show that the increase in cross-border lending is not driven by loan demand and/or other bank home country characteristics. In line with banks use cross-border lending as a regulatory arbitrage tool, the increase in cross-border lending occurs only if banks' home countries have more stringent climate policy compared to their borrowers' countries. The effect is stronger for large, lowly capitalized banks with high NPL ratios and for banks with more experience in cross-border lending. Our results suggest that without a global cooperation, cross-border lending can be a channel that reduces the effectiveness of climate policies.</details>
 
 <details><summary>Main table & figure </summary>
- <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/blob/master/static/images/DeltaCCPI_page-0001.jpg" alt="A sample image">
+ <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DeltaCCPI_page-0001.jpg" alt="A sample image">
 </details>
 
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
