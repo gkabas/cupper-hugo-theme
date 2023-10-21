@@ -185,7 +185,7 @@ summary-container {
 summary {
   width: 50%;
   float: left;
-  display: inline;
+  display: inline-block;
   margin-right: 10px;
   padding: 0;
   margin-bottom: 0rem;
@@ -197,18 +197,19 @@ blockquote {
 } 
 
 details {
-  display: inline;
+  display: inline-block;
   padding: 0;
   margin-bottom: 0rem;
   margin-bottom: 0rem;
   max-width: 42em;
+  vertical-align: top;
 }
 details > summary {
   list-style-type: none;
   cursor: pointer;
   display: block;
   max-width: 42em;
-  background: none:
+  background: none;
   outline:none; /* to remove blue border */
 }
 
