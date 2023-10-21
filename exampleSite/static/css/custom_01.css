@@ -191,7 +191,7 @@ blockquote {
 } 
 
 details {
-  display: inline;
+  display: block;
   padding: 0;
   margin-bottom: 0rem;
   margin-bottom: 0rem;
