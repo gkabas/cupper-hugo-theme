@@ -180,10 +180,12 @@ h6  {
   margin: 0px;
 }
 summary-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  grid-gap: 10px; /* Add some spacing between the elements */
 }
 .summary {
-  display: inline-block;
+  display: block;
   margin-right: 10px;
 }
 
@@ -192,7 +194,7 @@ blockquote {
 } 
 
 details {
-  display: inline-block;
+  display: block;
   vertical-align: top;
 }
 details > summary {
