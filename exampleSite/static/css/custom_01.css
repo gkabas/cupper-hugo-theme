@@ -182,14 +182,9 @@ h6  {
 summary-container {
   display: flex;
 }
-summary {
-  width: 50%;
-  float: left;
+.summary {
   display: inline-block;
   margin-right: 10px;
-  padding: 0;
-  margin-bottom: 0rem;
-  box-sizing: border-box;
 }
 
 blockquote {
@@ -198,10 +193,6 @@ blockquote {
 
 details {
   display: inline-block;
-  padding: 0;
-  margin-bottom: 0rem;
-  margin-bottom: 0rem;
-  max-width: 42em;
   vertical-align: top;
 }
 details > summary {
