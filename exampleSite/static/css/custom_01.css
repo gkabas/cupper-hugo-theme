@@ -179,11 +179,17 @@ h6  {
    padding: 0px;
   margin: 0px;
 }
-
+summary-container {
+  display: flex;
+}
 summary {
+  width: 50%;
+  float: left;
   display: inline;
+  margin-right: 10px;
   padding: 0;
   margin-bottom: 0rem;
+  box-sizing: border-box;
 }
 
 blockquote {
