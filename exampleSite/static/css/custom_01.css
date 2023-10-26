@@ -194,21 +194,21 @@ blockquote {
 } 
 
 details {
-  display: block;
+  display: inline;
   vertical-align: top;
   max-width: 42em;
 }
 details > summary {
   list-style-type: none;
   cursor: pointer;
-  display: block;
+  display: inline;
   max-width: 42em;
   background: none;
   outline:none; /* to remove blue border */
 }
 
 details > summary::-webkit-details-marker { 
-  display: none;
+  display: inline;
 }
 details>summary::before {
   content: '▷';
