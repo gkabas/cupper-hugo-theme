@@ -183,7 +183,7 @@ h6  {
 
 details {
   width: 620px;
-  display: block;
+  display: contents;
   vertical-align: top;
 }
 
