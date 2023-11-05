@@ -16,9 +16,10 @@ with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](http
 <p></p>
 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a>  
 
- <details data-for="first">
+<details data-for="first">
     <summary>Abstract</summary>
   </details>
+
   <details data-for="second">
     <summary>Abstract</summary>
   </details>
@@ -38,12 +39,11 @@ with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](http
   <div class="after-content">
     
   </div>
-  ---
+
 <div class="clear"></div>
 <br><br />
 <br><br />
 <hr class="solid">
----
 
  ## Publications
 **Population Aging and Bank Risk-Taking**<br>
