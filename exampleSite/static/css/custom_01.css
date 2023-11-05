@@ -213,15 +213,15 @@ position:absolute;
 
 
 
-details > summary::-webkit-details-marker { 
-  display: contents;
-}
-details>summary::before {
-  content: '▷';
-}
+ /* details > summary::-webkit-details-marker {  */
+ /*   display: contents; */
+ /* } */
+ /* details>summary::before { */
+ /*   content: '▷'; */
+ /* } */
 
-details[open]>summary::before {
-  content: '▽';
-}
+ /* details[open]>summary::before { */
+ /*   content: '▽'; */
+ /* } */
 
 
