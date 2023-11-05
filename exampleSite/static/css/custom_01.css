@@ -180,29 +180,30 @@ h6  {
   margin: 0px;
 }
 
+
+details {
+  width: 620px;
+  display: contents;
+}
+
 summary {
   display: block;
-  margin-right: 10px;
   width: 10em;
 }
 
-blockquote {
-  display: inline;
-} 
-
-details {
-  display: contents;
-  vertical-align: top;
-  max-width: 42em;
-}
 details > summary {
-  list-style-type: none;
+  padding: 2px 6px;
+  width: 10em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
   cursor: pointer;
   list-style: none;
   display: contents;
-  max-width: 42em;
-  background: none;
-  outline:none; /* to remove blue border */
+}
+
+span{
+  width: 10em;
 }
 
 details > p {
@@ -210,9 +211,7 @@ position:absolute;
   display: block;
 }
 
-span{
-  width: 10em;
-}
+
 
 details > summary::-webkit-details-marker { 
   display: contents;
