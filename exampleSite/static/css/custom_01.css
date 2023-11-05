@@ -184,6 +184,7 @@ h6  {
 details {
   width: 620px;
   display: contents;
+  vertical-align: top;
 }
 
 summary {
