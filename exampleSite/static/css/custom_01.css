@@ -1,6 +1,6 @@
-.your-custom-class-01 {
-  display: inline;
-}
+ /*.your-custom-class-01 { */
+ /*  display: inline; */
+ /*} */
  /* For CV icon */
 .icon {
   background: url('https://gazikabas.netlify.app/nasa-images/CV.png');
@@ -183,7 +183,7 @@ h6  {
 
 details {
   width: 620px;
-  display: contents;
+  display: block;
   vertical-align: top;
 }
 
