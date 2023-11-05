@@ -38,11 +38,12 @@ with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](http
   <div class="after-content">
     
   </div>
-/*<div class="clear"></div>*/
-/*<br><br />*/
-/*<br><br />*/
-/*<hr class="solid">*/
-
+  ---
+<div class="clear"></div>
+<br><br />
+<br><br />
+<hr class="solid">
+---
 
  ## Publications
 **Population Aging and Bank Risk-Taking**<br>
