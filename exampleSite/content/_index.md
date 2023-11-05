@@ -12,7 +12,8 @@ We provide evidence that banks increase cross-border lending in response to high
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3835232" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><a href="https://gkabas.netlify.app/files/KabasRoszbach2021.pdf" target="_blank" rel="noopener noreferrer" class="fa-regular fa-file-pdf" style="margin-left:0.2em; width: 28px; color: #3B5998"></a><details><summary>Abstract: </summary>Does households' leverage matter for their job search, matching in the labor market, and wages? To answer this question we exploit a loan-to-value ratio restriction in Norway that exogenously reduces household leverage and a sample of displaced workers who lost their jobs due to mass layoffs. We find that a reduction in leverage improves the starting wages of displaced workers. Lower leverage allows workers to prolong their unemployment duration, find jobs in higher paying firms, and switch into new occupations and industries. The positive effects are long-lasting and more pronounced for young and higher educated workers. Our results indicate that policies aimed at limiting households' leverage have the potential to substantially improve their labor market outcomes by reducing the frictions that leverage creates in the job search.</details>
 
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
-with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, R&R@<i>Management Science</i> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a>  <details data-for="first">
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, R&R@<i>Management Science</i> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a>  
+<details data-for="first">
     <summary>Abstract</summary>
   </details>
 
@@ -29,7 +30,8 @@ with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](http
     <div id="second" class="content">
       We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.
     </div>
-
+  <div class="after-content">
+  </div>
 <div class="clear"></div>
 <br><br />
 <br><br />
