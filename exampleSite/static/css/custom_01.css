@@ -189,6 +189,7 @@ details {
 summary {
   display: block;
   width: 10em;
+  position:absolute;
 }
 
 details > summary {
