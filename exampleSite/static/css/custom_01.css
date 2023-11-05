@@ -209,21 +209,21 @@ span{
 }
 
 details > p {
-position:absolute;
+  position:absolute;
   display: block;
 }
+details>summary::before { 
+  content: '▷'; 
+ } 
 
+details[open]>summary::before { 
+  content: '▽';
+ } 
 
 
  /* details > summary::-webkit-details-marker {  */
  /*   display: contents; */
  /* } */
- /* details>summary::before { */
- /*   content: '▷'; */
- /* } */
 
- /* details[open]>summary::before { */
- /*   content: '▽'; */
- /* } */
 
 
