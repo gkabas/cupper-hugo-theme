@@ -15,7 +15,7 @@ with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> <a h
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, R&R@<i>Management Science</i>
 <p></p>
 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a>  
-
+<p></p>
 <details data-for="first">
     <summary>Abstract</summary>
   </details>
