@@ -15,29 +15,8 @@ with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> <a h
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, R&R@<i>Management Science</i> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a>  
 <details><summary>Abstract: </summary>We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</details>
 
-<details data-for="first">
-    <summary>Abstract</summary>
-  </details>
-
-  <details data-for="second">
-    <summary>Abstract</summary>
-  </details>
-
-  <div class="contents">
-  
-    <div id="first" class="content">
-      We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.
-    </div>
-
-    <div id="second" class="content">
-      We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.
-    </div>
-
-  </div>
-  
   <div class="after-content">
-    
-  </div>
+      </div>
 
 <div class="clear"></div>
 <br><br />
