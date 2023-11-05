@@ -207,6 +207,11 @@ details > summary {
   outline:none; /* to remove blue border */
 }
 
+details > p {
+position:absolute;
+  display: block;
+}
+
 details > summary::-webkit-details-marker { 
   display: inline;
 }
