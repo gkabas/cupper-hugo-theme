@@ -31,13 +31,14 @@ with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](http
       We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.
     </div>
   <div class="after-content">
+      ## Publications
   </div>
 <div class="clear"></div>
 <br><br />
 <br><br />
 <hr class="solid">
 
-## Publications
+
 
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><details><summary>Abstract: </summary>
