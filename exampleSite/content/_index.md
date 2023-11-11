@@ -34,18 +34,16 @@ Does population aging affect bank lending? To answer this question we exploit ge
 ## In Progress
 
 **Unemployment Insurance and Macro-financial (In)Stability**<br>
-with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u><details><summary>Abstract: </summary>
-We question the predominantly held view that unemployment insurance (UI) policies automatically stabilize economic fluctuations. We argue that, while UI policies may stabilize downturns ex-post, ex-ante it amplifies the upswings. As a result, in many cases, such policies may increase the volatility. The underlying mechanism is that when UI benefits become more generous left tail income risk declines. As a result household reduce their savings and increase borrowing. In particular, we show that down payment ratios decline, mortgage credit volume, hence household leverage increases. As households demand more credit, the size of bank assets, in particular the size of mortgage portfolio increases. The weakening of balance sheet strength in return increases the vulnerability to shocks that works against the stabilization effects UI benefits. On top of these, more generous UI benefits enable consumers to increase their debt more during favorable times. As a result booms get amplified with higher UI benefits.</details>
-
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
   <details data-for="first">
     <summary>Abstract</summary>
   </details>
   <details data-for="second">
-    <summary>Abstract</summary>
+    <summary>Main Tables&Figures</summary>
   </details>
   <div class="contents">  
     <div id="first" class="content">
-      We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.
+      We question the predominantly held view that unemployment insurance (UI) policies automatically stabilize economic fluctuations. We argue that, while UI policies may stabilize downturns ex-post, ex-ante it amplifies the upswings. As a result, in many cases, such policies may increase the volatility. The underlying mechanism is that when UI benefits become more generous left tail income risk declines. As a result household reduce their savings and increase borrowing. In particular, we show that down payment ratios decline, mortgage credit volume, hence household leverage increases. As households demand more credit, the size of bank assets, in particular the size of mortgage portfolio increases. The weakening of balance sheet strength in return increases the vulnerability to shocks that works against the stabilization effects UI benefits. On top of these, more generous UI benefits enable consumers to increase their debt more during favorable times. As a result booms get amplified with higher UI benefits.</
     </div>
     <div id="second" class="content">
       We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.
@@ -53,5 +51,5 @@ We question the predominantly held view that unemployment insurance (UI) policie
   </div>  
   <div class="after-content">    
   </div>
-  <h4>aaaaa</h4>
+  <h4></h4>
 <div class="clear"></div>
