@@ -1063,3 +1063,36 @@ h1 svg {
   background: rgba(0,0,0,.8);
   color: #fefefe;
 }
+
+details {
+  width: 620px;
+  display: contents;
+}
+
+summary {
+  display: block;
+  width: 10em;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 10em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  list-style: none;
+  display: contents;
+}
+
+span{
+  width: 10em;
+}
+
+details > p {
+position:absolute;
+  display: block;
+}
+
+
+
