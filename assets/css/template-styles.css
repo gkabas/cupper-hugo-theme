@@ -230,14 +230,53 @@ blockquote .author {
 }
 
 /* Buttons */
-button {
+/*button {
     font-size: 1rem;
-    border-radius: 0.03em;
-    font-family: inherit;
+   border-radius: 0.03em;
+   font-family: inherit;
     background: #fefefe;
     color: #000000;
     padding: 0.05rem;
     border: 0;
+}*/
+button {
+  border-radius: 1px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 32px;
+  padding: 1px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: '\25bd';
+  position: absolute;
+  opacity: 0;  
+  top: 1px;
+  right: 20px;
+  transition: 0.2s;
+}
+
+button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 [data-launch] {
   font-size: 0.66rem !important;
