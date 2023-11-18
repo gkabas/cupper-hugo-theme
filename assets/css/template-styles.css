@@ -231,12 +231,12 @@ blockquote .author {
 
 /* Buttons */
 button {
-    font-size: 1rem;
-    border-radius: 0.33em;
+    font-size: 0.8rem;
+    border-radius: 0.03em;
     font-family: inherit;
-    background: #111;
-    color: #fefefe;
-    padding: 0.75rem;
+    background: #fefefe;
+    color: #cbcbcb;
+    padding: 0.5rem;
     border: 0;
 }
 [data-launch] {
