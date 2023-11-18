@@ -234,14 +234,16 @@ details[data-for="second"][open] ~ .contents #second {
   text-align: left;
   background-color: lightblue;
   margin-top: 10px;
+ display: none;
 }
 
 #myDIV2 {
-  max-width: 5px;
+  max-width: 1000px;
   padding: 10px 0;
   text-align: left;
   background-color: white;
   margin-top: 10px;
+ display: none;
 }
 
 
