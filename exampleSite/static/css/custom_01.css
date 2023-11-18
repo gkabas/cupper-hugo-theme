@@ -232,7 +232,7 @@ details[data-for="second"][open] ~ .contents #second {
   max-width: 1000px;
   padding: 10px 0;
   text-align: left;
-  background-color: lightblue;
+  background-color: #cbcbcb;
   margin-top: 10px;
  display: none;
 }
