@@ -4,10 +4,16 @@ const yourCustomFunction01 = (message) => {
 
 function abs1() {
   var x = document.getElementById("abs1");
+  var y = document.getElementById("fig1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
   }
 }
 
