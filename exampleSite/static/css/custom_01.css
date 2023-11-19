@@ -357,12 +357,12 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  right: -2em;
+  right: -2.5em;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
-  left: -2em;
+  left: -2.5em;
   border-radius: 3px 0 0 3px;
 }
 
@@ -402,6 +402,7 @@ img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s ease;
+  bottom: 1em;
 }
 
 .active, .dot:hover {
