@@ -2,8 +2,8 @@ const yourCustomFunction01 = (message) => {
   console.log(message);
 };
 
-function myFunction() {
-  var x = document.getElementById("myDIV");
+function abs1() {
+  var x = document.getElementById("abs1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -11,8 +11,44 @@ function myFunction() {
   }
 }
 
-function myFunction2() {
-  var x = document.getElementById("myDIV2");
+function abs2() {
+  var x = document.getElementById("abs2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function abs3() {
+  var x = document.getElementById("abs3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function abs4() {
+  var x = document.getElementById("abs4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function abs5() {
+  var x = document.getElementById("abs5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fig1() {
+  var x = document.getElementById("fig1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
