@@ -13,8 +13,7 @@ function abs1() {
   if (y.style.display === "block") {
     y.style.display = "none";
   } else {
-    y.style.display = "none";
-  }
+     }
 }
 
 function abs2() {
@@ -95,8 +94,8 @@ function fig1() {
 }
 
 function fig1() {
-  var x = document.getElementById("fig2");
-  var y = document.getElementById("abs2");
+  var x = document.getElementById("fig1");
+  var y = document.getElementById("abs1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -105,8 +104,7 @@ function fig1() {
    if (y.style.display === "block") {
     y.style.display = "none";
   } else {
-    y.style.display = "none";
-  }
+   }
 }
 
 function fig3() {
