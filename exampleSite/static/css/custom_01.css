@@ -329,7 +329,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 img {
  vertical-align: middle;
- width: 90%;
+ width: 80%;
 }
 
 /* Slideshow container */
@@ -361,6 +361,12 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  left: -2em;
+  border-radius: 3px 0 0 3px;
+}
+
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -370,9 +376,9 @@ img {
 .text2 {
   color: #000000;
   font-size: 1em;
-  padding: 8px 12px;
+  padding: 8px 8px;
   position: absolute;
-  bottom: -5em;
+  bottom: -4em;
   width: 100%;
   text-align: center;
 }
