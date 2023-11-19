@@ -93,9 +93,9 @@ function fig1() {
   }
 }
 
-function fig1() {
-  var x = document.getElementById("fig1");
-  var y = document.getElementById("abs1");
+function fig2() {
+  var x = document.getElementById("fig2");
+  var y = document.getElementById("abs2");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
