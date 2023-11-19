@@ -13,8 +13,38 @@ We document that banks react to domestic climate policy stringency by increasing
 </div>
 
 <div id="fig1">
- <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DeltaCCPI_page-0001.jpg" alt="Image Description">
-  </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table1.jpg" style="width:100%">
+  <div class="text2">Aciklama</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DeltaCCPI_page-0001.jpg" style="width:100%">
+  <div class="text2">Aciklama</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table2.jpg" style="width:100%">
+  <div class="text2">Aciklama</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
 
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
