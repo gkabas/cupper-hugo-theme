@@ -287,5 +287,41 @@ details[data-for="second"][open] ~ .contents #second {
  display: none;
 }
 
+#fig2 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#fig3 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#fig4 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#fig5 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
 
 
