@@ -238,6 +238,46 @@ details[data-for="second"][open] ~ .contents #second {
   border: 1px dashed gray;
 }
 
+#abs2 {
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#abs3 {
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#abs4 {
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#abs5 {
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
 #fig1 {
   max-width: 1000px;
   padding: 10px 0;
