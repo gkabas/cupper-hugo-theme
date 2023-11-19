@@ -228,7 +228,7 @@ details[data-for="second"][open] ~ .contents #second {
  /*   display: contents; */
  /* } */
 
-#myDIV {
+#abs1 {
   max-width: 1000px;
   padding: 10px 10px;
   text-align: left;
@@ -238,7 +238,7 @@ details[data-for="second"][open] ~ .contents #second {
   border: 1px dashed gray;
 }
 
-#myDIV2 {
+#fig1 {
   max-width: 1000px;
   padding: 10px 0;
   text-align: left;
