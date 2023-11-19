@@ -44,6 +44,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
  ## Publications
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
+
 <button onclick="abs4()">Abstract</button> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a>
 
 <div id="abs4">
