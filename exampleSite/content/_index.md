@@ -24,7 +24,7 @@ We document that banks react to domestic climate policy stringency by increasing
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DeltaCCPI_page-0001.jpg" style="width:100%">
-  <div class="text2">Policy stringency does not affect loan supply when the lender country is less stringent. Yet, there is a positive effect when the lender country has stricter climate policies </div>
+  <div class="text2">Policy stringency doesn't affect loan supply when borrower is stricter than lender, but it has a positive effect when lender is stricter </div>
 </div>
 
 <div class="mySlides fade">
