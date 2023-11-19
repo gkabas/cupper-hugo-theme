@@ -8,16 +8,22 @@ with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <
 
 <button onclick="myFunction()">Abstract</button> <button onclick="myFunction2()">Main Results</button> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4075737" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><a href="https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf" target="_blank" rel="noopener noreferrer" class="fa-regular fa-file-pdf" style="margin-left:0.2em; width: 28px; color: #3B5998"></a> 
 
-<div id="myDIV">
+<div id="abs1">
 We document that banks react to domestic climate policy stringency by increasing cross-border lending. We use loan fixed effects to control for loan demand and an instrumental variable strategy to establish causality. Consistent with a race to the bottom, the positive effect increases as the borrower country becomes less stringent and is absent if the borrower country is more stringent. Furthermore, climate policy stringency decreases loan supply to domestic borrowers with high carbon risk while increasing loan supply to high-risk borrowers abroad. Our results suggest that cross-border lending enables lenders to exploit the lack of global coordination in climate policies.
 </div>
 
-<div id="myDIV2">
+<div id="fig1">
  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DeltaCCPI_page-0001.jpg" alt="Image Description">
 </div>
 
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3835232" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><a href="https://gkabas.netlify.app/files/KabasRoszbach2021.pdf" target="_blank" rel="noopener noreferrer" class="fa-regular fa-file-pdf" style="margin-left:0.2em; width: 28px; color: #3B5998"></a><details><summary>Abstract: </summary>Does households' leverage matter for their job search, matching in the labor market, and wages? To answer this question we exploit a loan-to-value ratio restriction in Norway that exogenously reduces household leverage and a sample of displaced workers who lost their jobs due to mass layoffs. We find that a reduction in leverage improves the starting wages of displaced workers. Lower leverage allows workers to prolong their unemployment duration, find jobs in higher paying firms, and switch into new occupations and industries. The positive effects are long-lasting and more pronounced for young and higher educated workers. Our results indicate that policies aimed at limiting households' leverage have the potential to substantially improve their labor market outcomes by reducing the frictions that leverage creates in the job search.</details>
+
+<button onclick="abs2()">Abstract</button><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3835232" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a><a href="https://gkabas.netlify.app/files/KabasRoszbach2021.pdf" target="_blank" rel="noopener noreferrer" class="fa-regular fa-file-pdf" style="margin-left:0.2em; width: 28px; color: #3B5998"></a>
+
+<div id="abs2">
+Does households' leverage matter for their job search, matching in the labor market, and wages? To answer this question we exploit a loan-to-value ratio restriction in Norway that exogenously reduces household leverage and a sample of displaced workers who lost their jobs due to mass layoffs. We find that a reduction in leverage improves the starting wages of displaced workers. Lower leverage allows workers to prolong their unemployment duration, find jobs in higher paying firms, and switch into new occupations and industries. The positive effects are long-lasting and more pronounced for young and higher educated workers. Our results indicate that policies aimed at limiting households' leverage have the potential to substantially improve their labor market outcomes by reducing the frictions that leverage creates in the job search.
+</div>
 
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, R&R@<i>Management Science</i> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437" target="_blank" rel="noopener noreferrer" class="ai ai-ssrn"></a>  
