@@ -230,11 +230,12 @@ details[data-for="second"][open] ~ .contents #second {
 
 #myDIV {
   max-width: 1000px;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: left;
-  background-color: #cbcbcb;
+  background-color: #white;
   margin-top: 10px;
- display: none;
+  display: none;
+  border: 1px dashed gray;
 }
 
 #myDIV2 {
