@@ -55,3 +55,39 @@ function fig1() {
     x.style.display = "none";
   }
 }
+
+function fig2() {
+  var x = document.getElementById("fig2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fig3() {
+  var x = document.getElementById("fig3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fig4() {
+  var x = document.getElementById("fig4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fig5() {
+  var x = document.getElementById("fig5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
