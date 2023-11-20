@@ -19,10 +19,10 @@ function abs1() {
 function abs2() {
   var x = document.getElementById("abs2");
   var y = document.getElementById("fig2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "block") {
     x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
   if (y.style.display === "block") {
     y.style.display = "none";
