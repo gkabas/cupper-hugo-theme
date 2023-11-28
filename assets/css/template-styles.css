@@ -255,6 +255,30 @@ button:hover {
     color: #fff;
     background-color: #001F3F;
 }
+buttonSSRN {
+    font-size: 1rem;
+   border-radius: 0.03em;
+   font-family: inherit;
+    background: #fefefe;
+    color: #3B5998;
+    padding: 0.05rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border: 1px dashed gray;
+    border-color: #001F3F;
+}
+
+buttonSSRN{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+buttonSSRN:hover {
+    color: #fff;
+    background-color: #3B5998;
+}
 [data-launch] {
   font-size: 0.66rem !important;
   padding: 0.5rem !important;
