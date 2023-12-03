@@ -323,6 +323,61 @@ details[data-for="second"][open] ~ .contents #second {
  display: none;
 }
 
+buttonSSRN {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-color: 3B5998;
+    font-family: inherit;
+    background: #fefefe;
+    color: #3B5998;
+    padding: 0.05rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border: 1px dashed gray;
+    border-color: #3B5998;
+}
+
+buttonSSRN{
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  display: inline-block;
+  vertical-align:top;
+}
+
+buttonSSRN:hover {
+    color: #fff;
+    background-color: #3B5998;
+}
+
+buttonPDF {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-color: 3B5998;
+    font-family: inherit;
+    background: #fefefe;
+    color: #4C0000;
+    padding: 0.05rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border: 1px dashed gray;
+    border-color: #4C0000;
+}
+
+buttonPDF{
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  display: inline-block;
+  vertical-align:top;
+}
+
+buttonPDF:hover {
+    color: #fff;
+    background-color: #4C0000;
+}
+
+
 .mySlides {
  display: none
 }
