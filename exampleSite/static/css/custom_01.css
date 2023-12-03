@@ -366,7 +366,7 @@ buttonSSRN{
   cursor: pointer;
   position: relative;
   transition: 0.5s;
-  display: inline-block;
+  display: relative;
   vertical-align:top;
 }
 
@@ -393,7 +393,7 @@ buttonPDF{
   cursor: pointer;
   position: relative;
   transition: 0.5s;
-  display: inline-block;
+  display: relative;
   vertical-align:top;
 }
 
