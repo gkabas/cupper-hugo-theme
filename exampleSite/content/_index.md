@@ -50,8 +50,7 @@ We document that banks react to domestic climate policy stringency by increasing
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
 
-<button onclick="abs2()">Abstract</button><buttonSSRN onclick="ssrn2()">SSRN</buttonSSRN>
-<buttonPDF onclick="pdf2()">PDF</buttonPDF>
+<button onclick="abs2()">Abstract</button> <buttonSSRN onclick="ssrn2()">SSRN</buttonSSRN> <buttonPDF onclick="pdf2()">PDF</buttonPDF>
 
 <div id="abs2">
 Does households' leverage matter for their job search, matching in the labor market, and wages? To answer this question we exploit a loan-to-value ratio restriction in Norway that exogenously reduces household leverage and a sample of displaced workers who lost their jobs due to mass layoffs. We find that a reduction in leverage improves the starting wages of displaced workers. Lower leverage allows workers to prolong their unemployment duration, find jobs in higher paying firms, and switch into new occupations and industries. The positive effects are long-lasting and more pronounced for young and higher educated workers. Our results indicate that policies aimed at limiting households' leverage have the potential to substantially improve their labor market outcomes by reducing the frictions that leverage creates in the job search.
