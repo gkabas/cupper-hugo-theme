@@ -325,8 +325,8 @@ details[data-for="second"][open] ~ .contents #second {
 
 button {
     font-size: 1rem;
-   border-radius: 0.03em;
-   font-family: inherit;
+    border-radius: 0.03em;
+    font-family: inherit;
     background: #fefefe;
     color: #000000;
     padding: 0.05rem;
@@ -350,7 +350,7 @@ button:hover {
 buttonSSRN {
     font-size: 1rem;
     border-radius: 0.03em;
-    font-color: 3B5998;
+    font-color: #3B5998;
     font-family: inherit;
     background: #fefefe;
     color: #3B5998;
@@ -365,8 +365,6 @@ buttonSSRN{
   cursor: pointer;
   position: inline-block;
   transition: 0.5s;
-  display: inline-block;
-  vertical-align:top;
 }
 
 buttonSSRN:hover {
@@ -377,7 +375,7 @@ buttonSSRN:hover {
 buttonPDF {
     font-size: 1rem;
     border-radius: 0.03em;
-    font-color: 3B5998;
+    font-color: #3B5998;
     font-family: inherit;
     background: #fefefe;
     color: #4C0000;
@@ -392,8 +390,6 @@ buttonPDF{
   cursor: pointer;
   position: inline-block;
   transition: 0.5s;
-  display: inline-block;
-  vertical-align:top;
 }
 
 buttonPDF:hover {
