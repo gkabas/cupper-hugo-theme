@@ -16,6 +16,38 @@ function abs1() {
      }
 }
 
+function pdf1() {
+    window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
+    }
+
+function ssrn1() {
+    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4075737", "_blank");
+    }
+
+function pdf2() {
+    window.open("https://gkabas.netlify.app/files/KabasRoszbach2021.pdf", "_blank");
+    }
+
+function ssrn2() {
+    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3835232", "_blank");
+    }
+
+function pdf3() {
+    window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
+    }
+
+function ssrn3() {
+    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437", "_blank");
+    }
+
+function pdf4() {
+    window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
+    }
+
+function ssrn4() {
+    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184", "_blank");
+    }
+
 function abs2() {
   var x = document.getElementById("abs2");
   var y = document.getElementById("fig2");
