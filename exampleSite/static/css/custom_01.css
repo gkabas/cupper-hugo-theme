@@ -339,8 +339,6 @@ button {
 button{
   cursor: pointer;
   display: inline-block;
-  position: inline-block;
-  vertical-align:top;
   transition: 0.5s;
 }
 
