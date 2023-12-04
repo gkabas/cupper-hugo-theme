@@ -41,7 +41,7 @@ function ssrn3() {
     }
 
 function pdf4() {
-    window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
+    window.open("https://gkabas.netlify.app/files/DoerrKabasOngena.pdf", "_blank");
     }
 
 function ssrn4() {
