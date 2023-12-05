@@ -33,7 +33,7 @@ function ssrn2() {
     }
 
 function pdf3() {
-    window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
+    window.open("https://gkabas.netlify.app/files/ArslanDegerliKabas.pdf", "_blank");
     }
 
 function ssrn3() {
