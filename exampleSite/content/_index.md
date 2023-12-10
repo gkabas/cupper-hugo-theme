@@ -18,7 +18,7 @@ We document that banks react to domestic climate policy stringency by increasing
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table1.jpg" style="width:100%">
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table1.png" style="width:100%">
   <div class="text2">We use loan FE to control for loan demand</div>
 </div>
 
