@@ -14,7 +14,7 @@ We document that banks react to domestic climate policy stringency by increasing
 </div>
 
 <div id="fig1">
-<div class="slideshow-container">
+<div id="slideshow1" class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
@@ -31,16 +31,16 @@ We document that banks react to domestic climate policy stringency by increasing
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table2.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+<a class="prev" onclick="plusSlides(-1,slideshow1)">❮</a>
+<a class="next" onclick="plusSlides(1, slideshow1)">❯</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
 </div>
 </div>
 
@@ -54,7 +54,7 @@ Does households' leverage matter for their job search, matching in the labor mar
 </div>
 
 <div id="fig2">
-<div class="slideshow-container">
+<div id="slideshow2" class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
@@ -76,17 +76,17 @@ Does households' leverage matter for their job search, matching in the labor mar
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/KR_Table2.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+<a class="prev" onclick="plusSlides(-1, this.parentNode)">❮</a>
+<a class="next" onclick="plusSlides(1, this.parentNode)">❯</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
 </div>
 </div>
 
