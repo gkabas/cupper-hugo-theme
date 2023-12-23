@@ -117,8 +117,8 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADK_Table3.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1,0)">❮</a>
-<a class="next" onclick="plusSlides(1, 0)">❯</a>
+<a class="prev" onclick="plusSlides(-1,2)">❮</a>
+<a class="next" onclick="plusSlides(1, 2)">❯</a>
 
 </div>
 <br>
@@ -170,8 +170,8 @@ Does population aging affect bank lending? To answer this question we exploit ge
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DKO_Table3.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1, 1)">❮</a>
-<a class="next" onclick="plusSlides(1, 1)">❯</a>
+<a class="prev" onclick="plusSlides(-1, 3)">❮</a>
+<a class="next" onclick="plusSlides(1, 3)">❯</a>
 
 </div>
 <br>
