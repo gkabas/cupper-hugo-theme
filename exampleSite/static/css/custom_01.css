@@ -432,12 +432,12 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  right: -2.5em;
+  right: -1.5em;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
-  left: -2.5em;
+  left: -1.5em;
   border-radius: 3px 0 0 3px;
 }
 
@@ -461,10 +461,10 @@ img {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #000000;
-  font-size: 1em;
-  padding: 8px 12px;
+  font-size: 0.5em;
+  padding: 1px 1px;
   position: absolute;
-  top: 0;
+  top: 0.2em;
 }
 
 /* The dots/bullets/indicators */
