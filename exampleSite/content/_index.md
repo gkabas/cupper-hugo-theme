@@ -14,33 +14,33 @@ We document that banks react to domestic climate policy stringency by increasing
 </div>
 
 <div id="fig1">
-<div id="slideshow1" class="slideshow-container">
+<div class="slideshow-container">
 
-<div class="mySlides fade">
+<div class="mySlides1">
   <div class="numbertext">1 / 3</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table1.jpg" style="width:100%">
   </div>
 
-<div class="mySlides fade">
+<div class="mySlides1">
   <div class="numbertext">2 / 3</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Figure1.jpg" style="width:100%">
  </div>
 
-<div class="mySlides fade">
+<div class="mySlides1">
   <div class="numbertext">3 / 3</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table2.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1,slideshow1)">❮</a>
-<a class="next" onclick="plusSlides(1, slideshow1)">❯</a>
+<a class="prev" onclick="plusSlides(-1,0)">❮</a>
+<a class="next" onclick="plusSlides(1, 0)">❯</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
-  <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
-  <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(1, mySlides1)"></span> 
+  <span class="dot" onclick="currentSlide(2, mySlides1)"></span> 
+  <span class="dot" onclick="currentSlide(3, mySlides1)"></span> 
 </div>
 </div>
 
@@ -54,39 +54,39 @@ Does households' leverage matter for their job search, matching in the labor mar
 </div>
 
 <div id="fig2">
-<div id="slideshow2" class="slideshow-container">
+<div class="slideshow-container">
 
-<div class="mySlides fade">
+<div class="mySlides2">
   <div class="numbertext">1 / 4</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/KR_Figure1.jpg" style="width:100%">
   </div>
 
-<div class="mySlides fade">
+<div class="mySlides2">
   <div class="numbertext">2 / 4</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/KR_Figure2.jpg" style="width:100%">
  </div>
 
-<div class="mySlides fade">
+<div class="mySlides2">
   <div class="numbertext">3 / 4</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/KR_Table1.jpg" style="width:100%">
  </div>
 
- <div class="mySlides fade">
+ <div class="mySlides2">
   <div class="numbertext">4 / 4</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/KR_Table2.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1, slideshow2)">❮</a>
-<a class="next" onclick="plusSlides(1, slideshow2)">❯</a>
+<a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+<a class="next" onclick="plusSlides(1, 1)">❯</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
-  <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
-  <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
-  <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(1, mySlides2)"></span> 
+  <span class="dot" onclick="currentSlide(2, mySlides2)"></span> 
+  <span class="dot" onclick="currentSlide(3, mySlides2)"></span> 
+  <span class="dot" onclick="currentSlide(4, mySlides2)"></span> 
 </div>
 </div>
 
