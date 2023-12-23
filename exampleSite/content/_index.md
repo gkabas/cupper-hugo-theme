@@ -18,20 +18,18 @@ We document that banks react to domestic climate policy stringency by increasing
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table1.png" style="width:100%">
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table1.jpg" style="width:100%">
   </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DeltaCCPI_page-0001.jpg" style="width:100%">
-  <div class="text2">Policy stringency doesn't affect loan supply when borrower is stricter than lender, but it has a positive effect when lender is stricter </div>
-</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Figure1.jpg" style="width:100%">
+ </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table2.jpg" style="width:100%">
-  <div class="text2">We use Green Party shares as an IV for climate policy stringency</div>
-</div>
+ </div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
