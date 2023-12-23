@@ -76,8 +76,8 @@ Does households' leverage matter for their job search, matching in the labor mar
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/KR_Table2.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1, this.parentNode)">❮</a>
-<a class="next" onclick="plusSlides(1, this.parentNode)">❯</a>
+<a class="prev" onclick="plusSlides(-1, slideshow2)">❮</a>
+<a class="next" onclick="plusSlides(1, slideshow2)">❯</a>
 
 </div>
 <br>
