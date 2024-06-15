@@ -48,6 +48,9 @@ menu:
     - name: In progress
       url: /#in-progress
       weight: 3
+    - name: Discussions
+      url: /#discussions
+      weight: 4
 
 markup:
   defaultMarkdownHandler: goldmark
