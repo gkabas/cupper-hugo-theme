@@ -91,7 +91,7 @@ Does households' leverage matter for their job search, matching in the labor mar
 </div>
 
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
-with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, Accepted@<i>Management Science</i> 
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, forthcoming, <i>Management Science</i> 
 
 <button onclick="abs3()">Abstract</button> <button onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  
 
@@ -138,6 +138,46 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 
 
  ## Publications
+**Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, forthcoming, <i>Management Science</i> 
+
+<button onclick="abs3()">Abstract</button> <button onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  
+
+<div id="abs3">
+We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.
+</div>
+
+<div id="fig3">
+<div class="slideshow-container">
+
+<div class="mySlides3">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADK_Table1.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides3">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADK_Table2.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides3">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADK_Table3.jpg" style="width:100%">
+ </div>
+
+<a class="prev" onclick="plusSlides(-1,2)">❮</a>
+<a class="next" onclick="plusSlides(1, 2)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, mySlides3)"></span> 
+  <span class="dot" onclick="currentSlide(2, mySlides3)"></span> 
+  <span class="dot" onclick="currentSlide(3, mySlides3)"></span> 
+</div>
+</div>
+
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
 
@@ -205,4 +245,6 @@ We identify and study two mechanisms that can undermine the stabilizing effects 
 
 ## Discussions
 **Financial Constraints and Emission Intensity**<br>
-by Sfrappini, Norges Bank Research Workshop: Women in Central Banking, November 2023
+by <u>Sfrappini</u>, Norges Bank Research Workshop: Women in Central Banking, November 2023
+
+<buttonPDF onclick="dis1()">PDF</buttonPDF>
