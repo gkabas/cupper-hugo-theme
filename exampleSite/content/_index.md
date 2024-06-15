@@ -94,7 +94,7 @@ Does households' leverage matter for their job search, matching in the labor mar
 
  ## Publications
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
-with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, forthcoming, <i>Management Science</i> 
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
 
 <button onclick="abs3()">Abstract</button> <button onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  
 
