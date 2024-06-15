@@ -200,6 +200,7 @@ with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https:/
 We identify and study two mechanisms that can undermine the stabilizing effects of unemployment insurance policies. First, households in economies with more generous unemployment insurance reduce their precautionary savings and borrow more in the mortgage market. Second, the share of mortgages among bank assets, as well as the proportion of mortgages with higher loan-to-income ratios, increases on bank balance sheets. As a result, both bank and household balance sheets become vulnerable to adverse shocks, which deepens recessions. Furthermore, booms are also amplified, as reduced income risk enables households to increase their mortgage debt, consumption, and housing demand in response to expansionary shocks. We employ a quantitative general equilibrium model that incorporates interactions between household, bank, and firm balance sheets, as well as county- and state-level evidence from the U.S. housing and mortgage markets to demonstrate the importance of these channels.
 </div>
 
+<br><br />
 <hr class="solid">
 
 ## Discussions
