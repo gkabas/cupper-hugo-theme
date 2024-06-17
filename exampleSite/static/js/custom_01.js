@@ -52,6 +52,10 @@ function dis1() {
     window.open("https://gkabas.netlify.app/files/KabasDiscussion_NB2023.pdf", "_blank");
     }
 
+function dis2() {
+    window.open("https://gkabas.netlify.app/files/KabasDiscussion_TFS2024.pdf", "_blank");
+    }
+
 function abs2() {
   var x = document.getElementById("abs2");
   var y = document.getElementById("fig2");
