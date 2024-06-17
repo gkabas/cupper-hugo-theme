@@ -2,7 +2,6 @@
 title: "Discussions"
 ---
 
-## Discussions
 **Bank Financing of Global Supply Chains**<br>
 by <u>Alfaro, Brussevich, Minoiu, Presbitero</u>, <i>Tilburg Finance Summit</i>, June 2024
 
