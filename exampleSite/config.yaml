@@ -49,7 +49,7 @@ menu:
       url: /#in-progress
       weight: 3
     - name: Discussions
-      url: /#discussions
+      url: /discussions
       weight: 4
 
 markup:
