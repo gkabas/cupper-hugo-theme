@@ -1,16 +1,16 @@
 ---
 date: "2014-04-09"
-title: "About"
+title: "Discussions"
 ---
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
+**Bank Financing of Global Supply Chains**<br>
+by <u>Alfaro</u>, <u>Brussevich</u>, <u>Minoiu</u>, <u>Presbitero</u>, <i>Tilburg Finance Summit</i>, June 2024
 
-It makes use of a variety of open source projects including:
+<buttonPDF onclick="dis2()">Slides</buttonPDF>
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+<br><br />
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+**Financial Constraints and Emission Intensity**<br>
+by <u>Sfrappini</u>, <i>Norges Bank Research Workshop: Women in Central Banking</i>, November 2023
+
+<buttonPDF onclick="dis1()">Slides</buttonPDF>
