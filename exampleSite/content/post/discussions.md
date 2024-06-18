@@ -1,5 +1,6 @@
 ---
 title: "Discussions"
+toc: false
 ---
 
 **Bank Financing of Global Supply Chains**<br>
