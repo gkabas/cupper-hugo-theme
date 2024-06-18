@@ -5,7 +5,7 @@ draft: false
 ---
 
 **Bank Financing of Global Supply Chains**<br>
-by <u>Alfaro, Brussevich, Minoiu, Presbitero</u>, <i>Tilburg Finance Summit</i>, June 2024
+by <u>Alfaro</u>, <u>Brussevich</u>, <u>Minoiu</u>, <u>Presbitero</u>, <i>Tilburg Finance Summit</i>, June 2024
 
 <buttonPDF onclick="dis2()">Slides</buttonPDF>
 
