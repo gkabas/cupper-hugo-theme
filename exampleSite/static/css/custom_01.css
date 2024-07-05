@@ -230,6 +230,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 #abs1 {
   font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.9rem;
   max-width: 1000px;
   padding: 10px 10px;
   text-align: left;
@@ -241,7 +242,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 #abs2 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1rem;
+  font-size: 0.8rem;
   max-width: 1000px;
   padding: 10px 10px;
   text-align: left;
@@ -253,7 +254,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 #abs3 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1rem;
+  font-size: 0.7rem;
   max-width: 1000px;
   padding: 10px 10px;
   text-align: left;
@@ -265,7 +266,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 #abs4 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1rem;
+  font-size: 0.6rem;
   max-width: 1000px;
   padding: 10px 10px;
   text-align: left;
@@ -277,7 +278,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 #abs5 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1rem;
+  font-size: 0.5rem;
   max-width: 1000px;
   padding: 10px 10px;
   text-align: left;
