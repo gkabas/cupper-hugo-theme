@@ -435,11 +435,11 @@ caption {
 #menu-button {
     display: none;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 #menu-button:focus {
     outline: none;
-    box-shadow: inset 0 0 0 0.25rem #999;
+    /*box-shadow: inset 0 0 0 0.25rem #999;*/
 }
 
 /* Tables of contents */
