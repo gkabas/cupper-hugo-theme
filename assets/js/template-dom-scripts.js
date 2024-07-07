@@ -105,7 +105,7 @@
 
   function applyDarkTheme() {
     var darkTheme = document.getElementById('darkTheme');
-    darkTheme.disabled = false;
+    darkTheme.disabled = true;
   }
 
   function clearDarkTheme() {
