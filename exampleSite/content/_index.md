@@ -14,6 +14,41 @@ with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https:/
 We identify and study two mechanisms that can overturn the stabilizing effects of unemployment insurance (UI) policies. First, households in economies with more generous UI reduce their precautionary savings and borrow more in the mortgage market. Second, the overall share of mortgages as well as the share of mortgages with higher loan-to-income ratios on bank balance sheets increase. As a result, both bank and household balance sheets become more vulnerable to adverse shocks, which deepens recessions. We demonstrate the importance of these channels by employing a quantitative heterogeneous-agent general equilibrium model and by providing county-level empirical evidence from the U.S. housing and mortgage markets.</TT>
 </div>
 
+<div id="fig5">
+<div class="slideshow-container">
+
+<div class="mySlides5">
+  <div class="numbertext">1 / 5</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADGKK_Figure1.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides5">
+  <div class="numbertext">2 / 5</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADGKK_Figure2.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides5">
+  <div class="numbertext">3 / 5</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADGKK_Figure3.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides5">
+  <div class="numbertext">4 / 5</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADGKK_Figure4.jpg" style="width:100%">
+ </div>
+
+  <div class="mySlides5">
+  <div class="numbertext">5 / 5</div>
+  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADGKK_Figure5.jpg" style="width:100%">
+ </div>
+
+<a class="prev" onclick="plusSlides(-1, 3)">❮</a>
+<a class="next" onclick="plusSlides(1, 3)">❯</a>
+
+</div>
+<br>
+
+
 
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
