@@ -54,7 +54,7 @@ function pdf5() {
     }
 
 function ssrn5() {
-    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184", "_blank");
+    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437", "_blank");
     }
 
 function dis1() {
