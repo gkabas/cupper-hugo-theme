@@ -42,8 +42,8 @@ We identify and study two mechanisms that can overturn the stabilizing effects o
   <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADGKK_Figure5.jpg" style="width:100%">
  </div>
 
-<a class="prev" onclick="plusSlides(-1,0)">❮</a>
-<a class="next" onclick="plusSlides(1, 0)">❯</a>
+<a class="prev" onclick="plusSlides(-1,4)">❮</a>
+<a class="next" onclick="plusSlides(1, 4)">❯</a>
 
 </div>
 <br>
