@@ -3,6 +3,18 @@ date: "2017-06-26T18:27:58+01:00"
 title: 
 ---
 ## Working Papers 
+
+**Unemployment Insurance and Macro-financial (In)Stability**<br>
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
+
+<button onclick="abs5()">Abstract</button> <button onclick="fig5()">Main Results</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
+<buttonPDF onclick="pdf5()">PDF</buttonPDF>
+
+<div id="abs5"><TT>
+We identify and study two mechanisms that can undermine the stabilizing effects of unemployment insurance policies. First, households in economies with more generous unemployment insurance reduce their precautionary savings and borrow more in the mortgage market. Second, the share of mortgages among bank assets, as well as the proportion of mortgages with higher loan-to-income ratios, increases on bank balance sheets. As a result, both bank and household balance sheets become vulnerable to adverse shocks, which deepens recessions. Furthermore, booms are also amplified, as reduced income risk enables households to increase their mortgage debt, consumption, and housing demand in response to expansionary shocks. We employ a quantitative general equilibrium model that incorporates interactions between household, bank, and firm balance sheets, as well as county- and state-level evidence from the U.S. housing and mortgage markets to demonstrate the importance of these channels.</TT>
+</div>
+
+
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
 
@@ -187,11 +199,3 @@ Does population aging affect bank lending? To answer this question we exploit ge
 
 ## In Progress
 
-**Unemployment Insurance and Macro-financial (In)Stability**<br>
-with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
-
-<button onclick="abs5()">Abstract</button>
-
-<div id="abs5"><TT>
-We identify and study two mechanisms that can undermine the stabilizing effects of unemployment insurance policies. First, households in economies with more generous unemployment insurance reduce their precautionary savings and borrow more in the mortgage market. Second, the share of mortgages among bank assets, as well as the proportion of mortgages with higher loan-to-income ratios, increases on bank balance sheets. As a result, both bank and household balance sheets become vulnerable to adverse shocks, which deepens recessions. Furthermore, booms are also amplified, as reduced income risk enables households to increase their mortgage debt, consumption, and housing demand in response to expansionary shocks. We employ a quantitative general equilibrium model that incorporates interactions between household, bank, and firm balance sheets, as well as county- and state-level evidence from the U.S. housing and mortgage markets to demonstrate the importance of these channels.</TT>
-</div>
