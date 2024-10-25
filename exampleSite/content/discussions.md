@@ -3,6 +3,13 @@ date: "2014-04-09"
 title: "Discussions"
 ---
 
+**Stranded in the ICE: Bank Lending and the Transition to Electric Vehicles**<br>
+by <u>Fabiani</u>, <u>Federico</u>, <i>Durham-Bristol Banking Policy Forum</i>, October 2024
+
+<buttonPDF onclick="dis3()">Slides</buttonPDF>
+
+<br><br />
+
 **Bank Financing of Global Supply Chains**<br>
 by <u>Alfaro</u>, <u>Brussevich</u>, <u>Minoiu</u>, <u>Presbitero</u>, <i>Tilburg Finance Summit</i>, June 2024
 
