@@ -1,5 +1,4 @@
-
-## Corporate Valuation, Restructuring and M&A’s 
+<h2>Corporate Valuation, Restructuring and M&A’s </h2>
 <u>[Outline&Introduction](https://gkabas.netlify.app/files/Outline_Intro.pdf)</u> <br>
 <u>[Motives](https://gkabas.netlify.app/files/Motives.pdf)</u> <br>
 <u>[Returns to Mergers](https://gkabas.netlify.app/files/ReturnsMergers.pdf)</u> <br>
