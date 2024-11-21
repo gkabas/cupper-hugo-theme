@@ -1,2 +1,2 @@
 ### Files 
-<u>[Groningen](https://gkabas.netlify.app/files/RUG_presentation.pdf)</u> <br>
+<u>[Brown bag](https://gkabas.netlify.app/files/Brownbag.pdf)</u> <br>
