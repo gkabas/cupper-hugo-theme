@@ -5,4 +5,4 @@
 <u>[Empirical Evidence](https://gkabas.netlify.app/files/Evidence.pdf)</u> <br>
 <u>[Defense](https://gkabas.netlify.app/files/Defense.pdf)</u> <br>
 <u>[Buyouts](https://gkabas.netlify.app/files/Buyouts.pdf)</u> <br>
-<u>[Buyouts](https://gkabas.netlify.app/files/SampleQuestions.pdf)</u> <br>
+<u>[Sample Questions](https://gkabas.netlify.app/files/SampleQuestions.pdf)</u> <br>
