@@ -40,6 +40,9 @@ function pdf3() {
 function ssrn3() {
     window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437", "_blank");
     }
+function published3() {
+    window.open("https://pubsonline.informs.org/doi/full/10.1287/mnsc.2022.03217?af=R", "_blank");
+    }
 
 function pdf4() {
     window.open("https://gkabas.netlify.app/files/DoerrKabasOngena.pdf", "_blank");
@@ -47,6 +50,10 @@ function pdf4() {
 
 function ssrn4() {
     window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3430184", "_blank");
+    }
+
+function published4() {
+    window.open("https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/population-aging-and-bank-risktaking/A941732E6B58660C2A974C33862C0040", "_blank");
     }
 
 
