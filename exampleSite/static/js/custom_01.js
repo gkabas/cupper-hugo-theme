@@ -214,52 +214,52 @@ function updateButtonText() {
   const buttons = [
     {
       id: "main-results-fig1",
-      smallText: "Abs",
+      smallText: "Abs.",
       largeText: "Abstract",
     },
      {
       id: "main-results-fig2",
-      smallText: "Abs",
+      smallText: "Abs.",
       largeText: "Abstract",
     },
      {
       id: "main-results-fig3",
-      smallText: "Abs",
+      smallText: "Abs.",
       largeText: "Abstract",
     },
      {
       id: "main-results-fig4",
-      smallText: "Abs",
+      smallText: "Abs.",
       largeText: "Abstract",
     },
      {
       id: "main-results-fig5",
-      smallText: "Abs",
+      smallText: "Abs.",
       largeText: "Abstract",
     },
     {
       id: "main-results-res1",
-      smallText: "Res",
+      smallText: "Results",
       largeText: "Main Results",
     },
     {
       id: "main-results-res2",
-      smallText: "Res",
+      smallText: "Results",
       largeText: "Main Results",
     },
     {
       id: "main-results-res3",
-      smallText: "Res",
+      smallText: "Results",
       largeText: "Main Results",
     },
     {
       id: "main-results-res4",
-      smallText: "Res",
+      smallText: "Results",
       largeText: "Main Results",
     },
     {
       id: "main-results-res5",
-      smallText: "Res",
+      smallText: "Results",
       largeText: "Main Results",
     },
   ];
