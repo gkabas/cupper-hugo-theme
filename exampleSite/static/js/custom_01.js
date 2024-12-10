@@ -22,10 +22,10 @@ function updateButtonText() {
   
   if (window.matchMedia("(max-width: 768px)").matches) {
     // Small screen
-    mainResultsButton.textContent = "Results";
+    mainResultsButton.textContent = "Abs";
   } else {
     // Normal screen
-    mainResultsButton.textContent = "Main Results";
+    mainResultsButton.textContent = "Abstract";
   }
 }
 
@@ -244,10 +244,10 @@ function updateButtonText() {
   
   if (window.matchMedia("(max-width: 768px)").matches) {
     // Small screen
-    mainResultsButton.textContent = "Results";
+    mainResultsButton.textContent = "Abs";
   } else {
     // Normal screen
-    mainResultsButton.textContent = "Main Results";
+    mainResultsButton.textContent = "Abstract";
   }
 }
 
@@ -276,10 +276,10 @@ function updateButtonText() {
   
   if (window.matchMedia("(max-width: 768px)").matches) {
     // Small screen
-    mainResultsButton.textContent = "Results";
+    mainResultsButton.textContent = "Abs";
   } else {
     // Normal screen
-    mainResultsButton.textContent = "Main Results";
+    mainResultsButton.textContent = "Abstract";
   }
 }
 
@@ -375,10 +375,10 @@ function updateButtonText() {
   
   if (window.matchMedia("(max-width: 768px)").matches) {
     // Small screen
-    mainResultsButton.textContent = "Results";
+    mainResultsButton.textContent = "Abs";
   } else {
     // Normal screen
-    mainResultsButton.textContent = "Main Results";
+    mainResultsButton.textContent = "Abstract";
   }
 }
 
