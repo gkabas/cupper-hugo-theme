@@ -413,12 +413,12 @@ buttonPub {
     font-color: #3B5998;
     font-family: inherit;
     background: #fefefe;
-    color: #006400;
+    color: #556B2F;
     padding: 0.05rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     border: 1px dashed gray;
-    border-color: #4C0000;
+    border-color: #556B2F;
 }
 
 buttonPub{
@@ -429,8 +429,16 @@ buttonPub{
 
 buttonPub:hover {
     color: #fff;
-    background-color: #006400;
+    background-color: #556B2F;
 }
+
+<style>
+  @media (max-width: 768px) {
+    .hide-on-small-screen {
+      display: none; /* Hide the elements */
+    }
+  }
+</style>
 
 
 .mySlides {
