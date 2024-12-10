@@ -413,7 +413,9 @@ buttonPDF:hover {
     font-family: inherit;
     background: #fefefe;
     color: #556B2F;
-    padding: 0.05rem 0.1rem; /* Combined padding */
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
     border: 1px dashed #556B2F;
     cursor: pointer;
     transition: 0.5s;
