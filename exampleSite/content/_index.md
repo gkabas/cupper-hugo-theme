@@ -7,7 +7,7 @@ title:
 **Unemployment Insurance and Macro-financial (In)Stability**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
 
-<button onclick="abs5()">Abstract</button> <button id="main-results-btn" onclick="fig5()">Main Results</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
+<button onclick="abs5()">Abstract</button> <button id="main-results-res5" onclick="fig5()">Main Results</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf5()">PDF</buttonPDF>
 
 <div id="abs5"><TT>
@@ -60,7 +60,7 @@ We identify and study two mechanisms that can overturn the stabilizing effects o
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
 
-<button onclick="abs1()">Abstract</button> <button id="main-results-btn" onclick="fig1()">Main Results</button> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
+<button onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="fig1()">Main Results</button> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf1()">PDF</buttonPDF>
 
 <div id="abs1"><TT>
@@ -101,7 +101,7 @@ We document that banks react to domestic climate policy stringency by increasing
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
 
-<button onclick="abs2()">Abstract</button> <button onclick="fig2()">Main Results</button> <buttonSSRN onclick="ssrn2()">SSRN</buttonSSRN> <buttonPDF onclick="pdf2()">PDF</buttonPDF>
+<button onclick="abs2()">Abstract</button> <button id="main-results-res2" onclick="fig2()">Main Results</button> <buttonSSRN onclick="ssrn2()">SSRN</buttonSSRN> <buttonPDF onclick="pdf2()">PDF</buttonPDF>
 
 <div id="abs2"><TT>
 Does households' leverage matter for their job search, matching in the labor market, and wages? To answer this question we exploit a loan-to-value ratio restriction in Norway that exogenously reduces household leverage and a sample of displaced workers who lost their jobs due to mass layoffs. We find that a reduction in leverage improves the starting wages of displaced workers. Lower leverage allows workers to prolong their unemployment duration, find jobs in higher paying firms, and switch into new occupations and industries. The positive effects are long-lasting and more pronounced for young and higher educated workers. Our results indicate that policies aimed at limiting households' leverage have the potential to substantially improve their labor market outcomes by reducing the frictions that leverage creates in the job search.</TT>
@@ -151,7 +151,7 @@ Does households' leverage matter for their job search, matching in the labor mar
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
 
-<button onclick="abs3()">Abstract</button> <button onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  
+<button onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  
 
 <div id="abs3"><TT>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</TT>
@@ -191,7 +191,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
 
-<button onclick="abs4()">Abstract</button> <button onclick="fig4()">Main Results</button> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <buttonPDF onclick="pdf4()">PDF</buttonPDF> 
+<button onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="fig4()">Main Results</button> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <buttonPDF onclick="pdf4()">PDF</buttonPDF> 
 
 <div id="abs4"><TT>
 Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging.</TT>
