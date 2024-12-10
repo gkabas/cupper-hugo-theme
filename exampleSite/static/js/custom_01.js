@@ -2,21 +2,6 @@ const yourCustomFunction01 = (message) => {
   console.log(message);
 };
 
-function abs1() {
-  var x = document.getElementById("abs1");
-  var y = document.getElementById("fig1");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-     }
-}
-
-
 function pdf1() {
     window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
     }
@@ -77,6 +62,25 @@ function dis3() {
     window.open("https://gkabas.netlify.app/files/KabasDiscussion_Bristol2024.pdf", "_blank");
     }
 
+function abs1() {
+  var x = document.getElementById("abs1");
+  var y = document.getElementById("fig1");
+  var z = document.getElementById("pres1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
+}
+
 
 function abs2() {
   var x = document.getElementById("abs2");
@@ -113,7 +117,8 @@ function abs3() {
 function abs4() {
   var x = document.getElementById("abs4");
   var y = document.getElementById("fig4");
-   if (x.style.display === "block") {
+  var z = document.getElementById("pres4");
+  if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
@@ -121,8 +126,11 @@ function abs4() {
   if (y.style.display === "block") {
     y.style.display = "none";
   } else {
-    y.style.display = "none";
-  }
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
 }
 
 
@@ -190,6 +198,7 @@ function fig3() {
 function fig4() {
   var x = document.getElementById("fig4");
   var y = document.getElementById("abs4");
+  var z = document.getElementById("pres4");
    if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -199,6 +208,11 @@ function fig4() {
     y.style.display = "none";
   } else {
     y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
   }
 }
 
@@ -214,6 +228,27 @@ function fig5() {
     y.style.display = "none";
   } else {
     y.style.display = "none";
+  }
+}
+
+function pres4() {
+  var x = document.getElementById("pres4");
+  var y = document.getElementById("abs4");
+  var z = document.getElementById("fig4");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
   }
 }
 
@@ -268,6 +303,31 @@ function updateButtonText() {
       id: "main-results-res5",
       smallText: "Results",
       largeText: "Main Results",
+    },
+    {
+      id: "main-results-pres1",
+      smallText: "Pres.",
+      largeText: "Presentations & Media Coverage",
+    },
+     {
+      id: "main-results-pres2",
+      smallText: "Pres.",
+      largeText: "Presentations & Media Coverage",
+    },
+     {
+      id: "main-results-pres3",
+      smallText: "Pres.",
+      largeText: "Presentations & Media Coverage",
+    },
+     {
+      id: "main-results-pres4",
+      smallText: "Pres.",
+      largeText: "Presentations & Media Coverage",
+    },
+     {
+      id: "main-results-pres5",
+      smallText: "Pres.",
+      largeText: "Presentations & Media Coverage",
     },
   ];
 
