@@ -7,7 +7,7 @@ title:
 **Unemployment Insurance and Macro-financial (In)Stability**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
 
-<button onclick="abs5()">Abstract</button> <button onclick="fig5()">Main Results</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
+<button onclick="abs5()">Abstract</button> <button id="main-results-btn" onclick="fig5()">Main Results</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf5()">PDF</buttonPDF>
 
 <div id="abs5"><TT>
