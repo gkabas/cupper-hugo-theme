@@ -407,6 +407,31 @@ buttonPDF:hover {
     background-color: #4C0000;
 }
 
+buttonPub {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-color: #3B5998;
+    font-family: inherit;
+    background: #fefefe;
+    color: #006400;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed gray;
+    border-color: #4C0000;
+}
+
+buttonPub{
+  cursor: pointer;
+  position: inline-block;
+  transition: 0.5s;
+}
+
+buttonPub:hover {
+    color: #fff;
+    background-color: #006400;
+}
+
 
 .mySlides {
  display: none
