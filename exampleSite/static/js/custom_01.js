@@ -238,6 +238,24 @@ function fig1() {
     y.style.display = "none";
   }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-fig1");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
 
 function fig2() {
   var x = document.getElementById("fig2");
@@ -252,6 +270,24 @@ function fig2() {
   } else {
    }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-fig2");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
 
 function fig3() {
   var x = document.getElementById("fig3");
@@ -267,6 +303,25 @@ function fig3() {
     y.style.display = "none";
   }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-fig3");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
+
 function fig4() {
   var x = document.getElementById("fig4");
   var y = document.getElementById("abs4");
@@ -281,6 +336,25 @@ function fig4() {
     y.style.display = "none";
   }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-fig4");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
+
 function fig5() {
   var x = document.getElementById("fig5");
   var y = document.getElementById("abs5");
@@ -295,6 +369,24 @@ function fig5() {
     y.style.display = "none";
   }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-fig5");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
 
 let slideIndex = [1,1,1,1,1];
 let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
