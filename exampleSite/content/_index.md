@@ -151,7 +151,7 @@ Does households' leverage matter for their job search, matching in the labor mar
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
 
-<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF> <buttonPub class="hide-on-small-screen" onclick="published3()">Published Version</buttonPub>   
+<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
 
 <div id="abs3"><TT>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</TT>
