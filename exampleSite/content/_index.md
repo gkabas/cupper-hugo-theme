@@ -151,7 +151,7 @@ Does households' leverage matter for their job search, matching in the labor mar
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
 
-<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  
+<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF> <buttonPub onclick="published3()">PDF</buttonPub>   
 
 <div id="abs3"><TT>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</TT>
@@ -191,7 +191,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
 
-<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="fig4()">Main Results</button> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <buttonPDF onclick="pdf4()">PDF</buttonPDF> 
+<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="fig4()">Main Results</button> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <buttonPDF onclick="pdf4()">PDF</buttonPDF> <buttonPub onclick="published4()">PDF</buttonPub>  
 
 <div id="abs4"><TT>
 Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging.</TT>
