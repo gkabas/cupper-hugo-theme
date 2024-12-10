@@ -16,6 +16,25 @@ function abs1() {
      }
 }
 
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-btn");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
+
 function pdf1() {
     window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
     }
