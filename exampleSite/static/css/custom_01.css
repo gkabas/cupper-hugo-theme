@@ -407,27 +407,21 @@ buttonPDF:hover {
     background-color: #4C0000;
 }
 
-buttonPub {
+.hide-on-small-screen {
     font-size: 1rem;
     border-radius: 0.03em;
-    font-color: #3B5998;
     font-family: inherit;
     background: #fefefe;
     color: #556B2F;
-    padding: 0.05rem;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    border: 1px dashed gray;
-    border-color: #556B2F;
+    padding: 0.05rem 0.1rem; /* Combined padding */
+    border: 1px dashed #556B2F;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
 }
 
-buttonPub{
-  cursor: pointer;
-  position: inline-block;
-  transition: 0.5s;
-}
-
-buttonPub:hover {
+/* Hover effect for the button */
+.hide-on-small-screen:hover {
     color: #fff;
     background-color: #556B2F;
 }
