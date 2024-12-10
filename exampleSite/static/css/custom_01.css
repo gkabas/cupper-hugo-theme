@@ -428,13 +428,11 @@ buttonPDF:hover {
     background-color: #556B2F;
 }
 
-<style>
-  @media (max-width: 768px) {
-    .hide-on-small-screen {
-      display: none; /* Hide the elements */
-    }
+@media (max-width: 768px) {
+  .hide-on-small-screen {
+    display: none !important; /* Ensures styles are applied */
   }
-</style>
+}
 
 
 .mySlides {
