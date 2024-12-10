@@ -18,7 +18,7 @@ function abs1() {
 
 // Function to update button text based on screen size
 function updateButtonText() {
-  const mainResultsButton = document.getElementById("main-results-btn");
+  const mainResultsButton = document.getElementById("main-results-res1");
   
   if (window.matchMedia("(max-width: 768px)").matches) {
     // Small screen
@@ -104,6 +104,25 @@ function abs2() {
   }
 }
 
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-res2");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
+
 function abs3() {
   var x = document.getElementById("abs3");
   var y = document.getElementById("fig3");
@@ -118,6 +137,24 @@ function abs3() {
     y.style.display = "none";
   }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-res3");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
 
 
 function abs4() {
@@ -134,6 +171,24 @@ function abs4() {
     y.style.display = "none";
   }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-res4");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
 
 
 function abs5() {
@@ -150,6 +205,24 @@ function abs5() {
     y.style.display = "none";
   }
 }
+// Function to update button text based on screen size
+function updateButtonText() {
+  const mainResultsButton = document.getElementById("main-results-res5");
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Small screen
+    mainResultsButton.textContent = "Results";
+  } else {
+    // Normal screen
+    mainResultsButton.textContent = "Main Results";
+  }
+}
+
+// Initial check when the page loads
+updateButtonText();
+
+// Update button text when the window is resized
+window.addEventListener("resize", updateButtonText);
 
 function fig1() {
   var x = document.getElementById("fig1");
