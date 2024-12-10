@@ -412,11 +412,11 @@ buttonPDF:hover {
     border-radius: 0.03em;
     font-family: inherit;
     background: #fefefe;
-    color: #556B2F;
+    color: #38471f;
     padding: 0.05rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
-    border: 1px dashed #556B2F;
+    border: 1px dashed #38471f;
     cursor: pointer;
     transition: 0.5s;
     display: inline-block;
@@ -425,7 +425,7 @@ buttonPDF:hover {
 /* Hover effect for the button */
 .hide-on-small-screen:hover {
     color: #fff;
-    background-color: #556B2F;
+    background-color: #38471f;
 }
 
 @media (max-width: 768px) {
