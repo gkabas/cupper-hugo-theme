@@ -60,7 +60,7 @@ We identify and study two mechanisms that can overturn the stabilizing effects o
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
 
-<button onclick="abs1()">Abstract</button> <button onclick="fig1()">Main Results</button> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
+<button onclick="abs1()">Abstract</button> <button id="main-results-btn" onclick="fig1()">Main Results</button> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf1()">PDF</buttonPDF>
 
 <div id="abs1"><TT>
