@@ -85,6 +85,7 @@ function abs1() {
 function abs2() {
   var x = document.getElementById("abs2");
   var y = document.getElementById("fig2");
+  var z = document.getElementById("pres2");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -93,15 +94,20 @@ function abs2() {
   if (y.style.display === "block") {
     y.style.display = "none";
   } else {
-    y.style.display = "none";
-  }
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
 }
+
 
 
 function abs3() {
   var x = document.getElementById("abs3");
   var y = document.getElementById("fig3");
-   if (x.style.display === "block") {
+  var z = document.getElementById("pres3");
+  if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
@@ -109,8 +115,11 @@ function abs3() {
   if (y.style.display === "block") {
     y.style.display = "none";
   } else {
-    y.style.display = "none";
-  }
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
 }
 
 
@@ -137,6 +146,7 @@ function abs4() {
 function abs5() {
   var x = document.getElementById("abs5");
   var y = document.getElementById("fig5");
+  var z = document.getElementById("pres5");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -145,29 +155,18 @@ function abs5() {
   if (y.style.display === "block") {
     y.style.display = "none";
   } else {
-    y.style.display = "none";
-  }
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
 }
 
 
 function fig1() {
   var x = document.getElementById("fig1");
   var y = document.getElementById("abs1");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-}
-
-function fig2() {
-  var x = document.getElementById("fig2");
-  var y = document.getElementById("abs2");
+  var z = document.getElementById("pres1");
    if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -176,13 +175,20 @@ function fig2() {
    if (y.style.display === "block") {
     y.style.display = "none";
   } else {
-   }
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
 }
 
-function fig3() {
-  var x = document.getElementById("fig3");
-  var y = document.getElementById("abs3");
-  if (x.style.display === "block") {
+function fig2() {
+  var x = document.getElementById("fig2");
+  var y = document.getElementById("abs2");
+  var z = document.getElementById("pres2");
+   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
@@ -191,6 +197,32 @@ function fig3() {
     y.style.display = "none";
   } else {
     y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+
+function fig3() {
+  var x = document.getElementById("fig3");
+  var y = document.getElementById("abs3");
+  var z = document.getElementById("pres3");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
   }
 }
 
@@ -219,7 +251,8 @@ function fig4() {
 function fig5() {
   var x = document.getElementById("fig5");
   var y = document.getElementById("abs5");
-  if (x.style.display === "block") {
+  var z = document.getElementById("pres5");
+   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
@@ -229,12 +262,97 @@ function fig5() {
   } else {
     y.style.display = "none";
   }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
 }
 
+function pres1() {
+  var x = document.getElementById("pres1");
+  var y = document.getElementById("abs1");
+  var z = document.getElementById("fig1");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+function pres2() {
+  var x = document.getElementById("pres2");
+  var y = document.getElementById("abs2");
+  var z = document.getElementById("fig2");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+function pres3() {
+  var x = document.getElementById("pres3");
+  var y = document.getElementById("abs3");
+  var z = document.getElementById("fig3");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
 function pres4() {
   var x = document.getElementById("pres4");
   var y = document.getElementById("abs4");
   var z = document.getElementById("fig4");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+function pres5() {
+  var x = document.getElementById("pres5");
+  var y = document.getElementById("abs5");
+  var z = document.getElementById("fig5");
    if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -307,27 +425,27 @@ function updateButtonText() {
     {
       id: "main-results-pres1",
       smallText: "Pres.",
-      largeText: "Presentations & Media Coverage",
+      largeText: "Presentations",
     },
      {
       id: "main-results-pres2",
       smallText: "Pres.",
-      largeText: "Presentations & Media Coverage",
+      largeText: "Presentations",
     },
      {
       id: "main-results-pres3",
       smallText: "Pres.",
-      largeText: "Presentations & Media Coverage",
+      largeText: "Presentations",
     },
      {
       id: "main-results-pres4",
       smallText: "Pres.",
-      largeText: "Presentations & Media Coverage",
+      largeText: "Presentations",
     },
      {
       id: "main-results-pres5",
       smallText: "Pres.",
-      largeText: "Presentations & Media Coverage",
+      largeText: "Presentations",
     },
   ];
 
