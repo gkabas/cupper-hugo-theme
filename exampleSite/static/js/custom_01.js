@@ -26,7 +26,7 @@ function ssrn3() {
     window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437", "_blank");
     }
 function published3() {
-    window.open("https://pubsonline.informs.org/doi/full/10.1287/mnsc.2022.03217?af=R", "_blank");
+    window.open("https://doi.org/10.1287/mnsc.2022.03217", "_blank");
     }
 
 function pdf4() {
@@ -38,7 +38,7 @@ function ssrn4() {
     }
 
 function published4() {
-    window.open("https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/population-aging-and-bank-risktaking/A941732E6B58660C2A974C33862C0040", "_blank");
+    window.open("https://doi.org/10.1017/S0022109023001011", "_blank");
     }
 
 
