@@ -451,12 +451,12 @@ function updateButtonText() {
 
   buttons.forEach((button) => {
     const element = document.getElementById(button.id);
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      // Small screen
-      element.textContent = button.smallText;
-    } else {
-      // Normal screen
-      element.textContent = button.largeText;
+    if (element) {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        element.textContent = button.smallText;
+      } else {
+        element.textContent = button.largeText;
+      }
     }
   });
 }
