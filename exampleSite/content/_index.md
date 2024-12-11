@@ -7,7 +7,7 @@ title:
 **Unemployment Insurance and Macro-financial (In)Stability**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
 
-<button id="main-results-fig5" onclick="abs5()">Abstract</button> <button id="main-results-res5" onclick="fig5()">Main Results</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
+<button id="main-results-fig5" onclick="abs5()">Abstract</button> <button id="main-results-res5" onclick="fig5()">Main Results</button> <button id="main-results-pres5" onclick="pres5()">Presentations</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf5()">PDF</buttonPDF>
 
 <div id="abs5"><TT>
@@ -57,10 +57,14 @@ We identify and study two mechanisms that can overturn the stabilizing effects o
 </div>
 </div>
 
+<div id="pres5"><TT>
+Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University, Minneapolis Fed, Philly Fed, St. Louis Fed, University of Zurich, University of Liverpool, Barcelona Summer Forum, CEMLA/Dallas Fed Financial Stability Workshop, European Economic Association Conference, Econometric Society Meetings (North America and Asian), IFABS Conference, IBEFA Summer Meeting, Leuven Summer Event, Lisbon Macro Workshop, Midwest Finance Association Conference, Money, Macro and Finance Conference, SITE Conference, Swiss Society of Economics and Statistics Conference, T2M Macro Conference, Workshop in Empirical and Theoretical Macroeconomics (King’s College London), University of St. Gallen Workshop on Macroeconomic Implications of Housing, Household Finances, and Wealth Dynamics</TT>
+</div>
+
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
 
-<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="fig1()">Main Results</button> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
+<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="fig1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf1()">PDF</buttonPDF>
 
 <div id="abs1"><TT>
@@ -98,10 +102,15 @@ We document that banks react to domestic climate policy stringency by increasing
 </div>
 </div>
 
+
+<div id="pres1"><TT>
+Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Central Bank,  ECB Banking Supervision Research Conference, FRBSF Climate Risks Workshop, GRASFI, NEOMA Sustainable Finance Conference, Norges Bank, SFI Research Days, SFS NA Cavalcade, SGF Conference, Western Finance Association Conference, Workshop on Environmental Finance for the Common Good at Birkbeck College, seminars at Audencia Business School, Bangor Business School, Bundesbank, ESSEC, Montpellier Business School, NTNU Business School, Reserve Bank of Australia, University of Edinburgh, University of Liverpool, University of Luxembourg, University of Manchester, University of Naples Federico II, University of New South Wales, Sydney Business School, University of Technology Sydney, University of Zurich</TT>
+</div>
+
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
 
-<button id="main-results-fig2" onclick="abs2()">Abstract</button> <button id="main-results-res2" onclick="fig2()">Main Results</button> <buttonSSRN onclick="ssrn2()">SSRN</buttonSSRN> <buttonPDF onclick="pdf2()">PDF</buttonPDF>
+<button id="main-results-fig2" onclick="abs2()">Abstract</button> <button id="main-results-res2" onclick="fig2()">Main Results</button> <button id="main-results-pres2" onclick="pres2()">Presentations</button> <buttonSSRN onclick="ssrn2()">SSRN</buttonSSRN> <buttonPDF onclick="pdf2()">PDF</buttonPDF>
 
 <div id="abs2"><TT>
 Does households' leverage matter for their job search, matching in the labor market, and wages? To answer this question we exploit a loan-to-value ratio restriction in Norway that exogenously reduces household leverage and a sample of displaced workers who lost their jobs due to mass layoffs. We find that a reduction in leverage improves the starting wages of displaced workers. Lower leverage allows workers to prolong their unemployment duration, find jobs in higher paying firms, and switch into new occupations and industries. The positive effects are long-lasting and more pronounced for young and higher educated workers. Our results indicate that policies aimed at limiting households' leverage have the potential to substantially improve their labor market outcomes by reducing the frictions that leverage creates in the job search.</TT>
@@ -144,6 +153,10 @@ Does households' leverage matter for their job search, matching in the labor mar
 </div>
 </div>
 
+<div id="pres2"><TT>
+ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker's Forum, CEBRA conference, CEPR European Workshop on Household Finance, Cleveland Fed, Danmarks Nationalbank, FIRS, European Finance Association conference, EFiC Conference in Banking and Corporate Finance, European Systemic Risk Board Working Group, European Winter Finance Summit, IBEFA Young Economist Seminar Series, IBEFA-ASSA Meetings, Ohio State PhD Conference On Real Estate and Housing, IBEFA summer conference, De Nederlandsche Bank, LUISS Guido Carli, Nova SBE, Norges Bank, Oslo Macro Group seminar, Philadelphia Fed Mortgage conference, Swiss Society for Financial Market Research Conference, Swiss Winter Conference on Financial Intermediation, Tilburg University, University of Groningen, University of Zurich, Young Swiss Economists Meeting</TT>
+</div>
+
 <br><br />
 <hr class="solid">
 
@@ -151,7 +164,7 @@ Does households' leverage matter for their job search, matching in the labor mar
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
 
-<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
+<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <button id="main-results-pres3" onclick="pres3()">Presentations</button> <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <buttonPDF onclick="pdf3()">PDF</buttonPDF> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
 
 <div id="abs3"><TT>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</TT>
@@ -186,6 +199,10 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
   <span class="dot" onclick="currentSlide(2, mySlides3)"></span> 
   <span class="dot" onclick="currentSlide(3, mySlides3)"></span> 
 </div>
+</div>
+
+<div id="pres3"><TT>
+BIS, European Finance Association, Federal Reserve Board Brownbag, Fuqua Finance Brownbag, MoFiR Workshop on Banking, SFI Research Days, SFS Cavalcade North America, Swiss Winter Conference on Financial Intermediation, West ern Economic Association International Conference, Western Finance Association, and the University of Zurich</TT>
 </div>
 
 **Population Aging and Bank Risk-Taking**<br>
@@ -235,7 +252,7 @@ Does population aging affect bank lending? To answer this question we exploit ge
 </div>
 
 <div id="pres4"><TT>
- American Finance Association Annual Conference, Financial Intermediation Research Society Conference, Western Finance Association Meeting, FDIC 20th Annual Bank Research Conference, JFI-Nova SBE Conference on Financial Intermediation and Corporate Finance, Norges Bank-CEPR Workshop on Frontier Research in Banking, ZEW Conference on Ageing and Financial Markets, Annual Meeting of the Swiss Society for Financial Market Research.</TT>
+ American Finance Association Annual Conference, Financial Intermediation Research Society Conference, Western Finance Association Meeting, FDIC 20th Annual Bank Research Conference, JFI-Nova SBE Conference on Financial Intermediation and Corporate Finance, Norges Bank-CEPR Workshop on Frontier Research in Banking, ZEW Conference on Ageing and Financial Markets, Annual Meeting of the Swiss Society for Financial Market Research</TT>
 </div>
 
 <div class="clear"></div>
