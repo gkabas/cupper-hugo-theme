@@ -191,7 +191,7 @@ We use disaggregated U.S. data and a border discontinuity design to show that mo
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
 
-<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="fig4()">Main Results</button> <button id="main-results-pres4" onclick="pres4()">Presentations & Media Coverage</button> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <buttonPDF onclick="pdf4()">PDF</buttonPDF> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>  
+<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="fig4()">Main Results</button> <button id="main-results-pres4" onclick="pres4()">Presentations</button> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <buttonPDF onclick="pdf4()">PDF</buttonPDF> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>  
 
 <div id="abs4"><TT>
 Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging.</TT>
@@ -234,7 +234,7 @@ Does population aging affect bank lending? To answer this question we exploit ge
 </div>
 </div>
 
-<div id="pres4"><TT>
+<div id="abs4"><TT>
  American Finance Association Annual Conference, Financial Intermediation Research Society Conference, Western Finance Association Meeting, FDIC 20th Annual Bank Research Conference, JFI-Nova SBE Conference on Financial Intermediation and Corporate Finance, Norges Bank-CEPR Workshop on Frontier Research in Banking, ZEW Conference on Ageing and Financial Markets, Annual Meeting of the Swiss Society for Financial Market Research.</TT>
 </div>
 
