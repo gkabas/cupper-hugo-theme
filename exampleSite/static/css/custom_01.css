@@ -333,6 +333,51 @@ details[data-for="second"][open] ~ .contents #second {
  display: none;
 }
 
+#pres1 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#pres2 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#pres3 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#pres4 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#pres5 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
 button {
     font-size: 1rem;
     border-radius: 0.03em;
