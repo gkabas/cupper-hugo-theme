@@ -334,48 +334,63 @@ details[data-for="second"][open] ~ .contents #second {
 }
 
 #pres1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
   max-width: 1000px;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: left;
-  background-color: white;
+  background-color: #white;
   margin-top: 10px;
- display: none;
+  display: none;
+  border: 1px dashed gray;
 }
 
 #pres2 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
   max-width: 1000px;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: left;
-  background-color: white;
+  background-color: #white;
   margin-top: 10px;
- display: none;
+  display: none;
+  border: 1px dashed gray;
 }
 
 #pres3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
   max-width: 1000px;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: left;
-  background-color: white;
+  background-color: #white;
   margin-top: 10px;
- display: none;
+  display: none;
+  border: 1px dashed gray;
 }
 
 #pres4 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
   max-width: 1000px;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: left;
-  background-color: white;
+  background-color: #white;
   margin-top: 10px;
- display: none;
+  display: none;
+  border: 1px dashed gray;
 }
 
 #pres5 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
   max-width: 1000px;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: left;
-  background-color: white;
+  background-color: #white;
   margin-top: 10px;
- display: none;
+  display: none;
+  border: 1px dashed gray;
 }
 
 button {
