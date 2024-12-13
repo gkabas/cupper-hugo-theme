@@ -4,7 +4,7 @@ title:
 ---
 ## Working Papers 
 
-**Unemployment Insurance and Macro-financial (In)Stability**<br>
+**Unemployment Insurance and Macro-Financial (In)Stability**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
 
 <button id="main-results-fig5" onclick="abs5()">Abstract</button> <button id="main-results-res5" onclick="fig5()">Main Results</button> <button id="main-results-pres5" onclick="pres5()">Presentations</button> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
