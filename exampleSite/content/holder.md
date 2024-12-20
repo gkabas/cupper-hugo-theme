@@ -1,2 +1,2 @@
 ### Files 
-<u>[Brown bag](https://gkabas.netlify.app/files/ETS.pdf)</u> <br>
+<u>[SEA-Luzern](https://gkabas.netlify.app/files/ETS.pdf)</u> <br>
