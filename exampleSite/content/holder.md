@@ -9,7 +9,7 @@
 </div>
 
 <script>
-  const url = 'https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/files/ETS.pdf'; // Path to your PDF
+  const url = 'https://gkabas.netlify.app/files/ETS.pdf'; // Path to your PDF
   const pdfViewer = document.getElementById('pdfViewer');
   let pdfDoc = null;
   let pageNum = 1;
