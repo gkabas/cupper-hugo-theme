@@ -1,9 +1,3 @@
----
-date: 2024-12-31
-draft: false
-<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
----
-
 ### Files 
 <u>[SEA-Luzern](https://gkabas.netlify.app/files/ETS.pdf)</u> <br>
 
