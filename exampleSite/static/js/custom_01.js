@@ -563,7 +563,7 @@ function loadPDF6() {
 
 function showPDFWithSlides6() {
   const pdfContainer = document.getElementById("pdf6");
-  const navContainer = document.getElementById("pdf-navigation");
+  const navContainer = document.getElementById("pdf-navigation6");
   const absContainer = document.getElementById("abs6");
   const presContainer = document.getElementById("pres6");
 
