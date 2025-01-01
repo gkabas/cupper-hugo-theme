@@ -50,6 +50,14 @@ function ssrn5() {
     window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4915102", "_blank");
     }
 
+function pdf6() {
+    window.open("https://gkabas.netlify.app/files/UI_ADGKK.pdf", "_blank");
+    }
+
+function ssrn6() {
+    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4915102", "_blank");
+    }
+
 function dis1() {
     window.open("https://gkabas.netlify.app/files/KabasDiscussion_NB2023.pdf", "_blank");
     }
