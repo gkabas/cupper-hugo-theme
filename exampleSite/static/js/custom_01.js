@@ -511,6 +511,7 @@ function initializeDisplay() {
   document.getElementById("abs7").style.display = "none";
   document.getElementById("pdf7").style.display = "none";
   document.getElementById("pres7").style.display = "none";
+  document.getElementById("pdf-navigation6").style.display = "none";
 }
 
 // This part onwards is for the Main Results button with PDFs
@@ -579,7 +580,7 @@ function showPDFWithSlides6() {
 
     // Load PDF only if not already loaded
     if (!pdfContainer.dataset.loaded) {
-      loadPDF();
+      loadPDF6();
       pdfContainer.dataset.loaded = "true";
     }
   }
