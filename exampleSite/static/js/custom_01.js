@@ -164,7 +164,7 @@ function abs5() {
 
 function abs6() {
   var x = document.getElementById("abs6");
-  var y = document.getElementById("fig6");
+  var y = document.getElementById("pdf6");
   var z = document.getElementById("pres6");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -289,7 +289,7 @@ function fig5() {
 }
 
 function fig6() {
-  var x = document.getElementById("fig6");
+  var x = document.getElementById("pdf6");
   var y = document.getElementById("abs6");
   var z = document.getElementById("pres6");
    if (x.style.display === "block") {
@@ -415,7 +415,7 @@ function pres5() {
 function pres6() {
   var x = document.getElementById("pres6");
   var y = document.getElementById("abs6");
-  var z = document.getElementById("fig6");
+  var z = document.getElementById("pdf6");
    if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -435,9 +435,9 @@ function pres6() {
 
 function showPDF2() {
   // Toggle display of the PDF viewer
-  const x = document.getElementById("pdfViewer");
-  const y = document.getElementById("abs6");
-  const z = document.getElementById("pres6");
+  var x = document.getElementById("pdf6");
+  var y = document.getElementById("abs6");
+  var z = document.getElementById("pres6");
 
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -489,6 +489,11 @@ function updateButtonText() {
       largeText: "Abstract",
     },
     {
+      id: "main-results-fig6",
+      smallText: "Abs.",
+      largeText: "Abstract",
+    },
+    {
       id: "main-results-res1",
       smallText: "Results",
       largeText: "Main Results",
@@ -514,6 +519,11 @@ function updateButtonText() {
       largeText: "Main Results",
     },
     {
+      id: "main-results-res6",
+      smallText: "Results",
+      largeText: "Main Results",
+    },
+    {
       id: "main-results-pres1",
       smallText: "Pres.",
       largeText: "Presentations",
@@ -535,6 +545,11 @@ function updateButtonText() {
     },
      {
       id: "main-results-pres5",
+      smallText: "Pres.",
+      largeText: "Presentations",
+    },
+     {
+      id: "main-results-pres6",
       smallText: "Pres.",
       largeText: "Presentations",
     },
