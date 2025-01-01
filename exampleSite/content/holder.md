@@ -12,7 +12,7 @@
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
 
-  const url = 'https://gazikabas.netlify.app/files/presentation.pdf'; // PDF URL
+  const url = 'https://gazikabas.netlify.app/files/ETS.pdf'; // PDF URL
   const pdfViewer = document.getElementById('pdfViewer');
   let pdfDoc = null;
   let pageNum = 1;
