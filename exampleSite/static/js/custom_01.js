@@ -533,29 +533,40 @@ function loadPDF6() {
   const pdfViewer = document.getElementById("pdf6");
 
   const renderPage = (num) => {
-    pdfDoc.getPage(num).then((page) => {
-      const scale = 1; // Adjust scale for slide size
-      const viewport = page.getViewport({ scale });
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
+  const pdfViewer = document.getElementById("pdf6");
 
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
+  pdfDoc.getPage(num).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
 
-      pdfViewer.innerHTML = ""; // Clear previous slide
-      pdfViewer.appendChild(canvas);
+    // Get the container's width
+    const containerWidth = pdfViewer.offsetWidth;
 
-      const renderContext = {
-        canvasContext: context,
-        viewport: viewport,
-      };
+    // Calculate scale based on container width
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = containerWidth / viewport.width;
 
-      page.render(renderContext);
-    }).catch((error) => {
-      console.error("Error rendering page:", error);
-      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-    });
-  };
+    // Apply the scale to the viewport
+    const scaledViewport = page.getViewport({ scale });
+
+    // Set canvas dimensions
+    canvas.height = scaledViewport.height;
+    canvas.width = scaledViewport.width;
+
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise
