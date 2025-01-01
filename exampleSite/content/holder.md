@@ -1,7 +1,7 @@
 ### Files 
 <u>[SEA-Luzern](https://gkabas.netlify.app/files/ETS.pdf)</u> <br>
 
-<div id="pdfViewer" style="width:70%; height:auto; border:1px solid #ccc;"></div>
+<div id="pdfViewer" style="width:50%; height:auto; border:1px solid #ccc;"></div>
 
 <div style="text-align:center; margin-top:10px;">
   <button onclick="prevSlide()">❮ Previous</button>
