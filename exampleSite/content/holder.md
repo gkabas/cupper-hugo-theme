@@ -13,7 +13,8 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
 </div>
 
 
-<div id="pdfViewer" style="width:50%; height:auto; border:1px solid #ccc;"></div><script type="module">
+<div id="pdf6" style="width:50%; height:auto; border:1px solid #ccc;"></div>
+<script type="module">
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
 </script>
@@ -22,4 +23,6 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
 </div>
+
+
 
