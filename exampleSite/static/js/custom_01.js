@@ -670,7 +670,7 @@ function showPDF1() {
 // PDF.js logic
 function loadPDF() {
   const url = "https://gazikabas.netlify.app/files/ETS.pdf"; // PDF URL
-  const pdfViewer = document.getElementById("pdf6");
+  const pdfViewer = document.getElementById("pdfViewer");
   let pdfDoc = null;
   let pageNum = 1;
 
