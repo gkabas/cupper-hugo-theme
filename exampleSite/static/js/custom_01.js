@@ -435,21 +435,23 @@ function pres6() {
 
 function showPDF2() {
   // Toggle display of the PDF viewer
-  const pdfContainer = document.getElementById("pdfViewer");
-  const x = document.getElementById("fig6");
+  const x = document.getElementById("pdfViewer");
   const y = document.getElementById("abs6");
   const z = document.getElementById("pres6");
 
-  // Hide other elements
-  if (x) x.style.display = "none";
-  if (y) y.style.display = "none";
-  if (z) z.style.display = "none";
-
-  // Show the PDF container
-  if (pdfContainer.style.display === "block") {
-    pdfContainer.style.display = "none";
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    pdfContainer.style.display = "block";
+    x.style.display = "block";
+  }
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
 
     // Load the PDF only when the container is made visible
     if (!pdfContainer.dataset.loaded) {
