@@ -593,7 +593,7 @@ function showPDF7() {
 
     // Load PDF only if not already loaded
     if (!pdfContainer.dataset.loaded) {
-      loadPDF6();
+      loadPDF7();
       pdfContainer.dataset.loaded = "true";
     }
   }
