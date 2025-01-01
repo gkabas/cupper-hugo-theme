@@ -513,7 +513,7 @@ function initializeDisplay() {
   document.getElementById("pres7").style.display = "none";
 }
 
-function showPDF2() {
+function showPDF6() {
   const pdfContainer = document.getElementById("pdf6");
   const absContainer = document.getElementById("abs6");
   const presContainer = document.getElementById("pres6");
@@ -528,15 +528,80 @@ function showPDF2() {
 
     // Load PDF only if not already loaded
     if (!pdfContainer.dataset.loaded) {
-      loadPDF();
+      loadPDF6();
       pdfContainer.dataset.loaded = "true";
     }
   }
 }
 
-function loadPDF() {
+function loadPDF6() {
   const url = "https://gazikabas.netlify.app/files/ETS.pdf"; // Update PDF URL
   const pdfViewer = document.getElementById("pdf6");
+  let pdfDoc = null;
+  let pageNum = 1;
+
+  const renderPage = (num) => {
+    pdfDoc.getPage(num).then((page) => {
+      const scale = 1; // Adjust scale for PDF size
+      const viewport = page.getViewport({ scale });
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      pdfViewer.innerHTML = ""; // Clear the viewer
+      pdfViewer.appendChild(canvas);
+
+      const renderContext = {
+        canvasContext: context,
+        viewport: viewport,
+      };
+
+      page.render(renderContext);
+    }).catch((error) => {
+      console.error("Error rendering page:", error);
+      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+    });
+  };
+
+  const loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise
+    .then((pdf) => {
+      pdfDoc = pdf;
+      renderPage(pageNum);
+    })
+    .catch((error) => {
+      console.error("Error loading PDF:", error);
+      pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+    });
+}
+
+
+function showPDF7() {
+  const pdfContainer = document.getElementById("pdf7");
+  const absContainer = document.getElementById("abs7");
+  const presContainer = document.getElementById("pres7");
+
+  // Toggle PDF container visibility
+  if (pdfContainer.style.display === "block") {
+    pdfContainer.style.display = "none";
+  } else {
+    pdfContainer.style.display = "block";
+    absContainer.style.display = "none";
+    presContainer.style.display = "none";
+
+    // Load PDF only if not already loaded
+    if (!pdfContainer.dataset.loaded) {
+      loadPDF6();
+      pdfContainer.dataset.loaded = "true";
+    }
+  }
+}
+
+function loadPDF7() {
+  const url = "https://gazikabas.netlify.app/files/ETS_2.pdf"; // Update PDF URL
+  const pdfViewer = document.getElementById("pdf7");
   let pdfDoc = null;
   let pageNum = 1;
 
