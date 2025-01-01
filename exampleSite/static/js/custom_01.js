@@ -399,6 +399,7 @@ function pres4() {
     z.style.display = "none";
   }
 }
+
 function pres5() {
   var x = document.getElementById("pres5");
   var y = document.getElementById("abs5");
@@ -467,7 +468,6 @@ function showPDF2() {
       pdfContainer.dataset.loaded = "true"; // Ensure PDF is loaded only once
     }
   }
-}
 
 function updateButtonText() {
   const buttons = [
