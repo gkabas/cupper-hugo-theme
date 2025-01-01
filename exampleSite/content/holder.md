@@ -10,7 +10,7 @@
 <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 <script src="https://mozilla.github.io/pdf.js/build/pdf.worker.js"></script>
 <script>
-  const url = 'https://gkabas.netlify.app/files/ETS.pdf'; // Path to your PDF
+  const url = 'https://gazikabas.netlify.app/files/presentation.pdf'; // Update this URL
   const pdfViewer = document.getElementById('pdfViewer');
   let pdfDoc = null;
   let pageNum = 1;
@@ -33,15 +33,23 @@
       };
 
       page.render(renderContext);
+    }).catch((error) => {
+      console.error('Error rendering page:', error);
+      pdfViewer.innerHTML = '<p>Error rendering this page.</p>';
     });
   };
 
   const loadPDF = () => {
     const loadingTask = pdfjsLib.getDocument(url);
-    loadingTask.promise.then((pdf) => {
-      pdfDoc = pdf;
-      renderPage(pageNum);
-    });
+    loadingTask.promise
+      .then((pdf) => {
+        pdfDoc = pdf;
+        renderPage(pageNum);
+      })
+      .catch((error) => {
+        console.error('Error loading PDF:', error);
+        pdfViewer.innerHTML = '<p>Unable to load PDF. Please check the file URL.</p>';
+      });
   };
 
   const prevSlide = () => {
