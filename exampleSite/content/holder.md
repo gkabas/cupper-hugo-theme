@@ -40,8 +40,8 @@ Does household leverage matter for workers' job search, matching in the labor ma
 </script>
 
 <div id="pdf-navigation" style="text-align:center; display:none; margin-top:10px;">
-  <button onclick="prevSlide()">❮ Previous</button>
-  <button onclick="nextSlide()">Next ❯</button>
+  <button onclick="prevSlide2()">❮ Previous</button>
+  <button onclick="nextSlide2()">Next ❯</button>
 </div>
 
 <div id="pres7"><TT>
