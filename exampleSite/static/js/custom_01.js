@@ -479,13 +479,50 @@ function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
 
+//function showSlides(n, no) {
+//  let i;
+//  let x = document.getElementsByClassName(slideId[no]);
+//  if (n > x.length) {slideIndex[no] = 1}    
+//  if (n < 1) {slideIndex[no] = x.length}
+//  for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//  }
+//  x[slideIndex[no]-1].style.display = "block";  
+//}
+
 function showSlides(n, no) {
   let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+
+  // Check if slideId and slideIndex are defined
+  if (!slideId || !slideId[no]) {
+    console.error(`slideId[${no}] is undefined. Ensure slideId is properly initialized.`);
+    return;
   }
-  x[slideIndex[no]-1].style.display = "block";  
+  if (!slideIndex || typeof slideIndex[no] === 'undefined') {
+    console.error(`slideIndex[${no}] is undefined. Ensure slideIndex is properly initialized.`);
+    return;
+  }
+
+  // Get slides for the specified group
+  let x = document.getElementsByClassName(slideId[no]);
+  if (x.length === 0) {
+    console.error(`No slides found for slideId[${no}] (${slideId[no]}).`);
+    return;
+  }
+
+  // Handle slide index out of bounds
+  if (n > x.length) {
+    slideIndex[no] = 1; // Loop back to first slide
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length; // Loop back to last slide
+  }
+
+  // Hide all slides in the group
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  // Show the current slide
+  x[slideIndex[no] - 1].style.display = "block";
 }
