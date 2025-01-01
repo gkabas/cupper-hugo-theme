@@ -468,26 +468,26 @@ function pres6() {
   if (presContainer.style.display === "block") {
     presContainer.style.display = "none";
   } else {
-    absContainer.style.display = "block";
+    presContainer.style.display = "block";
     pdfContainer.style.display = "none";
-    presContainer.style.display = "none";
+    absContainer.style.display = "none";
     navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
 
-function pres6() {
-  const presContainer = document.getElementById("pres6");
-  const pdfContainer = document.getElementById("pdf6");
-  const absContainer = document.getElementById("abs6");
-  const navContainer = document.getElementById("pdf-navigation6");
+function pres7() {
+  const presContainer = document.getElementById("pres7");
+  const pdfContainer = document.getElementById("pdf7");
+  const absContainer = document.getElementById("abs7");
+  const navContainer = document.getElementById("pdf-navigation7");
 
   // Toggle Abstract visibility
   if (presContainer.style.display === "block") {
     presContainer.style.display = "none";
   } else {
-    absContainer.style.display = "block";
+    presContainer.style.display = "block";
     pdfContainer.style.display = "none";
-    presContainer.style.display = "none";
+    absContainer.style.display = "none";
     navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
