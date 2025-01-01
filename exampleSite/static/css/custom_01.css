@@ -462,7 +462,7 @@ details[data-for="second"][open] ~ .contents #second {
 #pdf6 {
   max-width: 1000px;
   width: 100%;
-  aspect-ratio: 1; /* Preferred modern approach */
+  aspect-ratio: 16 / 9; /* Preferred modern approach */
   border: 1px solid #ccc;
 }
 
