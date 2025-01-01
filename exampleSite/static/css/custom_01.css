@@ -469,9 +469,11 @@ details[data-for="second"][open] ~ .contents #second {
 }
 
 #pdf6 canvas {
-    display: block;
-    margin: 0 auto; /* Center the canvas */
-  }
+  max-width: 100%; /* Ensure canvas fits within the container */
+  height: auto;     /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center align canvas */
+}
 
 button {
     font-size: 1rem;
