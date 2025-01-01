@@ -459,6 +459,13 @@ details[data-for="second"][open] ~ .contents #second {
   border: 1px dashed gray;
 }
 
+#pdf6 {
+  max-width: 1000px;
+  width: 100%;
+  aspect-ratio: 1; /* Preferred modern approach */
+  border: 1px solid #ccc;
+}
+
 button {
     font-size: 1rem;
     border-radius: 0.03em;
