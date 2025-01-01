@@ -7,10 +7,12 @@
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
 </div>
-<script src="static/js/pdfjs/pdf.js"></script>
-<script src="static/js/pdfjs/pdf.worker.js"></script>
-<script>
-  const url = 'https://gazikabas.netlify.app/files/presentation.pdf'; // Update this URL
+<script src="/js/pdfjs/pdf.mjs" type="module"></script>
+<script src="/js/pdfjs/pdf.worker.mjs" type="module"></script>
+<script type="module">
+  import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
+
+  const url = 'https://gazikabas.netlify.app/files/ETS.pdf'; // PDF URL
   const pdfViewer = document.getElementById('pdfViewer');
   let pdfDoc = null;
   let pageNum = 1;
@@ -64,7 +66,7 @@
     renderPage(pageNum);
   };
 
- pdfjsLib.GlobalWorkerOptions.workerSrc =
-      'static/js/pdfjs/pdf.worker.js';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
   loadPDF();
 </script>
+
