@@ -1,7 +1,7 @@
 ### Files 
 <u>[SEA-Luzern](https://gkabas.netlify.app/files/ETS.pdf)</u> <br>
 
-<button id="main-results-fig6" onclick="abs6()">Abstract</button> <button id="main-results-res6" onclick="showPDF6()">Main Results</button> <button id="main-results-pres6" onclick="pres6()">Presentations</button> <buttonSSRN onclick="ssrn6()">SSRN</buttonSSRN>
+<button id="main-results-fig6" onclick="abs6()">Abstract</button> <button id="main-results-res6" onclick="showPDFWithSlides6()">Main Results</button> <button id="main-results-pres6" onclick="pres6()">Presentations</button> <buttonSSRN onclick="ssrn6()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf6()">PDF</buttonPDF>
 
 <div id="abs6"><TT>
@@ -19,11 +19,11 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
 </script>
 
-<div style="text-align:center; margin-top:10px;">
+<div id="pdf-navigation" style="text-align:center; display:none; margin-top:10px;">
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
 </div>
-<br><\br>
+<br>
 
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
