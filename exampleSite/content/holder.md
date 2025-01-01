@@ -7,12 +7,12 @@
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
 </div>
-<script src="/js/pdfjs/pdf.mjs" type="module"></script>
-<script src="/js/pdfjs/pdf.worker.mjs" type="module"></script>
+
 <script type="module">
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
 
-  const url = 'https://gazikabas.netlify.app/files/ETS.pdf'; // PDF URL
+  const url = 'https://gazikabas.netlify.app/files/presentation.pdf'; // PDF URL
   const pdfViewer = document.getElementById('pdfViewer');
   let pdfDoc = null;
   let pageNum = 1;
@@ -54,19 +54,18 @@
       });
   };
 
-  const prevSlide = () => {
+  window.prevSlide = function() {
     if (pageNum <= 1) return;
     pageNum--;
     renderPage(pageNum);
   };
 
-  const nextSlide = () => {
+  window.nextSlide = function() {
     if (pageNum >= pdfDoc.numPages) return;
     pageNum++;
     renderPage(pageNum);
   };
 
-  pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
   loadPDF();
 </script>
 
