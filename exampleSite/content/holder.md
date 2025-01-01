@@ -7,8 +7,8 @@
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
 </div>
-<script src="static/js/pdfjs/pdf.mjs"></script>
-<script src="static/js/pdfjs/pdf.worker.mjs"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js"></script>
 <script>
   const url = 'https://gazikabas.netlify.app/files/presentation.pdf'; // Update this URL
   const pdfViewer = document.getElementById('pdfViewer');
@@ -64,7 +64,7 @@
     renderPage(pageNum);
   };
 
-  pdfjsLib.GlobalWorkerOptions.workerSrc =
-    'static/js/pdfjs/pdf.worker.mjs';
+ pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
   loadPDF();
 </script>
