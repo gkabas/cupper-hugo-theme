@@ -171,22 +171,20 @@ function abs5() {
 }
 
 function abs6() {
-  var x = document.getElementById("abs6");
-  var y = document.getElementById("pdf6");
-  var z = document.getElementById("pres6");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  const absContainer = document.getElementById("abs6");
+  const pdfContainer = document.getElementById("pdf6");
+  const presContainer = document.getElementById("pres6");
+  const navContainer = document.getElementById("pdf-navigation6");
+
+  // Toggle Abstract visibility
+  if (absContainer.style.display === "block") {
+    absContainer.style.display = "none";
   } else {
-    x.style.display = "block";
+    absContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-     }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-     }
 }
 
 function abs7() {
