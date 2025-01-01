@@ -269,6 +269,27 @@ function fig5() {
   }
 }
 
+function fig6() {
+  var x = document.getElementById("fig6");
+  var y = document.getElementById("abs6");
+  var z = document.getElementById("pres6");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+
 function pres1() {
   var x = document.getElementById("pres1");
   var y = document.getElementById("abs1");
