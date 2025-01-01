@@ -513,36 +513,18 @@ function initializeDisplay() {
   document.getElementById("pres7").style.display = "none";
 }
 
-function showPDF6() {
-  const pdfContainer = document.getElementById("pdf6");
-  const absContainer = document.getElementById("abs6");
-  const presContainer = document.getElementById("pres6");
-
-  // Toggle PDF container visibility
-  if (pdfContainer.style.display === "block") {
-    pdfContainer.style.display = "none";
-  } else {
-    pdfContainer.style.display = "block";
-    absContainer.style.display = "none";
-    presContainer.style.display = "none";
-
-    // Load PDF only if not already loaded
-    if (!pdfContainer.dataset.loaded) {
-      loadPDF6();
-      pdfContainer.dataset.loaded = "true";
-    }
-  }
-}
+// This part onwards is for the Main Results button with PDFs
+let pdfDoc = null;
+let pageNum = 1; // Start with the first slide
+let pageCount = 0; // Total number of pages in the PDF
 
 function loadPDF6() {
-  const url = "https://gazikabas.netlify.app/files/ETS.pdf"; // Update PDF URL
+  const url = "https://gazikabas.netlify.app/files/ETS.pdf"; // PDF URL
   const pdfViewer = document.getElementById("pdf6");
-  let pdfDoc = null;
-  let pageNum = 1;
 
   const renderPage = (num) => {
     pdfDoc.getPage(num).then((page) => {
-      const scale = 1; // Adjust scale for PDF size
+      const scale = 1; // Adjust scale for slide size
       const viewport = page.getViewport({ scale });
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
@@ -550,7 +532,7 @@ function loadPDF6() {
       canvas.height = viewport.height;
       canvas.width = viewport.width;
 
-      pdfViewer.innerHTML = ""; // Clear the viewer
+      pdfViewer.innerHTML = ""; // Clear previous slide
       pdfViewer.appendChild(canvas);
 
       const renderContext = {
@@ -569,7 +551,8 @@ function loadPDF6() {
   loadingTask.promise
     .then((pdf) => {
       pdfDoc = pdf;
-      renderPage(pageNum);
+      pageCount = pdf.numPages; // Set total number of slides
+      renderPage(pageNum); // Render the first slide
     })
     .catch((error) => {
       console.error("Error loading PDF:", error);
@@ -577,6 +560,70 @@ function loadPDF6() {
     });
 }
 
+
+function showPDFWithSlides6() {
+  const pdfContainer = document.getElementById("pdf6");
+  const navContainer = document.getElementById("pdf-navigation");
+  const absContainer = document.getElementById("abs6");
+  const presContainer = document.getElementById("pres6");
+
+  // Toggle PDF container visibility
+  if (pdfContainer.style.display === "block") {
+    pdfContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
+  } else {
+    pdfContainer.style.display = "block";
+    navContainer.style.display = "block"; // Show navigation buttons
+    absContainer.style.display = "none";
+    presContainer.style.display = "none";
+
+    // Load PDF only if not already loaded
+    if (!pdfContainer.dataset.loaded) {
+      loadPDF();
+      pdfContainer.dataset.loaded = "true";
+    }
+  }
+}
+
+function nextSlide() {
+  if (pageNum < pageCount) {
+    pageNum++;
+    loadSlide();
+  }
+}
+
+function prevSlide() {
+  if (pageNum > 1) {
+    pageNum--;
+    loadSlide();
+  }
+}
+
+function loadSlide() {
+  const pdfViewer = document.getElementById("pdf6");
+  pdfDoc.getPage(pageNum).then((page) => {
+    const scale = 1; // Adjust scale for slide size
+    const viewport = page.getViewport({ scale });
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    const renderContext = {
+      canvasContext: context,
+      viewport: viewport,
+    };
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering slide:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this slide.</p>";
+  });
+}
 
 function showPDF7() {
   const pdfContainer = document.getElementById("pdf7");
