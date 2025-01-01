@@ -162,6 +162,25 @@ function abs5() {
      }
 }
 
+function abs6() {
+  var x = document.getElementById("abs6");
+  var y = document.getElementById("fig6");
+  var z = document.getElementById("pres6");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
+}
+
 
 function fig1() {
   var x = document.getElementById("fig1");
@@ -290,6 +309,8 @@ function fig6() {
   }
 }
 
+
+
 function pres1() {
   var x = document.getElementById("pres1");
   var y = document.getElementById("abs1");
@@ -388,6 +409,53 @@ function pres5() {
     z.style.display = "none";
   } else {
     z.style.display = "none";
+  }
+}
+
+function pres6() {
+  var x = document.getElementById("pres6");
+  var y = document.getElementById("abs6");
+  var z = document.getElementById("fig6");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+
+function showPDF2() {
+  // Toggle display of the PDF viewer
+  const pdfContainer = document.getElementById("pdfViewer");
+  const x = document.getElementById("fig6");
+  const y = document.getElementById("abs6");
+  const z = document.getElementById("pres6");
+
+  // Hide other elements
+  if (x) x.style.display = "none";
+  if (y) y.style.display = "none";
+  if (z) z.style.display = "none";
+
+  // Show the PDF container
+  if (pdfContainer.style.display === "block") {
+    pdfContainer.style.display = "none";
+  } else {
+    pdfContainer.style.display = "block";
+
+    // Load the PDF only when the container is made visible
+    if (!pdfContainer.dataset.loaded) {
+      loadPDF();
+      pdfContainer.dataset.loaded = "true"; // Ensure PDF is loaded only once
+    }
   }
 }
 
