@@ -462,10 +462,16 @@ details[data-for="second"][open] ~ .contents #second {
 #pdf6 {
   max-width: 1000px;
   width: 100%;
-  padding: 10px 10px;
-  aspect-ratio: 16 / 9; /* Preferred modern approach */
-  border: 1px dashed gray;
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ccc;
+  overflow: hidden; /* Hide any overflow */
+  text-align: center; /* Center align content */
 }
+
+#pdf6 canvas {
+    display: block;
+    margin: 0 auto; /* Center the canvas */
+  }
 
 button {
     font-size: 1rem;
