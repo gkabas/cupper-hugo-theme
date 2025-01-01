@@ -288,6 +288,30 @@ details[data-for="second"][open] ~ .contents #second {
   border: 1px dashed gray;
 }
 
+#abs6 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#abs7 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
 #fig1 {
   max-width: 1000px;
   padding: 10px 0;
@@ -325,6 +349,24 @@ details[data-for="second"][open] ~ .contents #second {
 }
 
 #fig5 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#fig6 {
+  max-width: 1000px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+#fig7 {
   max-width: 1000px;
   padding: 10px 0;
   text-align: left;
@@ -382,6 +424,30 @@ details[data-for="second"][open] ~ .contents #second {
 }
 
 #pres5 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#pres6 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: 1000px;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#pres7 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 0.85rem;
   max-width: 1000px;
