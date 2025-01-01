@@ -1,7 +1,7 @@
 ### Files 
 <u>[SEA-Luzern](https://gkabas.netlify.app/files/ETS.pdf)</u> <br>
 
-<button id="main-results-fig6" onclick="abs6()">Abstract</button> <button id="main-results-res6" onclick="showPDF2()">Main Results</button> <button id="main-results-pres6" onclick="pres6()">Presentations</button> <buttonSSRN onclick="ssrn6()">SSRN</buttonSSRN>
+<button id="main-results-fig6" onclick="abs6()">Abstract</button> <button id="main-results-res6" onclick="showPDF6()">Main Results</button> <button id="main-results-pres6" onclick="pres6()">Presentations</button> <buttonSSRN onclick="ssrn6()">SSRN</buttonSSRN>
 <buttonPDF onclick="pdf6()">PDF</buttonPDF>
 
 <div id="abs6"><TT>
@@ -28,13 +28,13 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
 
-<button id="main-results-fig7" onclick="abs7()">Abstract</button> <button id="main-results-res7" onclick="fig7()">Main Results</button> <button id="main-results-pres7" onclick="pres7()">Presentations</button> <buttonPDF onclick="pdf7()">PDF</buttonPDF> <buttonSSRN onclick="ssrn7()">SSRN</buttonSSRN> 
+<button id="main-results-fig7" onclick="abs7()">Abstract</button> <button id="main-results-res7" onclick="showPDF7()">Main Results</button> <button id="main-results-pres7" onclick="pres7()">Presentations</button> <buttonPDF onclick="pdf7()">PDF</buttonPDF> <buttonSSRN onclick="ssrn7()">SSRN</buttonSSRN> 
 
 <div id="abs7"><TT>
 Does household leverage matter for workers' job search, matching in the labor market, and wages? We answer this question by exploiting the introduction of a macroprudential borrowing restriction that exogenously reduces household leverage in Norway. We study homeowners who lose their jobs and find that a reduction in leverage raises wages by 3.3 percentage points after unemployment. The restriction of leverage enables workers to search longer for jobs, and thereby find positions in firms that pay higher wage premia and switch to new occupations and industries. We observe no evidence that greater use of credit during unemployment drives the extended job search. The positive effect on wages is persistent and more pronounced for workers who are more likely to benefit from improved job search, such as young people. Our findings contribute to the debate on the costs and benefits of policies that constrain household leverage and show that such policies, while primarily aiming at enhancing financial stability, have other positive effects, such as improved labor market outcomes.</TT>
 </div>
 
-<div id="pdf7" style="width:50%; height:auto; border:1px solid #ccc;"></div>
+<div id="pdf7" style="width:80%; height:auto; border:1px solid #ccc;"></div>
 <script type="module">
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
