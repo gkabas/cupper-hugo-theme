@@ -13,7 +13,7 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
 </div>
 
 
-<div id="pdf6" style="max-width: 1000px; height:auto; border:1px solid #ccc;"></div>
+<div id="pdf6"></div>
 <script type="module">
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
