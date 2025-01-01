@@ -189,6 +189,25 @@ function abs6() {
      }
 }
 
+function abs7() {
+  var x = document.getElementById("abs7");
+  var y = document.getElementById("pdf7");
+  var z = document.getElementById("pres7");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+     }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+     }
+}
+
 
 function fig1() {
   var x = document.getElementById("fig1");
@@ -300,6 +319,28 @@ function fig6() {
   var x = document.getElementById("pdf6");
   var y = document.getElementById("abs6");
   var z = document.getElementById("pres6");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+
+
+function fig7() {
+  var x = document.getElementById("pdf7");
+  var y = document.getElementById("abs7");
+  var z = document.getElementById("pres7");
    if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -442,6 +483,27 @@ function pres6() {
   }
 }
 
+function pres7() {
+  var x = document.getElementById("pres7");
+  var y = document.getElementById("abs7");
+  var z = document.getElementById("pdf7");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "none";
+  }
+}
+
 function showPDF2() {
   // Toggle display of the PDF viewer
   var x = document.getElementById("pdf6");
@@ -501,6 +563,11 @@ function updateButtonText() {
       smallText: "Abs.",
       largeText: "Abstract",
     },
+     {
+      id: "main-results-fig7",
+      smallText: "Abs.",
+      largeText: "Abstract",
+    },
     {
       id: "main-results-res1",
       smallText: "Results",
@@ -532,6 +599,11 @@ function updateButtonText() {
       largeText: "Main Results",
     },
     {
+      id: "main-results-res7",
+      smallText: "Results",
+      largeText: "Main Results",
+    },
+    {
       id: "main-results-pres1",
       smallText: "Pres.",
       largeText: "Presentations",
@@ -558,6 +630,11 @@ function updateButtonText() {
     },
      {
       id: "main-results-pres6",
+      smallText: "Pres.",
+      largeText: "Presentations",
+    },
+    {
+      id: "main-results-pres7",
       smallText: "Pres.",
       largeText: "Presentations",
     },
