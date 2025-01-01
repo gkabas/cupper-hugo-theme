@@ -606,6 +606,6 @@ img {
 
   @media (min-width: 768px) {
     #pdfViewer canvas {
-      max-width: 40%; /* Smaller width for larger screens */
+      max-width: 60%; /* Smaller width for larger screens */
     }
 
