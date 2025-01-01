@@ -188,22 +188,20 @@ function abs6() {
 }
 
 function abs7() {
-  var x = document.getElementById("abs7");
-  var y = document.getElementById("pdf7");
-  var z = document.getElementById("pres7");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  const absContainer = document.getElementById("abs7");
+  const pdfContainer = document.getElementById("pdf7");
+  const presContainer = document.getElementById("pres7");
+  const navContainer = document.getElementById("pdf-navigation7");
+
+  // Toggle Abstract visibility
+  if (absContainer.style.display === "block") {
+    absContainer.style.display = "none";
   } else {
-    x.style.display = "block";
+    absContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-     }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-     }
 }
 
 
@@ -461,55 +459,68 @@ function pres5() {
 }
 
 function pres6() {
-  var x = document.getElementById("pres6");
-  var y = document.getElementById("abs6");
-  var z = document.getElementById("pdf6");
-   if (x.style.display === "block") {
-    x.style.display = "none";
+  const presContainer = document.getElementById("pres6");
+  const pdfContainer = document.getElementById("pdf6");
+  const absContainer = document.getElementById("abs6");
+  const navContainer = document.getElementById("pdf-navigation6");
+
+  // Toggle Abstract visibility
+  if (presContainer.style.display === "block") {
+    presContainer.style.display = "none";
   } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
+    absContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
 
-function pres7() {
-  var x = document.getElementById("pres7");
-  var y = document.getElementById("abs7");
-  var z = document.getElementById("pdf7");
-   if (x.style.display === "block") {
-    x.style.display = "none";
+function pres6() {
+  const presContainer = document.getElementById("pres6");
+  const pdfContainer = document.getElementById("pdf6");
+  const absContainer = document.getElementById("abs6");
+  const navContainer = document.getElementById("pdf-navigation6");
+
+  // Toggle Abstract visibility
+  if (presContainer.style.display === "block") {
+    presContainer.style.display = "none";
   } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
+    absContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
 
+// This function turns off all buttons at the beginning
 function initializeDisplay() {
+  document.getElementById("abs1").style.display = "none";
+  document.getElementById("pdf1").style.display = "none";
+  document.getElementById("pres1").style.display = "none";
+  document.getElementById("pdf-navigation1").style.display = "none";
+  document.getElementById("abs2").style.display = "none";
+  document.getElementById("pdf2").style.display = "none";
+  document.getElementById("pres2").style.display = "none";
+  document.getElementById("pdf-navigation2").style.display = "none";
+  document.getElementById("abs3").style.display = "none";
+  document.getElementById("pdf3").style.display = "none";
+  document.getElementById("pres3").style.display = "none";
+  document.getElementById("pdf-navigation3").style.display = "none";
+  document.getElementById("abs4").style.display = "none";
+  document.getElementById("pdf4").style.display = "none";
+  document.getElementById("pres4").style.display = "none";
+  document.getElementById("pdf-navigation4").style.display = "none";
+  document.getElementById("abs5").style.display = "none";
+  document.getElementById("pdf5").style.display = "none";
+  document.getElementById("pres5").style.display = "none";
+  document.getElementById("pdf-navigation5").style.display = "none";
   document.getElementById("abs6").style.display = "none";
   document.getElementById("pdf6").style.display = "none";
   document.getElementById("pres6").style.display = "none";
+  document.getElementById("pdf-navigation6").style.display = "none";
   document.getElementById("abs7").style.display = "none";
   document.getElementById("pdf7").style.display = "none";
-  document.getElementById("pres7").style.display = "none";
-  document.getElementById("pdf-navigation6").style.display = "none";
+  document.getElementById("pres7").style.display = "none";  
 }
 
 // This part onwards is for the Main Results button with PDFs
