@@ -7,8 +7,8 @@
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
 </div>
-<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-<script src="https://mozilla.github.io/pdf.js/build/pdf.worker.js"></script>
+<script src="static/js/pdfjs/pdf.mjs"></script>
+<script src="static/js/pdfjs/pdf.worker.mjs"></script>
 <script>
   const url = 'https://gazikabas.netlify.app/files/presentation.pdf'; // Update this URL
   const pdfViewer = document.getElementById('pdfViewer');
@@ -65,6 +65,6 @@
   };
 
   pdfjsLib.GlobalWorkerOptions.workerSrc =
-    'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+    'static/js/pdfjs/pdf.worker.mjs';
   loadPDF();
 </script>
