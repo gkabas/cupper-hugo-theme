@@ -463,7 +463,7 @@ details[data-for="second"][open] ~ .contents #second {
   max-width: 1000px;
   width: 100%;
   height: auto; /* Maintain aspect ratio */
-  border: 1px solid #ccc;
+  border: 1px dashed gray;
   overflow: hidden; /* Hide any overflow */
   text-align: center; /* Center align content */
 }
