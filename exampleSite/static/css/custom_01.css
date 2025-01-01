@@ -462,8 +462,9 @@ details[data-for="second"][open] ~ .contents #second {
 #pdf6 {
   max-width: 1000px;
   width: 100%;
+  padding: 10px 10px;
   aspect-ratio: 16 / 9; /* Preferred modern approach */
-  border: 1px solid #ccc;
+  border: 1px dashed gray;
 }
 
 button {
@@ -670,15 +671,15 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
-#pdfViewer canvas {
-    max-width: 90%; /* Full width for smaller screens */
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
+/* #pdfViewer canvas {
+/*    max-width: 90%; /* Full width for smaller screens */
+/*    height: auto;
+/*    margin: 0 auto;
+/*    display: block;
+/* }
 
-  @media (min-width: 768px) {
-    #pdfViewer canvas {
-      max-width: 90%; /* Smaller width for larger screens */
-    }
+/* @media (min-width: 768px) {
+/*    #pdfViewer canvas {
+/*      max-width: 90%; /* Smaller width for larger screens */
+/*    }
 
