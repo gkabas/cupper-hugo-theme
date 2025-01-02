@@ -459,7 +459,7 @@ details[data-for="second"][open] ~ .contents #second {
   border: 1px dashed gray;
 }
 
-#pdf6 {
+#pdf4 {
   max-width: 1000px;
   width: 100%;
   height: auto; /* Maintain aspect ratio */
@@ -469,14 +469,14 @@ details[data-for="second"][open] ~ .contents #second {
   position: relative; /* Set relative positioning for child elements */
 }
 
-#pdf6 canvas {
+#pdf4 canvas {
   max-width: 100%; /* Ensure canvas fits within the container */
   height: auto;     /* Maintain aspect ratio */
   display: block;
   margin: 0 auto; /* Center align canvas */
 }
 
-#pdf-navigation6 {
+#pdf-navigation4 {
   position: relative; /* Position navigation buttons absolutely within #pdf6 */
   bottom: -10px; /* Adjust this value to control vertical placement */
   left: min(500px, 50%);; /* Center horizontally */
@@ -487,7 +487,7 @@ details[data-for="second"][open] ~ .contents #second {
   margin-top: 10px; /* Space between canvas and buttons */
 }
 
-#pdf-navigation6 button {
+#pdf-navigation4 button {
   margin: 0 10px; /* Add spacing between the buttons */
   font-size: 1rem;
   border-radius: 0.03em;
@@ -503,7 +503,7 @@ details[data-for="second"][open] ~ .contents #second {
   transition: 0.3s;
 }
 
-#pdf-navigation6 button:hover {
+#pdf-navigation4 button:hover {
   color: #fff;
   background-color: #001F3F;
 }
