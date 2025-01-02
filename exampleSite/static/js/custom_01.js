@@ -516,8 +516,9 @@ function pres7() {
   }
 }
 
-
+//////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
+// Copy paste the part between the comments for a new paper
 let pdfDoc = null; // Holds the PDF document
 let pageNum = 1; // Start with the first page
 let pageCount = 0; // Total number of pages in the PDF
@@ -528,7 +529,7 @@ function loadPDF6() {
 
   // Render a specific page
   const renderPage = (num) => {
-    pdfDoc.getPage(num).then((page) => {
+    .getPage(num).then((page) => {
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
 
@@ -567,7 +568,7 @@ function loadPDF6() {
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise
     .then((pdf) => {
-      pdfDoc = pdf;
+       = pdf;
       pageCount = pdf.numPages; // Set total number of slides
       renderPage(pageNum); // Render the first slide
     })
@@ -654,7 +655,151 @@ function loadSlide6() {
     pdfViewer.innerHTML = "<p>Error rendering this slide.</p>";
   });
 }
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
+
+//////////////////////////////////////////////////////////////
+// This part onwards is for the Main Results button with PDFs
+// Copy paste the part between the comments for a new paper
+let pdfDoc = null; // Holds the PDF document
+let pageNum = 1; // Start with the first page
+let pageCount = 0; // Total number of pages in the PDF
+
+function loadPDF7() {
+  const url = "https://gazikabas.netlify.app/files/ETS_2.pdf"; // PDF URL
+  const pdfViewer = document.getElementById("pdf7");
+
+  // Render a specific page
+  const renderPage = (num) => {
+    .getPage(num).then((page) => {
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+
+      // Get the container's width
+      const containerWidth = pdfViewer.offsetWidth;
+
+      // Calculate scale based on container width
+      const viewport = page.getViewport({ scale: 1 });
+      const scale = containerWidth / viewport.width;
+
+      // Apply the scale
+      const scaledViewport = page.getViewport({ scale });
+
+      // Set canvas dimensions
+      canvas.width = scaledViewport.width;
+      canvas.height = scaledViewport.height;
+
+      // Clear previous slide and append canvas
+      pdfViewer.innerHTML = ""; // Clear the viewer
+      pdfViewer.appendChild(canvas);
+
+      // Render the page on the canvas
+      const renderContext = {
+        canvasContext: context,
+        viewport: scaledViewport,
+      };
+
+      page.render(renderContext);
+    }).catch((error) => {
+      console.error("Error rendering page:", error);
+      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+    });
+  };
+
+  // Load the PDF
+  const loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise
+    .then((pdf) => {
+       = pdf;
+      pageCount = pdf.numPages; // Set total number of slides
+      renderPage(pageNum); // Render the first slide
+    })
+    .catch((error) => {
+      console.error("Error loading PDF:", error);
+      pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+    });
+}
+
+function showPDFWithSlides7() {
+  const pdfContainer = document.getElementById("pdf7");
+  const navContainer = document.getElementById("pdf-navigation7");
+  const absContainer = document.getElementById("abs7");
+  const presContainer = document.getElementById("pres7");
+
+  // Hide other sections
+  absContainer.style.display = "none";
+  presContainer.style.display = "none";
+
+  // Toggle PDF container visibility
+  if (pdfContainer.style.display === "block") {
+    pdfContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
+  } else {
+    pdfContainer.style.display = "block";
+    navContainer.style.display = "flex"; // Show navigation buttons
+
+    // Load PDF only if not already loaded
+    if (!pdfContainer.dataset.loaded) {
+      loadPDF7(); // Call the function to load the PDF
+      pdfContainer.dataset.loaded = "true";
+    }
+  }
+}
+
+function nextSlide7() {
+  if (pageNum < pageCount) {
+    pageNum++;
+    loadSlide7();
+  }
+}
+
+function prevSlide7() {
+  if (pageNum > 1) {
+    pageNum--;
+    loadSlide7();
+  }
+}
+
+function loadSlide7() {
+  const pdfViewer = document.getElementById("pdf7");
+
+  pdfDoc.getPage(pageNum).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    // Get the container's width
+    const containerWidth = pdfViewer.offsetWidth;
+
+    // Calculate scale based on container width
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = containerWidth / viewport.width;
+
+    // Apply the scale
+    const scaledViewport = page.getViewport({ scale });
+
+    // Set canvas dimensions
+    canvas.width = scaledViewport.width;
+    canvas.height = scaledViewport.height;
+
+    // Clear previous slide and append canvas
+    pdfViewer.innerHTML = ""; // Clear the viewer
+    pdfViewer.appendChild(canvas);
+
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering slide:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this slide.</p>";
+  });
+}
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 function showPDF7() {
   const pdfContainer = document.getElementById("pdf7");
