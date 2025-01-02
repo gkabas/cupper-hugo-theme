@@ -521,13 +521,13 @@ function pres7() {
 // Copy-paste the part between the comments for a new paper
 
 // Variables for first PDF
-let pdfDoc6 = null; // Holds the PDF document
-let pageNum6 = 1; // Start with the first page
-let pageCount6 = 0; // Total number of pages in the PDF
+let pdfDoc4 = null; // Holds the PDF document
+let pageNum4 = 1; // Start with the first page
+let pageCount4 = 0; // Total number of pages in the PDF
 
-function loadPDF6() {
-  const url = "https://gazikabas.netlify.app/files/ETS.pdf";
-  const pdfViewer = document.getElementById("pdf6");
+function loadPDF4() {
+  const url = "https://gazikabas.netlify.app/files/DKO.pdf";
+  const pdfViewer = document.getElementById("pdf4");
 
   const renderPage = (num) => {
     pdfDoc6.getPage(num).then((page) => {
@@ -559,9 +559,9 @@ function loadPDF6() {
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
-    pdfDoc6 = pdf;
-    pageCount6 = pdf.numPages;
-    renderPage(pageNum6);
+    pdfDoc4 = pdf;
+    pageCount4 = pdf.numPages;
+    renderPage(pageNum4);
   }).catch((error) => {
     console.error("Error loading PDF:", error);
     pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
@@ -570,11 +570,11 @@ function loadPDF6() {
 
 
 // Functions to toggle and navigate Cluster 6 PDF
-function showPDFWithSlides6() {
-  const pdfContainer = document.getElementById("pdf6");
-  const navContainer = document.getElementById("pdf-navigation6");
-  const absContainer = document.getElementById("abs6");
-  const presContainer = document.getElementById("pres6");
+function showPDFWithSlides4() {
+  const pdfContainer = document.getElementById("pdf4");
+  const navContainer = document.getElementById("pdf-navigation4");
+  const absContainer = document.getElementById("abs4");
+  const presContainer = document.getElementById("pres4");
 
   if (pdfContainer.style.display === "block") {
     pdfContainer.style.display = "none";
@@ -591,24 +591,24 @@ function showPDFWithSlides6() {
   }
 }
 
-function nextSlide6() {
-  if (pageNum6 < pageCount6) {
-    pageNum6++;
-    loadPDF6();
+function nextSlide4() {
+  if (pageNum4 < pageCount4) {
+    pageNum4++;
+    loadPDF4();
   }
 }
 
-function prevSlide6() {
-  if (pageNum6 > 1) {
-    pageNum6--;
-    loadPDF6();
+function prevSlide4() {
+  if (pageNum4 > 1) {
+    pageNum4--;
+    loadPDF4();
   }
 }
 
-function loadSlide6() {
-  const pdfViewer = document.getElementById("pdf6");
+function loadSlide4() {
+  const pdfViewer = document.getElementById("pdf4");
 
-  pdfDoc6.getPage(pageNum6).then((page) => {
+  pdfDoc4.getPage(pageNum4).then((page) => {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
 
@@ -643,27 +643,10 @@ function loadSlide6() {
   });
 }
 
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
-function showPDF7() {
-  const pdfContainer = document.getElementById("pdf7");
-  const absContainer = document.getElementById("abs7");
-  const presContainer = document.getElementById("pres7");
-
-  // Toggle PDF container visibility
-  if (pdfContainer.style.display === "block") {
-    pdfContainer.style.display = "none";
-  } else {
-    pdfContainer.style.display = "block";
-    absContainer.style.display = "none";
-    presContainer.style.display = "none";
-
-    // Load PDF only if not already loaded
-    if (!pdfContainer.dataset.loaded) {
-      loadPDF7();
-      pdfContainer.dataset.loaded = "true";
-    }
-  }
-}
 
 let pdfDoc7 = null;
 let pageNum7 = 1;
