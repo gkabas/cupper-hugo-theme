@@ -18,10 +18,6 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
   <button onclick="nextSlide6()">Next ❯</button>
   </div>
 
-<script type="module">
-  import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
-  pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
-</script>
 
 
 <br>
@@ -46,11 +42,11 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
   <button onclick="nextSlide7()">Next ❯</button>
   </div>
 
+
 <script type="module">
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
 </script>
-
 
 
 
