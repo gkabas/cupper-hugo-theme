@@ -475,14 +475,14 @@ details[data-for="second"][open] ~ .contents #second {
   margin: 0 auto; /* Center align canvas */
 }
 
-#pdf-navigation {
+#pdf-navigation6 {
   display: flex;
   justify-content: center; /* Center align buttons horizontally */
   align-items: center;
   margin-top: 10px; /* Space between canvas and buttons */
 }
 
-#pdf-navigation button {
+#pdf-navigation6 button {
   margin: 0 10px; /* Add spacing between the buttons */
   padding: 5px 15px; /* Optional: Adjust button size */
   font-size: 16px; /* Optional: Adjust font size */
