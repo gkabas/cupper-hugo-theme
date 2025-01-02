@@ -18,7 +18,7 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
 </script>
 
-<div id="pdf-navigation6" style="text-align:center; display:none; margin-top:10px;">
+<div id="pdf-navigation6">
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
 </div>
