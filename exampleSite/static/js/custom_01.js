@@ -530,7 +530,7 @@ function loadPDF4() {
   const pdfViewer = document.getElementById("pdf4");
 
   const renderPage = (num) => {
-    pdfDoc6.getPage(num).then((page) => {
+    pdfDoc4.getPage(num).then((page) => {
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
       const containerWidth = pdfViewer.offsetWidth;
