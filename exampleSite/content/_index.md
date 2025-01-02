@@ -207,51 +207,20 @@ BIS, European Finance Association, Federal Reserve Board Brownbag, Fuqua Finance
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
 
-<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="fig4()">Main Results</button> <button id="main-results-pres4" onclick="pres4()">Presentations</button> <buttonPDF onclick="pdf4()">PDF</buttonPDF> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>  
+<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="showPDFWithSlides4()">Main Results</button> <button id="main-results-pres4" onclick="pres4()">Presentations</button> <buttonPDF onclick="pdf4()">PDF</buttonPDF> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>  
 
 <div id="abs4"><TT>
 Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging.</TT>
 </div>
 
-<div id="fig4">
-<div class="slideshow-container">
-
-<div class="mySlides4">
-  <div class="numbertext">1 / 4</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DKO_Table1.jpg" style="width:100%">
-  </div>
-
-<div class="mySlides4">
-  <div class="numbertext">2 / 4</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DKO_Figure1.jpg" style="width:100%">
- </div>
-
-<div class="mySlides4">
-  <div class="numbertext">3 / 4</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DKO_Table2.jpg" style="width:100%">
- </div>
-
- <div class="mySlides4">
-  <div class="numbertext">4 / 4</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/DKO_Table3.jpg" style="width:100%">
- </div>
-
-<a class="prev" onclick="plusSlides(-1, 3)">❮</a>
-<a class="next" onclick="plusSlides(1, 3)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1, mySlides4)"></span> 
-  <span class="dot" onclick="currentSlide(2, mySlides4)"></span> 
-  <span class="dot" onclick="currentSlide(3, mySlides4)"></span> 
-  <span class="dot" onclick="currentSlide(4, mySlides4)"></span> 
-</div>
-</div>
-
 <div id="pres4"><TT>
  American Finance Association Annual Conference, Financial Intermediation Research Society Conference, Western Finance Association Meeting, FDIC 20th Annual Bank Research Conference, JFI-Nova SBE Conference on Financial Intermediation and Corporate Finance, Norges Bank-CEPR Workshop on Frontier Research in Banking, ZEW Conference on Ageing and Financial Markets, Annual Meeting of the Swiss Society for Financial Market Research</TT>
+</div>
+
+<div id="pdf6"></div>
+<div id="pdf-navigation4">
+  <button onclick="prevSlide4()">❮ Previous</button>
+  <button onclick="nextSlide4()">Next ❯</button>
 </div>
 
 <div class="clear"></div>
@@ -262,3 +231,8 @@ Does population aging affect bank lending? To answer this question we exploit ge
 ## In Progress
 
 Available upon request
+
+<script type="module">
+  import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
+</script>
