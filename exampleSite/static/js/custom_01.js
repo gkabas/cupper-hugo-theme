@@ -2,6 +2,30 @@ const yourCustomFunction01 = (message) => {
   console.log(message);
 };
 
+// This function turns off all buttons at the beginning
+function initializeDisplay() {
+  const ids = [
+    "abs1", "pdf1", "pres1", "pdf-navigation1",
+    "abs2", "pdf2", "pres2", "pdf-navigation2",
+    "abs3", "pdf3", "pres3", "pdf-navigation3",
+    "abs4", "pdf4", "pres4", "pdf-navigation4",
+    "abs5", "pdf5", "pres5", "pdf-navigation5",
+    "abs6", "pdf6", "pres6", "pdf-navigation6",
+    "abs7", "pdf7", "pres7",
+  ];
+
+  ids.forEach((id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.style.display = "none";
+    }
+  });
+}
+
+// Call initializeDisplay when the page loads
+window.onload = initializeDisplay;
+
+
 function pdf1() {
     window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
     }
@@ -492,36 +516,6 @@ function pres7() {
   }
 }
 
-// This function turns off all buttons at the beginning
-function initializeDisplay() {
-  document.getElementById("abs1").style.display = "none";
-  document.getElementById("pdf1").style.display = "none";
-  document.getElementById("pres1").style.display = "none";
-  document.getElementById("pdf-navigation1").style.display = "none";
-  document.getElementById("abs2").style.display = "none";
-  document.getElementById("pdf2").style.display = "none";
-  document.getElementById("pres2").style.display = "none";
-  document.getElementById("pdf-navigation2").style.display = "none";
-  document.getElementById("abs3").style.display = "none";
-  document.getElementById("pdf3").style.display = "none";
-  document.getElementById("pres3").style.display = "none";
-  document.getElementById("pdf-navigation3").style.display = "none";
-  document.getElementById("abs4").style.display = "none";
-  document.getElementById("pdf4").style.display = "none";
-  document.getElementById("pres4").style.display = "none";
-  document.getElementById("pdf-navigation4").style.display = "none";
-  document.getElementById("abs5").style.display = "none";
-  document.getElementById("pdf5").style.display = "none";
-  document.getElementById("pres5").style.display = "none";
-  document.getElementById("pdf-navigation5").style.display = "none";
-  document.getElementById("abs6").style.display = "none";
-  document.getElementById("pdf6").style.display = "none";
-  document.getElementById("pres6").style.display = "none";
-  document.getElementById("pdf-navigation6").style.display = "none";
-  document.getElementById("abs7").style.display = "none";
-  document.getElementById("pdf7").style.display = "none";
-  document.getElementById("pres7").style.display = "none";  
-}
 
 // This part onwards is for the Main Results button with PDFs
 let pdfDoc = null; // Holds the PDF document
@@ -595,7 +589,7 @@ function showPDFWithSlides6() {
     navContainer.style.display = "none"; // Hide navigation buttons
   } else {
     pdfContainer.style.display = "block";
-    navContainer.style.display = "block"; // Show navigation buttons
+    navContainer.style.display = "flex"; // Show navigation buttons
     absContainer.style.display = "none";
     presContainer.style.display = "none";
 
@@ -724,8 +718,6 @@ function loadPDF7() {
     });
 }
 
-// Initialize displays when the page loads
-window.onload = initializeDisplay;
 
 function updateButtonText() {
   const buttons = [
