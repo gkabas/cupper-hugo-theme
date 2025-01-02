@@ -11,7 +11,7 @@ function initializeDisplay() {
     "abs4", "pdf4", "pres4", "pdf-navigation4",
     "abs5", "pdf5", "pres5", "pdf-navigation5",
     "abs6", "pdf6", "pres6", "pdf-navigation6",
-    "abs7", "pdf7", "pres7",
+    "abs7", "pdf7", "pres7", "pdf-navigation7",
   ];
 
   ids.forEach((id) => {
