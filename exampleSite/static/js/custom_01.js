@@ -573,6 +573,8 @@ function loadPDF6() {
 function showPDFWithSlides6() {
   const pdfContainer = document.getElementById("pdf6");
   const navContainer = document.getElementById("pdf-navigation6");
+  const absContainer = document.getElementById("abs6");
+  const presContainer = document.getElementById("pres6");
 
   if (pdfContainer.style.display === "block") {
     pdfContainer.style.display = "none";
@@ -580,6 +582,8 @@ function showPDFWithSlides6() {
   } else {
     pdfContainer.style.display = "block";
     navContainer.style.display = "flex";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
     if (!pdfContainer.dataset.loaded) {
       loadPDF6();
       pdfContainer.dataset.loaded = "true";
