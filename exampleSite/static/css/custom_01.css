@@ -484,8 +484,16 @@ details[data-for="second"][open] ~ .contents #second {
 
 #pdf-navigation6 button {
   margin: 0 10px; /* Add spacing between the buttons */
-  padding: 5px 15px; /* Optional: Adjust button size */
-  font-size: 16px; /* Optional: Adjust font size */
+  font-size: 1rem;
+  border-radius: 0.03em;
+  font-family: inherit;
+  background: #fefefe;
+  color: #000000;
+  padding: 0.05rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border: 1px dashed gray;
+  border-color: #001F3F;
 }
 
 button {
