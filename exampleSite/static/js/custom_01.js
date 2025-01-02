@@ -583,6 +583,10 @@ function showPDFWithSlides6() {
   const absContainer = document.getElementById("abs6");
   const presContainer = document.getElementById("pres6");
 
+  // Hide other sections
+  absContainer.style.display = "none";
+  presContainer.style.display = "none";
+
   // Toggle PDF container visibility
   if (pdfContainer.style.display === "block") {
     pdfContainer.style.display = "none";
@@ -590,8 +594,6 @@ function showPDFWithSlides6() {
   } else {
     pdfContainer.style.display = "block";
     navContainer.style.display = "flex"; // Show navigation buttons
-    absContainer.style.display = "none";
-    presContainer.style.display = "none";
 
     // Load PDF only if not already loaded
     if (!pdfContainer.dataset.loaded) {
