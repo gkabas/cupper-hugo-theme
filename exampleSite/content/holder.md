@@ -18,6 +18,14 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
   <button onclick="nextSlide()">Next ❯</button>
   </div>
 </div>
+
+<div style="width:100%; max-width:1000px; height:600px; border:1px solid #ccc; margin: auto;">
+  <iframe
+    src="/web/viewer.html?file=https://gazikabas.netlify.app/files/ETS.pdf"
+    style="width:100%; height:100%; border:none;">
+  </iframe>
+</div>
+
 <script type="module">
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
