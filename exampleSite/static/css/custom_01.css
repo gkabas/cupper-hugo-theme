@@ -496,6 +496,17 @@ details[data-for="second"][open] ~ .contents #second {
   border-color: #001F3F;
 }
 
+#pdf-navigation6 button{
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+#pdf-navigation6 button:hover {
+    color: #fff;
+    background-color: #001F3F;
+}
+
 button {
     font-size: 1rem;
     border-radius: 0.03em;
@@ -512,7 +523,7 @@ button {
 button{
   cursor: pointer;
   display: inline-block;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 button:hover {
