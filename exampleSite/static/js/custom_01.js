@@ -518,10 +518,12 @@ function pres7() {
 
 //////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
-// Copy paste the part between the comments for a new paper
-let pdfDoc = null; // Holds the PDF document
-let pageNum = 1; // Start with the first page
-let pageCount = 0; // Total number of pages in the PDF
+// Copy-paste the part between the comments for a new paper
+
+// Variables for first PDF
+let pdfDoc6 = null; // Holds the PDF document
+let pageNum6 = 1; // Start with the first page
+let pageCount6 = 0; // Total number of pages in the PDF
 
 function loadPDF6() {
   const url = "https://gazikabas.netlify.app/files/ETS.pdf"; // PDF URL
@@ -529,7 +531,7 @@ function loadPDF6() {
 
   // Render a specific page
   const renderPage = (num) => {
-    .getPage(num).then((page) => {
+    pdfDoc6.getPage(num).then((page) => { // Corrected: Added `pdfDoc6`
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
 
@@ -568,9 +570,9 @@ function loadPDF6() {
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise
     .then((pdf) => {
-       = pdf;
-      pageCount = pdf.numPages; // Set total number of slides
-      renderPage(pageNum); // Render the first slide
+      pdfDoc6 = pdf; // Assign to `pdfDoc6`
+      pageCount6 = pdf.numPages; // Set total number of slides
+      renderPage(pageNum6); // Render the first slide
     })
     .catch((error) => {
       console.error("Error loading PDF:", error);
@@ -605,15 +607,15 @@ function showPDFWithSlides6() {
 }
 
 function nextSlide6() {
-  if (pageNum < pageCount) {
-    pageNum++;
+  if (pageNum6 < pageCount6) {
+    pageNum6++;
     loadSlide6();
   }
 }
 
 function prevSlide6() {
-  if (pageNum > 1) {
-    pageNum--;
+  if (pageNum6 > 1) {
+    pageNum6--;
     loadSlide6();
   }
 }
@@ -621,7 +623,7 @@ function prevSlide6() {
 function loadSlide6() {
   const pdfViewer = document.getElementById("pdf6");
 
-  pdfDoc.getPage(pageNum).then((page) => {
+  pdfDoc6.getPage(pageNum6).then((page) => {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
 
@@ -656,15 +658,12 @@ function loadSlide6() {
   });
 }
 //////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////
+// Copy the same structure for `loadPDF7`, `showPDFWithSlides7`, etc.
 
-
-//////////////////////////////////////////////////////////////
-// This part onwards is for the Main Results button with PDFs
-// Copy paste the part between the comments for a new paper
-let pdfDoc = null; // Holds the PDF document
-let pageNum = 1; // Start with the first page
-let pageCount = 0; // Total number of pages in the PDF
+// Variables for second PDF
+let pdfDoc7 = null;
+let pageNum7 = 1;
+let pageCount7 = 0;
 
 function loadPDF7() {
   const url = "https://gazikabas.netlify.app/files/ETS_2.pdf"; // PDF URL
@@ -672,7 +671,7 @@ function loadPDF7() {
 
   // Render a specific page
   const renderPage = (num) => {
-    .getPage(num).then((page) => {
+    pdfDoc7.getPage(num).then((page) => { // Corrected: Added `pdfDoc7`
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
 
@@ -711,9 +710,9 @@ function loadPDF7() {
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise
     .then((pdf) => {
-       = pdf;
-      pageCount = pdf.numPages; // Set total number of slides
-      renderPage(pageNum); // Render the first slide
+      pdfDoc7 = pdf; // Assign to `pdfDoc7`
+      pageCount7 = pdf.numPages; // Set total number of slides
+      renderPage(pageNum7); // Render the first slide
     })
     .catch((error) => {
       console.error("Error loading PDF:", error);
@@ -748,15 +747,15 @@ function showPDFWithSlides7() {
 }
 
 function nextSlide7() {
-  if (pageNum < pageCount) {
-    pageNum++;
+  if (pageNum7 < pageCount7) {
+    pageNum7++;
     loadSlide7();
   }
 }
 
 function prevSlide7() {
-  if (pageNum > 1) {
-    pageNum--;
+  if (pageNum7 > 1) {
+    pageNum7--;
     loadSlide7();
   }
 }
@@ -764,7 +763,7 @@ function prevSlide7() {
 function loadSlide7() {
   const pdfViewer = document.getElementById("pdf7");
 
-  pdfDoc.getPage(pageNum).then((page) => {
+  pdfDoc7.getPage(pageNum7).then((page) => {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
 
