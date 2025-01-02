@@ -603,21 +603,21 @@ function showPDFWithSlides6() {
   }
 }
 
-function nextSlide() {
+function nextSlide6() {
   if (pageNum < pageCount) {
     pageNum++;
-    loadSlide();
+    loadSlide6();
   }
 }
 
-function prevSlide() {
+function prevSlide6() {
   if (pageNum > 1) {
     pageNum--;
-    loadSlide();
+    loadSlide6();
   }
 }
 
-function loadSlide() {
+function loadSlide6() {
   const pdfViewer = document.getElementById("pdf6");
 
   pdfDoc.getPage(pageNum).then((page) => {
