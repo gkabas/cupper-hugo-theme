@@ -12,12 +12,11 @@ We identify and study two mechanisms that can overturn the stabilizing effects o
 Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University, Minneapolis Fed, Philly Fed, St. Louis Fed, University of Zurich, University of Liverpool, Barcelona Summer Forum, CEMLA/Dallas Fed Financial Stability Workshop, European Economic Association Conference, Econometric Society Meetings (North America and Asian), IFABS Conference, IBEFA Summer Meeting, Leuven Summer Event, Lisbon Macro Workshop, Midwest Finance Association Conference, Money, Macro and Finance Conference, SITE Conference, Swiss Society of Economics and Statistics Conference, T2M Macro Conference, Workshop in Empirical and Theoretical Macroeconomics (King’s College London), University of St. Gallen Workshop on Macroeconomic Implications of Housing, Household Finances, and Wealth Dynamics</TT>
 </div>
 
-<div id="pdf6">
+<div id="pdf6"></div>
   <div id="pdf-navigation6">
   <button onclick="prevSlide()">❮ Previous</button>
   <button onclick="nextSlide()">Next ❯</button>
   </div>
-</div>
 
 <div style="width:100%; max-width:1000px; height:600px; border:1px solid #ccc; margin: auto;">
   <iframe
