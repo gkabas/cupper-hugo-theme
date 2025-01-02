@@ -14,8 +14,8 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
 
 <div id="pdf6"></div>
   <div id="pdf-navigation6">
-  <button onclick="prevSlide()">❮ Previous</button>
-  <button onclick="nextSlide()">Next ❯</button>
+  <button onclick="prevSlide6()">❮ Previous</button>
+  <button onclick="nextSlide6()">Next ❯</button>
   </div>
 
 <script type="module">
