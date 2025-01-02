@@ -528,7 +528,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 #pdf-navigation7 {
   position: relative; /* Position navigation buttons absolutely within #pdf6 */
-  bottom: 1px; /* Adjust this value to control vertical placement */
+  bottom: -10px; /* Adjust this value to control vertical placement */
   left: min(500px, 50%);; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for horizontal centering */
   display: flex;
