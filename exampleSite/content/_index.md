@@ -163,46 +163,25 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
 
-<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="fig3()">Main Results</button> <button id="main-results-pres3" onclick="pres3()">Presentations</button> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
+<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="showPDFWithSlides3()">Main Results</button> <button id="main-results-pres3" onclick="pres3()">Presentations</button> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
 
 <div id="abs3"><TT>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</TT>
 </div>
 
-<div id="fig3">
-<div class="slideshow-container">
-
-<div class="mySlides3">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADK_Table1.jpg" style="width:100%">
-  </div>
-
-<div class="mySlides3">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADK_Table2.jpg" style="width:100%">
- </div>
-
-<div class="mySlides3">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/ADK_Table3.jpg" style="width:100%">
- </div>
-
-<a class="prev" onclick="plusSlides(-1,2)">❮</a>
-<a class="next" onclick="plusSlides(1, 2)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1, mySlides3)"></span> 
-  <span class="dot" onclick="currentSlide(2, mySlides3)"></span> 
-  <span class="dot" onclick="currentSlide(3, mySlides3)"></span> 
-</div>
-</div>
-
 <div id="pres3"><TT>
-BIS, European Finance Association, Federal Reserve Board Brownbag, Fuqua Finance Brownbag, MoFiR Workshop on Banking, SFI Research Days, SFS Cavalcade North America, Swiss Winter Conference on Financial Intermediation, West ern Economic Association International Conference, Western Finance Association, University of Zurich</TT>
+BIS, European Finance Association, Federal Reserve Board Brownbag, Fuqua Finance Brownbag, MoFiR Workshop on Banking, SFI Research Days, SFS Cavalcade North America, Swiss Winter Conference on Financial Intermediation, Western Economic Association International Conference, Western Finance Association, University of Zurich</TT>
 </div>
+
+<div id="pdf3"></div>
+<div id="pdf-navigation3">
+  <button onclick="prevSlide3()">❮ Previous</button>
+  <button onclick="nextSlide3()">Next ❯</button>
+</div>
+
+<div class="clear"></div>
+
+
 
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
