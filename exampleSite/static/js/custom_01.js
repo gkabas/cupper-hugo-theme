@@ -156,22 +156,20 @@ function abs3() {
 
 
 function abs4() {
-  var x = document.getElementById("abs4");
-  var y = document.getElementById("fig4");
-  var z = document.getElementById("pres4");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  const absContainer = document.getElementById("abs4");
+  const pdfContainer = document.getElementById("pdf4");
+  const presContainer = document.getElementById("pres4");
+  const navContainer = document.getElementById("pdf-navigation4");
+
+  // Toggle Abstract visibility
+  if (absContainer.style.display === "block") {
+    absContainer.style.display = "none";
   } else {
-    x.style.display = "block";
+    absContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-     }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-     }
 }
 
 
@@ -440,24 +438,21 @@ function pres3() {
     z.style.display = "none";
   }
 }
+
 function pres4() {
-  var x = document.getElementById("pres4");
-  var y = document.getElementById("abs4");
-  var z = document.getElementById("fig4");
-   if (x.style.display === "block") {
-    x.style.display = "none";
+  const presContainer = document.getElementById("pres4");
+  const pdfContainer = document.getElementById("pdf4");
+  const absContainer = document.getElementById("abs4");
+  const navContainer = document.getElementById("pdf-navigation4");
+
+  // Toggle Abstract visibility
+  if (presContainer.style.display === "block") {
+    presContainer.style.display = "none";
   } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
+    presContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    absContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
 
