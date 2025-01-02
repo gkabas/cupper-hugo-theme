@@ -1,8 +1,8 @@
 ### Files 
 <u>[SEA-Luzern](https://gkabas.netlify.app/files/ETS.pdf)</u> <br>
 
-<button id="main-results-fig6" onclick="abs6()">Abstract</button> <button id="main-results-res6" onclick="showPDFWithSlides6()">Main Results</button> <button id="main-results-pres6" onclick="pres6()">Presentations</button> <buttonSSRN onclick="ssrn6()">SSRN</buttonSSRN>
-<buttonPDF onclick="pdf6()">PDF</buttonPDF>
+<button id="main-results-fig6" onclick="abs6()">Abstract</button> <button id="main-results-res6" onclick="showPDFWithSlides6()">Main Results</button> <button id="main-results-pres6" onclick="pres6()">Presentations</button> <buttonPDF onclick="pdf6()">PDF</buttonPDF> <buttonSSRN onclick="ssrn6()">SSRN</buttonSSRN>
+
 
 <div id="abs6"><TT>
 We identify and study two mechanisms that can overturn the stabilizing effects of unemployment insurance (UI) policies. First, households in economies with more generous UI reduce their precautionary savings and borrow more in the mortgage market. Second, the overall share of mortgages as well as the share of mortgages with higher loan-to-income ratios on bank balance sheets increase. As a result, both bank and household balance sheets become more vulnerable to adverse shocks, which deepens recessions. We demonstrate the importance of these channels by employing a quantitative heterogeneous-agent general equilibrium model and by providing county-level empirical evidence from the U.S. housing and mortgage markets.</TT>
@@ -37,10 +37,10 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
 </div>
 
 <div id="pdf7"></div>
-  <div id="pdf-navigation7">
+<div id="pdf-navigation7">
   <button onclick="prevSlide7()">❮ Previous</button>
   <button onclick="nextSlide7()">Next ❯</button>
-  </div>
+</div>
 
 
 <script type="module">
