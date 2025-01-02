@@ -582,8 +582,8 @@ function showPDFWithSlides6() {
   } else {
     pdfContainer.style.display = "block";
     navContainer.style.display = "flex";
-    presContainer.style.display = "none";
-    navContainer.style.display = "none"; // Hide navigation buttons
+    absContainer.style.display = "none";
+    presContainer.style.display = "none"; 
     if (!pdfContainer.dataset.loaded) {
       loadPDF6();
       pdfContainer.dataset.loaded = "true";
