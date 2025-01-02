@@ -641,13 +641,13 @@ function loadSlide6() {
 //////////////////////////////////////////////////////////////
 // Copy the same structure for `loadPDF7`, `showPDFWithSlides7`, etc.
 
-// Variables for second PDF
-let pdfDoc7 = null;
-let pageNum7 = 1;
-let pageCount7 = 0;
+// Variables for first PDF
+let pdfDoc7 = null; // Holds the PDF document
+let pageNum7 = 1; // Start with the first page
+let pageCount7 = 0; // Total number of pages in the PDF
 
 function loadPDF7() {
-  const url = "https://gazikabas.netlify.app/files/ETS_2.pdf";
+  const url = "https://gazikabas.netlify.app/files/ETS.pdf";
   const pdfViewer = document.getElementById("pdf7");
 
   const renderPage = (num) => {
@@ -689,6 +689,8 @@ function loadPDF7() {
   });
 }
 
+
+// Functions to toggle and navigate Cluster 7 PDF
 function showPDFWithSlides7() {
   const pdfContainer = document.getElementById("pdf7");
   const navContainer = document.getElementById("pdf-navigation7");
