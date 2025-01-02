@@ -580,7 +580,7 @@ function showPDFWithSlides4() {
     absContainer.style.display = "none";
     presContainer.style.display = "none"; 
     if (!pdfContainer.dataset.loaded) {
-      loadPDF6();
+      loadPDF4();
       pdfContainer.dataset.loaded = "true";
     }
   }
