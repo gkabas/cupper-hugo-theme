@@ -407,7 +407,7 @@ buttonPDF:hover {
     background-color: #38471f;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .hide-on-small-screen {
     display: none !important; /* Ensures styles are applied */
   }
@@ -516,15 +516,4 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
-/* #pdfViewer canvas {
-/*    max-width: 90%; /* Full width for smaller screens */
-/*    height: auto;
-/*    margin: 0 auto;
-/*    display: block;
-/* }
-
-/* @media (min-width: 768px) {
-/*    #pdfViewer canvas {
-/*      max-width: 90%; /* Smaller width for larger screens */
-/*    }
 
