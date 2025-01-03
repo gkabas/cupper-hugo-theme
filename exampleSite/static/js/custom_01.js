@@ -373,15 +373,16 @@ function loadPDF1() {
 
 const renderPage = (num) => {
   pdfDoc1.getPage(num).then((page) => {
-        const canvas = document.createElement("canvas");
+    const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
     
     // Get the actual width of the container (excluding menu width)
     const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on the container width
-    const viewport = page.getViewport({ scale: 1 });
-    const scale = containerWidth / viewport.width;
+    // Calculate scale based on container width
+    const baseScale = containerWidth / page.getViewport({ scale: 1 }).width;
+    // Increase the scale for better quality (e.g., 1.5 times the calculated scale)
+    const scale = baseScale * 1.5;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
