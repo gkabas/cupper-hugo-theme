@@ -228,7 +228,7 @@ details[data-for="second"][open] ~ .contents #second {
  /*   display: contents; */
  /* } */
 
-#abs1 {
+#abs1, #abs2, #abs3, #abs4, #abs5, #abs6, #abs7 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 0.85rem;
   max-width: 1000px;
@@ -240,77 +240,7 @@ details[data-for="second"][open] ~ .contents #second {
   border: 1px dashed gray;
 }
 
-#abs2 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
 
-#abs3 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#abs4 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#abs5 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#abs6 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#abs7 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
 
 #fig1 {
   max-width: 1000px;
@@ -375,7 +305,7 @@ details[data-for="second"][open] ~ .contents #second {
  display: none;
 }
 
-#pres1 {
+#pres1, #pres2, #pres3, #pres4, #pres5, #pres6, #pres7 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 0.85rem;
   max-width: 1000px;
@@ -387,79 +317,8 @@ details[data-for="second"][open] ~ .contents #second {
   border: 1px dashed gray;
 }
 
-#pres2 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
 
-#pres3 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#pres4 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#pres5 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#pres6 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#pres7 {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 0.85rem;
-  max-width: 1000px;
-  padding: 10px 10px;
-  text-align: left;
-  background-color: #white;
-  margin-top: 10px;
-  display: none;
-  border: 1px dashed gray;
-}
-
-#pdf3 {
+#pdf1, #pdf2, #pdf3, #pdf4, #pdf5, #pdf6, #pdf7 {
   max-width: 1000px;
   width: 100%;
   height: auto; /* Maintain aspect ratio */
@@ -469,15 +328,15 @@ details[data-for="second"][open] ~ .contents #second {
   position: relative; /* Set relative positioning for child elements */
 }
 
-#pdf3 canvas {
+#pdf1 canvas, #pdf2 canvas, #pdf3 canvas, #pdf4 canvas, #pdf5 canvas, #pdf6 canvas, #pdf7 canvas, {
   max-width: 100%; /* Ensure canvas fits within the container */
   height: auto;     /* Maintain aspect ratio */
   display: block;
   margin: 0 auto; /* Center align canvas */
 }
 
-#pdf-navigation3 {
-  position: relative; /* Position navigation buttons absolutely within #pdf6 */
+#pdf-navigation1, #pdf-navigation2, #pdf-navigation3, #pdf-navigation4, #pdf-navigation5, #pdf-navigation6, #pdf-navigation7, {
+  position: relative; /* Position navigation buttons absolutely within #pdf */
   bottom: -10px; /* Adjust this value to control vertical placement */
   left: min(500px, 50%);; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for horizontal centering */
@@ -487,7 +346,7 @@ details[data-for="second"][open] ~ .contents #second {
   margin-top: 10px; /* Space between canvas and buttons */
 }
 
-#pdf-navigation3 button {
+#pdf-navigation1 button, #pdf-navigation2 button, #pdf-navigation3 button, #pdf-navigation4 button, #pdf-navigation5 button, #pdf-navigation6 button, #pdf-navigation7 button, {
   margin: 0 10px; /* Add spacing between the buttons */
   font-size: 1rem;
   border-radius: 0.03em;
@@ -503,109 +362,11 @@ details[data-for="second"][open] ~ .contents #second {
   transition: 0.3s;
 }
 
-#pdf-navigation3 button:hover {
+#pdf-navigation1 button:hover, #pdf-navigation2 button:hover, #pdf-navigation3 button:hover, #pdf-navigation4 button:hover, #pdf-navigation5 button:hover, #pdf-navigation6 button:hover, #pdf-navigation7 button:hover,  {
   color: #fff;
   background-color: #001F3F;
 }
 
-#pdf4 {
-  max-width: 1000px;
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border: 1px dashed gray;
-  overflow: hidden; /* Hide any overflow */
-  text-align: center; /* Center align content */
-  position: relative; /* Set relative positioning for child elements */
-}
-
-#pdf4 canvas {
-  max-width: 100%; /* Ensure canvas fits within the container */
-  height: auto;     /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto; /* Center align canvas */
-}
-
-#pdf-navigation4 {
-  position: relative; /* Position navigation buttons absolutely within #pdf6 */
-  bottom: -10px; /* Adjust this value to control vertical placement */
-  left: min(500px, 50%);; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for horizontal centering */
-  display: flex;
-  justify-content: center; /* Center align buttons horizontally */
-  align-items: center;
-  margin-top: 10px; /* Space between canvas and buttons */
-}
-
-#pdf-navigation4 button {
-  margin: 0 10px; /* Add spacing between the buttons */
-  font-size: 1rem;
-  border-radius: 0.03em;
-  font-family: inherit;
-  background: #fefefe;
-  color: #000000;
-  padding: 0.05rem;
-  padding-left: 0.1rem;
-  padding-right: 0.1rem;
-  border: 1px dashed gray;
-  border-color: #001F3F;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#pdf-navigation4 button:hover {
-  color: #fff;
-  background-color: #001F3F;
-}
-
-
-#pdf7 {
-  max-width: 1000px;
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border: 1px dashed gray;
-  overflow: hidden; /* Hide any overflow */
-  text-align: center; /* Center align content */
-  position: relative; /* Set relative positioning for child elements */
-}
-
-#pdf7 canvas {
-  max-width: 100%; /* Ensure canvas fits within the container */
-  height: auto;     /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto; /* Center align canvas */
-}
-
-#pdf-navigation7 {
-  position: relative; /* Position navigation buttons absolutely within #pdf6 */
-  bottom: -10px; /* Adjust this value to control vertical placement */
-  left: min(500px, 50%);; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for horizontal centering */
-  display: flex;
-  justify-content: center; /* Center align buttons horizontally */
-  align-items: center;
-  margin-top: 10px; /* Space between canvas and buttons */
-}
-
-#pdf-navigation7 button {
-  margin: 0 10px; /* Add spacing between the buttons */
-  font-size: 1rem;
-  border-radius: 0.03em;
-  font-family: inherit;
-  background: #fefefe;
-  color: #000000;
-  padding: 0.05rem;
-  padding-left: 0.1rem;
-  padding-right: 0.1rem;
-  border: 1px dashed gray;
-  border-color: #001F3F;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#pdf-navigation7 button:hover {
-  color: #fff;
-  background-color: #001F3F;
-}
 
 button {
     font-size: 1rem;
