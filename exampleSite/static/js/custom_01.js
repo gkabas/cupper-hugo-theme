@@ -382,7 +382,7 @@ const renderPage = (num) => {
     // Calculate scale based on container width
     const baseScale = containerWidth / page.getViewport({ scale: 1 }).width;
     // Increase the scale for better quality (e.g., 1.5 times the calculated scale)
-    const scale = baseScale * 1.5;
+    const scale = baseScale * 2;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
