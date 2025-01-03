@@ -263,6 +263,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 #pdf1, #pdf2, #pdf3, #pdf4, #pdf5, #pdf6, #pdf7 {
   max-width: calc(1200px - 15rem);
+  margin-top: 10px;
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   border: 1px dashed gray;
@@ -286,7 +287,7 @@ details[data-for="second"][open] ~ .contents #second {
   display: flex;
   justify-content: center; /* Center align buttons horizontally */
   align-items: center;
-  margin-top: 10px; /* Space between canvas and buttons */
+  margin-top: 5px; /* Space between canvas and buttons */
   background: transparent;
   z-index: 1;
 }
