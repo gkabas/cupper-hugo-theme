@@ -63,47 +63,21 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
 
-<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="fig1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <buttonPDF onclick="pdf1()">PDF</buttonPDF> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
+<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="showPDFWithSlides1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <buttonPDF onclick="pdf1()">PDF</buttonPDF> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
 
 
 <div id="abs1"><TT>
 We document that banks react to domestic climate policy stringency by increasing cross-border lending. We use loan fixed effects to control for loan demand and an instrumental variable strategy to establish causality. Consistent with a race to the bottom, the positive effect increases as the borrower country becomes less stringent and is absent if the borrower country is more stringent. Furthermore, climate policy stringency decreases loan supply to domestic borrowers with high carbon risk while increasing loan supply to high-risk borrowers abroad. Our results suggest that cross-border lending enables lenders to exploit the lack of global coordination in climate policies.</TT>
 </div>
 
-<div id="fig1">
-<div class="slideshow-container">
-
-<div class="mySlides1">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table1.jpg" style="width:100%">
-  </div>
-
-<div class="mySlides1">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Figure1.jpg" style="width:100%">
- </div>
-
-<div class="mySlides1">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://raw.githubusercontent.com/gkabas/cupper-hugo-theme/master/static/images/BKO_Table2.jpg" style="width:100%">
- </div>
-
-<a class="prev" onclick="plusSlides(-1,0)">❮</a>
-<a class="next" onclick="plusSlides(1, 0)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1, mySlides1)"></span> 
-  <span class="dot" onclick="currentSlide(2, mySlides1)"></span> 
-  <span class="dot" onclick="currentSlide(3, mySlides1)"></span> 
-</div>
-</div>
-
-
 <div id="pres1"><TT>
 Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Central Bank,  ECB Banking Supervision Research Conference, FRBSF Climate Risks Workshop, GRASFI, NEOMA Sustainable Finance Conference, Norges Bank, SFI Research Days, SFS NA Cavalcade, SGF Conference, Western Finance Association Conference, Workshop on Environmental Finance for the Common Good at Birkbeck College, Audencia Business School, Bangor Business School, Bundesbank, ESSEC, Montpellier Business School, NTNU Business School, Reserve Bank of Australia, University of Edinburgh, University of Liverpool, University of Luxembourg, University of Manchester, University of Naples Federico II, University of New South Wales, Sydney Business School, University of Technology Sydney, University of Zurich</TT>
+</div>
+
+<div id="pdf1"></div>
+<div id="pdf-navigation1">
+  <button onclick="prevSlide1()">❮ Previous</button>
+  <button onclick="nextSlide1()">Next ❯</button>
 </div>
 
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
