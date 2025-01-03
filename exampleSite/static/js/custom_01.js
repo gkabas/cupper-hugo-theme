@@ -165,24 +165,21 @@ function abs4() {
   }
 }
 
-
 function abs5() {
-  var x = document.getElementById("abs5");
-  var y = document.getElementById("fig5");
-  var z = document.getElementById("pres5");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  const absContainer = document.getElementById("abs5");
+  const pdfContainer = document.getElementById("pdf5");
+  const presContainer = document.getElementById("pres5");
+  const navContainer = document.getElementById("pdf-navigation5");
+
+  // Toggle Abstract visibility
+  if (absContainer.style.display === "block") {
+    absContainer.style.display = "none";
   } else {
-    x.style.display = "block";
+    absContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-     }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-     }
 }
 
 function abs6() {
@@ -241,133 +238,6 @@ function fig1() {
   }
 }
 
-function fig2() {
-  var x = document.getElementById("fig2");
-  var y = document.getElementById("abs2");
-  var z = document.getElementById("pres2");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
-  }
-}
-
-function fig3() {
-  var x = document.getElementById("fig3");
-  var y = document.getElementById("abs3");
-  var z = document.getElementById("pres3");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
-  }
-}
-
-
-function fig4() {
-  var x = document.getElementById("fig4");
-  var y = document.getElementById("abs4");
-  var z = document.getElementById("pres4");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
-  }
-}
-
-function fig5() {
-  var x = document.getElementById("fig5");
-  var y = document.getElementById("abs5");
-  var z = document.getElementById("pres5");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
-  }
-}
-
-function fig6() {
-  var x = document.getElementById("pdf6");
-  var y = document.getElementById("abs6");
-  var z = document.getElementById("pres6");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
-  }
-}
-
-
-function fig7() {
-  var x = document.getElementById("pdf7");
-  var y = document.getElementById("abs7");
-  var z = document.getElementById("pres7");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
-  }
-}
 
 function pres1() {
   const presContainer = document.getElementById("pres1");
@@ -438,23 +308,19 @@ function pres4() {
 }
 
 function pres5() {
-  var x = document.getElementById("pres5");
-  var y = document.getElementById("abs5");
-  var z = document.getElementById("fig5");
-   if (x.style.display === "block") {
-    x.style.display = "none";
+  const presContainer = document.getElementById("pres5");
+  const pdfContainer = document.getElementById("pdf5");
+  const absContainer = document.getElementById("abs5");
+  const navContainer = document.getElementById("pdf-navigation5");
+
+  // Toggle Abstract visibility
+  if (presContainer.style.display === "block") {
+    presContainer.style.display = "none";
   } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
+    presContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    absContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
 
@@ -1018,6 +884,136 @@ function loadSlide4() {
 //////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////
+// This part onwards is for the Main Results button with PDFs
+// Copy-paste the part between the comments for a new paper
+
+// Variables for first PDF
+let pdfDoc5 = null; // Holds the PDF document
+let pageNum5 = 1; // Start with the first page
+let pageCount5 = 0; // Total number of pages in the PDF
+
+function loadPDF5() {
+  const url = "https://gazikabas.netlify.app/files/ADGKK.pdf";
+  const pdfViewer = document.getElementById("pdf5");
+
+  const renderPage = (num) => {
+    pdfDoc5.getPage(num).then((page) => {
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+      const containerWidth = pdfViewer.offsetWidth;
+
+      const viewport = page.getViewport({ scale: 1 });
+      const scale = containerWidth / viewport.width;
+      const scaledViewport = page.getViewport({ scale });
+
+      canvas.width = scaledViewport.width;
+      canvas.height = scaledViewport.height;
+
+      pdfViewer.innerHTML = "";
+      pdfViewer.appendChild(canvas);
+
+      const renderContext = {
+        canvasContext: context,
+        viewport: scaledViewport,
+      };
+
+      page.render(renderContext);
+    }).catch((error) => {
+      console.error("Error rendering page:", error);
+      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+    });
+  };
+
+  const loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise.then((pdf) => {
+    pdfDoc5 = pdf;
+    pageCount5 = pdf.numPages;
+    renderPage(pageNum5);
+  }).catch((error) => {
+    console.error("Error loading PDF:", error);
+    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+  });
+}
+
+
+// Functions to toggle and navigate Cluster 6 PDF
+function showPDFWithSlides5() {
+  const pdfContainer = document.getElementById("pdf5");
+  const navContainer = document.getElementById("pdf-navigation5");
+  const absContainer = document.getElementById("abs5");
+  const presContainer = document.getElementById("pres5");
+
+  if (pdfContainer.style.display === "block") {
+    pdfContainer.style.display = "none";
+    navContainer.style.display = "none";
+  } else {
+    pdfContainer.style.display = "block";
+    navContainer.style.display = "flex";
+    absContainer.style.display = "none";
+    presContainer.style.display = "none"; 
+    if (!pdfContainer.dataset.loaded) {
+      loadPDF5();
+      pdfContainer.dataset.loaded = "true";
+    }
+  }
+}
+
+function nextSlide5() {
+  if (pageNum5 < pageCount5) {
+    pageNum5++;
+    loadPDF5();
+  }
+}
+
+function prevSlide5() {
+  if (pageNum5 > 1) {
+    pageNum5--;
+    loadPDF5();
+  }
+}
+
+function loadSlide5() {
+  const pdfViewer = document.getElementById("pdf5");
+
+  pdfDoc5.getPage(pageNum5).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    // Get the container's width
+    const containerWidth = pdfViewer.offsetWidth;
+
+    // Calculate scale based on container width
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = containerWidth / viewport.width;
+
+    // Apply the scale
+    const scaledViewport = page.getViewport({ scale });
+
+    // Set canvas dimensions
+    canvas.width = scaledViewport.width;
+    canvas.height = scaledViewport.height;
+
+    // Clear previous slide and append canvas
+    pdfViewer.innerHTML = ""; // Clear the viewer
+    pdfViewer.appendChild(canvas);
+
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering slide:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this slide.</p>";
+  });
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 let pdfDoc7 = null;
 let pageNum7 = 1;
