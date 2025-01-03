@@ -224,7 +224,7 @@ details[data-for="second"][open] ~ .contents #second {
 }
 
 #fig1 {
-  max-width: 1000px;
+  max-width: calc(1200px - 15rem);
   padding: 10px 0;
   text-align: left;
   background-color: white;
@@ -239,7 +239,7 @@ details[data-for="second"][open] ~ .contents #second {
 #abs1, #abs2, #abs3, #abs4, #abs5, #abs6, #abs7 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 0.85rem;
-  max-width: 1000px;
+  max-width: calc(1200px - 15rem);
   padding: 10px 10px;
   text-align: left;
   background-color: #white;
@@ -251,7 +251,7 @@ details[data-for="second"][open] ~ .contents #second {
 #pres1, #pres2, #pres3, #pres4, #pres5, #pres6, #pres7 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 0.85rem;
-  max-width: 1000px;
+  max-width: calc(1200px - 15rem);
   padding: 10px 10px;
   text-align: left;
   background-color: #white;
@@ -262,7 +262,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 
 #pdf1, #pdf2, #pdf3, #pdf4, #pdf5, #pdf6, #pdf7 {
-  max-width: calc(1000px - 15rem);
+  max-width: calc(1200px - 15rem);
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   border: 1px dashed gray;
@@ -281,7 +281,7 @@ details[data-for="second"][open] ~ .contents #second {
 #pdf-navigation1, #pdf-navigation2, #pdf-navigation3, #pdf-navigation4, #pdf-navigation5, #pdf-navigation6, #pdf-navigation7 {
   position: relative; /* Position navigation buttons absolutely within #pdf */
   bottom: -10px; /* Adjust this value to control vertical placement */
-  left: min(500px, 50%);; /* Center horizontally */
+  left: min(600px - 7.5rem, 50%);; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for horizontal centering */
   display: flex;
   justify-content: center; /* Center align buttons horizontally */
