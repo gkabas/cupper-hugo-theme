@@ -371,33 +371,42 @@ function loadPDF1() {
   const url = "https://gazikabas.netlify.app/files/BKO.pdf";
   const pdfViewer = document.getElementById("pdf1");
 
-  const renderPage = (num) => {
-    pdfDoc1.getPage(num).then((page) => {
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
-      const containerWidth = pdfViewer.offsetWidth;
+const renderPage = (num) => {
+  pdfDoc1.getPage(num).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    const containerWidth = pdfViewer.offsetWidth;
 
-      const viewport = page.getViewport({ scale: 1 });
-      const scale = containerWidth / viewport.width;
-      const scaledViewport = page.getViewport({ scale });
+    // Calculate scale based on container width and increase the quality
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
+    const scaledViewport = page.getViewport({ scale });
 
-      canvas.width = scaledViewport.width;
-      canvas.height = scaledViewport.height;
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS size
+    canvas.style.height = `${scaledViewport.height}px`; // CSS size
 
-      pdfViewer.innerHTML = "";
-      pdfViewer.appendChild(canvas);
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
 
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
 
-      page.render(renderContext);
-    }).catch((error) => {
-      console.error("Error rendering page:", error);
-      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-    });
-  };
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
@@ -503,33 +512,42 @@ function loadPDF2() {
   const url = "https://gazikabas.netlify.app/files/KR.pdf";
   const pdfViewer = document.getElementById("pdf2");
 
-  const renderPage = (num) => {
-    pdfDoc2.getPage(num).then((page) => {
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
-      const containerWidth = pdfViewer.offsetWidth;
+const renderPage = (num) => {
+  pdfDoc2.getPage(num).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    const containerWidth = pdfViewer.offsetWidth;
 
-      const viewport = page.getViewport({ scale: 1 });
-      const scale = containerWidth / viewport.width;
-      const scaledViewport = page.getViewport({ scale });
+    // Calculate scale based on container width and increase the quality
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
+    const scaledViewport = page.getViewport({ scale });
 
-      canvas.width = scaledViewport.width;
-      canvas.height = scaledViewport.height;
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS size
+    canvas.style.height = `${scaledViewport.height}px`; // CSS size
 
-      pdfViewer.innerHTML = "";
-      pdfViewer.appendChild(canvas);
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
 
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
 
-      page.render(renderContext);
-    }).catch((error) => {
-      console.error("Error rendering page:", error);
-      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-    });
-  };
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
@@ -635,33 +653,42 @@ function loadPDF3() {
   const url = "https://gazikabas.netlify.app/files/ADK.pdf";
   const pdfViewer = document.getElementById("pdf3");
 
-  const renderPage = (num) => {
-    pdfDoc3.getPage(num).then((page) => {
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
-      const containerWidth = pdfViewer.offsetWidth;
+const renderPage = (num) => {
+  pdfDoc3.getPage(num).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    const containerWidth = pdfViewer.offsetWidth;
 
-      const viewport = page.getViewport({ scale: 1 });
-      const scale = containerWidth / viewport.width;
-      const scaledViewport = page.getViewport({ scale });
+    // Calculate scale based on container width and increase the quality
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
+    const scaledViewport = page.getViewport({ scale });
 
-      canvas.width = scaledViewport.width;
-      canvas.height = scaledViewport.height;
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS size
+    canvas.style.height = `${scaledViewport.height}px`; // CSS size
 
-      pdfViewer.innerHTML = "";
-      pdfViewer.appendChild(canvas);
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
 
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
 
-      page.render(renderContext);
-    }).catch((error) => {
-      console.error("Error rendering page:", error);
-      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-    });
-  };
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
@@ -766,33 +793,42 @@ function loadPDF4() {
   const url = "https://gazikabas.netlify.app/files/DKO.pdf";
   const pdfViewer = document.getElementById("pdf4");
 
-  const renderPage = (num) => {
-    pdfDoc4.getPage(num).then((page) => {
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
-      const containerWidth = pdfViewer.offsetWidth;
+const renderPage = (num) => {
+  pdfDoc4.getPage(num).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    const containerWidth = pdfViewer.offsetWidth;
 
-      const viewport = page.getViewport({ scale: 1 });
-      const scale = containerWidth / viewport.width;
-      const scaledViewport = page.getViewport({ scale });
+    // Calculate scale based on container width and increase the quality
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
+    const scaledViewport = page.getViewport({ scale });
 
-      canvas.width = scaledViewport.width;
-      canvas.height = scaledViewport.height;
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS size
+    canvas.style.height = `${scaledViewport.height}px`; // CSS size
 
-      pdfViewer.innerHTML = "";
-      pdfViewer.appendChild(canvas);
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
 
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
 
-      page.render(renderContext);
-    }).catch((error) => {
-      console.error("Error rendering page:", error);
-      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-    });
-  };
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
@@ -897,33 +933,42 @@ function loadPDF5() {
   const url = "https://gazikabas.netlify.app/files/ADGKK.pdf";
   const pdfViewer = document.getElementById("pdf5");
 
-  const renderPage = (num) => {
-    pdfDoc5.getPage(num).then((page) => {
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
-      const containerWidth = pdfViewer.offsetWidth;
+const renderPage = (num) => {
+  pdfDoc5.getPage(num).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    const containerWidth = pdfViewer.offsetWidth;
 
-      const viewport = page.getViewport({ scale: 1 });
-      const scale = containerWidth / viewport.width;
-      const scaledViewport = page.getViewport({ scale });
+    // Calculate scale based on container width and increase the quality
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
+    const scaledViewport = page.getViewport({ scale });
 
-      canvas.width = scaledViewport.width;
-      canvas.height = scaledViewport.height;
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS size
+    canvas.style.height = `${scaledViewport.height}px`; // CSS size
 
-      pdfViewer.innerHTML = "";
-      pdfViewer.appendChild(canvas);
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
 
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
 
-      page.render(renderContext);
-    }).catch((error) => {
-      console.error("Error rendering page:", error);
-      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-    });
-  };
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
@@ -1023,33 +1068,42 @@ function loadPDF7() {
   const url = "https://gazikabas.netlify.app/files/ETS_2.pdf";
   const pdfViewer = document.getElementById("pdf7");
 
-  const renderPage = (num) => {
-    pdfDoc7.getPage(num).then((page) => {
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
-      const containerWidth = pdfViewer.offsetWidth;
+const renderPage = (num) => {
+  pdfDoc7.getPage(num).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    const containerWidth = pdfViewer.offsetWidth;
 
-      const viewport = page.getViewport({ scale: 1 });
-      const scale = containerWidth / viewport.width;
-      const scaledViewport = page.getViewport({ scale });
+    // Calculate scale based on container width and increase the quality
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
+    const scaledViewport = page.getViewport({ scale });
 
-      canvas.width = scaledViewport.width;
-      canvas.height = scaledViewport.height;
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS size
+    canvas.style.height = `${scaledViewport.height}px`; // CSS size
 
-      pdfViewer.innerHTML = "";
-      pdfViewer.appendChild(canvas);
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
 
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
 
-      page.render(renderContext);
-    }).catch((error) => {
-      console.error("Error rendering page:", error);
-      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-    });
-  };
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
