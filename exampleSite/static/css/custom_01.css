@@ -262,7 +262,7 @@ details[data-for="second"][open] ~ .contents #second {
 
 
 #pdf1, #pdf2, #pdf3, #pdf4, #pdf5, #pdf6, #pdf7 {
-  max-width: 1000px;
+  max-width: calc(1000px - 15rem);
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   border: 1px dashed gray;
