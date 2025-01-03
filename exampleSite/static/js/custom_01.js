@@ -375,35 +375,35 @@ const renderPage = (num) => {
   pdfDoc1.getPage(num).then((page) => {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-    
+
     // Get the actual width of the container (excluding menu width)
     const containerWidth = pdfViewer.getBoundingClientRect().width;
 
     // Calculate scale based on container width
-    const baseScale = containerWidth / page.getViewport({ scale: 1 }).width;
-    // Increase the scale for better quality (e.g., 1.5 times the calculated scale)
-    const scale = baseScale * 2;
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = containerWidth / viewport.width;
 
-    // Adjust for device pixel ratio
-    const devicePixelRatio = window.devicePixelRatio || 1;
-    const scaledViewport = page.getViewport({ scale });
+    // Scale for higher quality rendering
+    const enhancedScale = scale * 1.5; // Adjust multiplier for quality
+    const scaledViewport = page.getViewport({ scale: enhancedScale });
 
-    canvas.width = scaledViewport.width * devicePixelRatio;
-    canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS width
-    canvas.style.height = `${scaledViewport.height}px`; // CSS height
+    // Set canvas dimensions based on the viewport
+    canvas.width = scaledViewport.width;
+    canvas.height = scaledViewport.height;
 
-    // Set the canvas context scale for high DPI rendering
-    context.scale(devicePixelRatio, devicePixelRatio);
+    // Maintain aspect ratio using CSS dimensions
+    canvas.style.width = `${scaledViewport.width / window.devicePixelRatio}px`;
+    canvas.style.height = `${scaledViewport.height / window.devicePixelRatio}px`;
+
+    // Clear previous content and append the new canvas
+    pdfViewer.innerHTML = ""; // Clear the viewer
+    pdfViewer.appendChild(canvas);
 
     // Render the page on the canvas
     const renderContext = {
       canvasContext: context,
       viewport: scaledViewport,
     };
-
-    pdfViewer.innerHTML = ""; // Clear previous slide
-    pdfViewer.appendChild(canvas);
 
     page.render(renderContext);
   }).catch((error) => {
