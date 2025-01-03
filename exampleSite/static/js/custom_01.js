@@ -115,22 +115,20 @@ function abs1() {
 
 
 function abs2() {
-  var x = document.getElementById("abs2");
-  var y = document.getElementById("fig2");
-  var z = document.getElementById("pres2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  const absContainer = document.getElementById("abs2");
+  const pdfContainer = document.getElementById("pdf2");
+  const presContainer = document.getElementById("pres2");
+  const navContainer = document.getElementById("pdf-navigation2");
+
+  // Toggle Abstract visibility
+  if (absContainer.style.display === "block") {
+    absContainer.style.display = "none";
   } else {
-    x.style.display = "block";
+    absContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    presContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-     }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-     }
 }
 
 
@@ -395,24 +393,21 @@ function pres1() {
     z.style.display = "none";
   }
 }
+
 function pres2() {
-  var x = document.getElementById("pres2");
-  var y = document.getElementById("abs2");
-  var z = document.getElementById("fig2");
-   if (x.style.display === "block") {
-    x.style.display = "none";
+  const presContainer = document.getElementById("pres2");
+  const pdfContainer = document.getElementById("pdf2");
+  const absContainer = document.getElementById("abs2");
+  const navContainer = document.getElementById("pdf-navigation2");
+
+  // Toggle Abstract visibility
+  if (presContainer.style.display === "block") {
+    presContainer.style.display = "none";
   } else {
-    x.style.display = "block";
-  }
-   if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "none";
-  }
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "none";
+    presContainer.style.display = "block";
+    pdfContainer.style.display = "none";
+    absContainer.style.display = "none";
+    navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
 
@@ -504,6 +499,138 @@ function pres7() {
     navContainer.style.display = "none"; // Hide navigation buttons
   }
 }
+
+//////////////////////////////////////////////////////////////
+// This part onwards is for the Main Results button with PDFs
+// Copy-paste the part between the comments for a new paper
+
+// Variables for first PDF
+let pdfDoc2 = null; // Holds the PDF document
+let pageNum2 = 1; // Start with the first page
+let pageCount2 = 0; // Total number of pages in the PDF
+
+function loadPDF2() {
+  const url = "https://gazikabas.netlify.app/files/KR.pdf";
+  const pdfViewer = document.getElementById("pdf2");
+
+  const renderPage = (num) => {
+    pdfDoc2.getPage(num).then((page) => {
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+      const containerWidth = pdfViewer.offsetWidth;
+
+      const viewport = page.getViewport({ scale: 1 });
+      const scale = containerWidth / viewport.width;
+      const scaledViewport = page.getViewport({ scale });
+
+      canvas.width = scaledViewport.width;
+      canvas.height = scaledViewport.height;
+
+      pdfViewer.innerHTML = "";
+      pdfViewer.appendChild(canvas);
+
+      const renderContext = {
+        canvasContext: context,
+        viewport: scaledViewport,
+      };
+
+      page.render(renderContext);
+    }).catch((error) => {
+      console.error("Error rendering page:", error);
+      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+    });
+  };
+
+  const loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise.then((pdf) => {
+    pdfDoc2 = pdf;
+    pageCount2 = pdf.numPages;
+    renderPage(pageNum2);
+  }).catch((error) => {
+    console.error("Error loading PDF:", error);
+    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+  });
+}
+
+
+// Functions to toggle and navigate Cluster 6 PDF
+function showPDFWithSlides2() {
+  const pdfContainer = document.getElementById("pdf2");
+  const navContainer = document.getElementById("pdf-navigation2");
+  const absContainer = document.getElementById("abs2");
+  const presContainer = document.getElementById("pres2");
+
+  if (pdfContainer.style.display === "block") {
+    pdfContainer.style.display = "none";
+    navContainer.style.display = "none";
+  } else {
+    pdfContainer.style.display = "block";
+    navContainer.style.display = "flex";
+    absContainer.style.display = "none";
+    presContainer.style.display = "none"; 
+    if (!pdfContainer.dataset.loaded) {
+      loadPDF2();
+      pdfContainer.dataset.loaded = "true";
+    }
+  }
+}
+
+function nextSlide2() {
+  if (pageNum2 < pageCount2) {
+    pageNum2++;
+    loadPDF2();
+  }
+}
+
+function prevSlide2() {
+  if (pageNum2 > 1) {
+    pageNum2--;
+    loadPDF2();
+  }
+}
+
+function loadSlide2() {
+  const pdfViewer = document.getElementById("pdf2");
+
+  pdfDoc2.getPage(pageNum2).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    // Get the container's width
+    const containerWidth = pdfViewer.offsetWidth;
+
+    // Calculate scale based on container width
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = containerWidth / viewport.width;
+
+    // Apply the scale
+    const scaledViewport = page.getViewport({ scale });
+
+    // Set canvas dimensions
+    canvas.width = scaledViewport.width;
+    canvas.height = scaledViewport.height;
+
+    // Clear previous slide and append canvas
+    pdfViewer.innerHTML = ""; // Clear the viewer
+    pdfViewer.appendChild(canvas);
+
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering slide:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this slide.</p>";
+  });
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
 
 //////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
