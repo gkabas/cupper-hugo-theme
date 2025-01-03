@@ -373,21 +373,24 @@ function loadPDF1() {
 
 const renderPage = (num) => {
   pdfDoc1.getPage(num).then((page) => {
-    const canvas = document.createElement("canvas");
+        const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-    const containerWidth = pdfViewer.offsetWidth;
+    
+    // Get the actual width of the container (excluding menu width)
+    const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on container width and increase the quality
+    // Calculate scale based on the container width
     const viewport = page.getViewport({ scale: 1 });
-    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
-    const scaledViewport = page.getViewport({ scale });
+    const scale = containerWidth / viewport.width;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
+
     canvas.width = scaledViewport.width * devicePixelRatio;
     canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS size
-    canvas.style.height = `${scaledViewport.height}px`; // CSS size
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
 
     // Set the canvas context scale for high DPI rendering
     context.scale(devicePixelRatio, devicePixelRatio);
@@ -514,21 +517,24 @@ function loadPDF2() {
 
 const renderPage = (num) => {
   pdfDoc2.getPage(num).then((page) => {
-    const canvas = document.createElement("canvas");
+        const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-    const containerWidth = pdfViewer.offsetWidth;
+    
+    // Get the actual width of the container (excluding menu width)
+    const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on container width and increase the quality
+    // Calculate scale based on the container width
     const viewport = page.getViewport({ scale: 1 });
-    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
-    const scaledViewport = page.getViewport({ scale });
+    const scale = containerWidth / viewport.width;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
+
     canvas.width = scaledViewport.width * devicePixelRatio;
     canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS size
-    canvas.style.height = `${scaledViewport.height}px`; // CSS size
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
 
     // Set the canvas context scale for high DPI rendering
     context.scale(devicePixelRatio, devicePixelRatio);
@@ -655,21 +661,24 @@ function loadPDF3() {
 
 const renderPage = (num) => {
   pdfDoc3.getPage(num).then((page) => {
-    const canvas = document.createElement("canvas");
+        const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-    const containerWidth = pdfViewer.offsetWidth;
+    
+    // Get the actual width of the container (excluding menu width)
+    const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on container width and increase the quality
+    // Calculate scale based on the container width
     const viewport = page.getViewport({ scale: 1 });
-    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
-    const scaledViewport = page.getViewport({ scale });
+    const scale = containerWidth / viewport.width;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
+
     canvas.width = scaledViewport.width * devicePixelRatio;
     canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS size
-    canvas.style.height = `${scaledViewport.height}px`; // CSS size
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
 
     // Set the canvas context scale for high DPI rendering
     context.scale(devicePixelRatio, devicePixelRatio);
@@ -689,7 +698,6 @@ const renderPage = (num) => {
     pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
   });
 };
-
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
     pdfDoc3 = pdf;
@@ -795,21 +803,24 @@ function loadPDF4() {
 
 const renderPage = (num) => {
   pdfDoc4.getPage(num).then((page) => {
-    const canvas = document.createElement("canvas");
+        const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-    const containerWidth = pdfViewer.offsetWidth;
+    
+    // Get the actual width of the container (excluding menu width)
+    const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on container width and increase the quality
+    // Calculate scale based on the container width
     const viewport = page.getViewport({ scale: 1 });
-    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
-    const scaledViewport = page.getViewport({ scale });
+    const scale = containerWidth / viewport.width;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
+
     canvas.width = scaledViewport.width * devicePixelRatio;
     canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS size
-    canvas.style.height = `${scaledViewport.height}px`; // CSS size
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
 
     // Set the canvas context scale for high DPI rendering
     context.scale(devicePixelRatio, devicePixelRatio);
@@ -937,19 +948,22 @@ const renderPage = (num) => {
   pdfDoc5.getPage(num).then((page) => {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-    const containerWidth = pdfViewer.offsetWidth;
+    
+    // Get the actual width of the container (excluding menu width)
+    const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on container width and increase the quality
+    // Calculate scale based on the container width
     const viewport = page.getViewport({ scale: 1 });
-    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
-    const scaledViewport = page.getViewport({ scale });
+    const scale = containerWidth / viewport.width;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
+
     canvas.width = scaledViewport.width * devicePixelRatio;
     canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS size
-    canvas.style.height = `${scaledViewport.height}px`; // CSS size
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
 
     // Set the canvas context scale for high DPI rendering
     context.scale(devicePixelRatio, devicePixelRatio);
@@ -1070,21 +1084,24 @@ function loadPDF7() {
 
 const renderPage = (num) => {
   pdfDoc7.getPage(num).then((page) => {
-    const canvas = document.createElement("canvas");
+        const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-    const containerWidth = pdfViewer.offsetWidth;
+    
+    // Get the actual width of the container (excluding menu width)
+    const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on container width and increase the quality
+    // Calculate scale based on the container width
     const viewport = page.getViewport({ scale: 1 });
-    const scale = (containerWidth / viewport.width) * 1.5; // Increase the scale (e.g., 1.5x for sharper images)
-    const scaledViewport = page.getViewport({ scale });
+    const scale = containerWidth / viewport.width;
 
     // Adjust for device pixel ratio
     const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
+
     canvas.width = scaledViewport.width * devicePixelRatio;
     canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS size
-    canvas.style.height = `${scaledViewport.height}px`; // CSS size
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
 
     // Set the canvas context scale for high DPI rendering
     context.scale(devicePixelRatio, devicePixelRatio);
