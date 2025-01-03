@@ -375,35 +375,34 @@ const renderPage = (num) => {
   pdfDoc1.getPage(num).then((page) => {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
-
+    
     // Get the actual width of the container (excluding menu width)
     const containerWidth = pdfViewer.getBoundingClientRect().width;
 
-    // Calculate scale based on container width
+    // Calculate scale based on the container width
     const viewport = page.getViewport({ scale: 1 });
     const scale = containerWidth / viewport.width;
 
-    // Scale for higher quality rendering
-    const enhancedScale = scale * 1.5; // Adjust multiplier for quality
-    const scaledViewport = page.getViewport({ scale: enhancedScale });
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
 
-    // Set canvas dimensions based on the viewport
-    canvas.width = scaledViewport.width;
-    canvas.height = scaledViewport.height;
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
 
-    // Maintain aspect ratio using CSS dimensions
-    canvas.style.width = `${scaledViewport.width / window.devicePixelRatio}px`;
-    canvas.style.height = `${scaledViewport.height / window.devicePixelRatio}px`;
-
-    // Clear previous content and append the new canvas
-    pdfViewer.innerHTML = ""; // Clear the viewer
-    pdfViewer.appendChild(canvas);
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
 
     // Render the page on the canvas
     const renderContext = {
       canvasContext: context,
       viewport: scaledViewport,
     };
+
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
 
     page.render(renderContext);
   }).catch((error) => {
