@@ -344,6 +344,8 @@ details[data-for="second"][open] ~ .contents #second {
   justify-content: center; /* Center align buttons horizontally */
   align-items: center;
   margin-top: 10px; /* Space between canvas and buttons */
+  background: transparent;
+  z-index: 1;
 }
 
 #pdf-navigation1 button, #pdf-navigation2 button, #pdf-navigation3 button, #pdf-navigation4 button, #pdf-navigation5 button, #pdf-navigation6 button, #pdf-navigation7 button {
