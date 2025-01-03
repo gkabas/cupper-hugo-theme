@@ -414,17 +414,6 @@ const renderPage = (num) => {
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
-    pdfDoc2 = pdf;
-    pageCount2 = pdf.numPages;
-    renderPage(pageNum2);
-  }).catch((error) => {
-    console.error("Error loading PDF:", error);
-    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-  });
-}
-
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then((pdf) => {
     pdfDoc1 = pdf;
     pageCount1 = pdf.numPages;
     renderPage(pageNum1);
@@ -433,6 +422,8 @@ const renderPage = (num) => {
     pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
   });
 }
+
+
 
 
 // Functions to toggle and navigate Cluster 6 PDF
