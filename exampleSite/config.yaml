@@ -51,6 +51,10 @@ menu:
     - name: Discussions
       url: /discussions
       weight: 4
+    - name: Personal
+      url: /personal
+      weight: 5
+
 
 markup:
   defaultMarkdownHandler: goldmark
