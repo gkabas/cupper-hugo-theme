@@ -35,7 +35,7 @@ function ssrn1() {
     }
 
 function pdf2() {
-    window.open("https://gkabas.netlify.app/files/KabasRoszbach2021.pdf", "_blank");
+    window.open("https://gkabas.netlify.app/files/KabasRoszbach.pdf", "_blank");
     }
 
 function ssrn2() {
