@@ -370,38 +370,32 @@ let pageCount1 = 0; // Total number of pages in the PDF
 function loadPDF1() {
   const url = "https://gazikabas.netlify.app/files/BKO.pdf";
   const pdfViewer = document.getElementById("pdf1");
+  console.log("loadPDF1() called, pdfViewer width:", pdfViewer.getBoundingClientRect().width);
 
   const renderPage = (num) => {
     pdfDoc1.getPage(num).then((page) => {
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
       
-      // Get the actual width of the container (excluding menu width)
       const containerWidth = pdfViewer.getBoundingClientRect().width;
-  
-      // Calculate scale based on the container width
+      console.log("Container width:", containerWidth);
+      
       const viewport = page.getViewport({ scale: 1 });
       const scale = containerWidth / viewport.width;
+      console.log("Calculated scale:", scale);
   
-      // Adjust for device pixel ratio
       const devicePixelRatio = window.devicePixelRatio || 1;
       const scaledViewport = page.getViewport({ scale });
   
       canvas.width = scaledViewport.width * devicePixelRatio;
       canvas.height = scaledViewport.height * devicePixelRatio;
-      canvas.style.width = `${scaledViewport.width}px`; // CSS width
-      canvas.style.height = `${scaledViewport.height}px`; // CSS height
+      canvas.style.width = `${scaledViewport.width}px`;
+      canvas.style.height = `${scaledViewport.height}px`;
   
-      // Set the canvas context scale for high DPI rendering
       context.scale(devicePixelRatio, devicePixelRatio);
+      const renderContext = { canvasContext: context, viewport: scaledViewport };
   
-      // Render the page on the canvas
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
-  
-      pdfViewer.innerHTML = ""; // Clear previous slide
+      pdfViewer.innerHTML = ""; // Clear previous content
       pdfViewer.appendChild(canvas);
   
       page.render(renderContext);
@@ -413,9 +407,10 @@ function loadPDF1() {
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
+    console.log("PDF loaded, numPages:", pdf.numPages);
     pdfDoc1 = pdf;
     pageCount1 = pdf.numPages;
-    // Mark the container as loaded so we don't load again on button click
+    // Mark as loaded if you plan to check later
     pdfViewer.dataset.loaded = "true";
     renderPage(pageNum1);
   }).catch((error) => {
