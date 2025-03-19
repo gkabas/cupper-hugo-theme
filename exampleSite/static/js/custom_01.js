@@ -371,50 +371,52 @@ function loadPDF1() {
   const url = "https://gazikabas.netlify.app/files/BKO.pdf";
   const pdfViewer = document.getElementById("pdf1");
 
-const renderPage = (num) => {
-  pdfDoc1.getPage(num).then((page) => {
-    const canvas = document.createElement("canvas");
-    const context = canvas.getContext("2d");
-    
-    // Get the actual width of the container (excluding menu width)
-    const containerWidth = pdfViewer.getBoundingClientRect().width;
-
-    // Calculate scale based on the container width
-    const viewport = page.getViewport({ scale: 1 });
-    const scale = containerWidth / viewport.width;
-
-    // Adjust for device pixel ratio
-    const devicePixelRatio = window.devicePixelRatio || 1;
-    const scaledViewport = page.getViewport({ scale });
-
-    canvas.width = scaledViewport.width * devicePixelRatio;
-    canvas.height = scaledViewport.height * devicePixelRatio;
-    canvas.style.width = `${scaledViewport.width}px`; // CSS width
-    canvas.style.height = `${scaledViewport.height}px`; // CSS height
-
-    // Set the canvas context scale for high DPI rendering
-    context.scale(devicePixelRatio, devicePixelRatio);
-
-    // Render the page on the canvas
-    const renderContext = {
-      canvasContext: context,
-      viewport: scaledViewport,
-    };
-
-    pdfViewer.innerHTML = ""; // Clear previous slide
-    pdfViewer.appendChild(canvas);
-
-    page.render(renderContext);
-  }).catch((error) => {
-    console.error("Error rendering page:", error);
-    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
-  });
-};
+  const renderPage = (num) => {
+    pdfDoc1.getPage(num).then((page) => {
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+      
+      // Get the actual width of the container (excluding menu width)
+      const containerWidth = pdfViewer.getBoundingClientRect().width;
+  
+      // Calculate scale based on the container width
+      const viewport = page.getViewport({ scale: 1 });
+      const scale = containerWidth / viewport.width;
+  
+      // Adjust for device pixel ratio
+      const devicePixelRatio = window.devicePixelRatio || 1;
+      const scaledViewport = page.getViewport({ scale });
+  
+      canvas.width = scaledViewport.width * devicePixelRatio;
+      canvas.height = scaledViewport.height * devicePixelRatio;
+      canvas.style.width = `${scaledViewport.width}px`; // CSS width
+      canvas.style.height = `${scaledViewport.height}px`; // CSS height
+  
+      // Set the canvas context scale for high DPI rendering
+      context.scale(devicePixelRatio, devicePixelRatio);
+  
+      // Render the page on the canvas
+      const renderContext = {
+        canvasContext: context,
+        viewport: scaledViewport,
+      };
+  
+      pdfViewer.innerHTML = ""; // Clear previous slide
+      pdfViewer.appendChild(canvas);
+  
+      page.render(renderContext);
+    }).catch((error) => {
+      console.error("Error rendering page:", error);
+      pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+    });
+  };
 
   const loadingTask = pdfjsLib.getDocument(url);
   loadingTask.promise.then((pdf) => {
     pdfDoc1 = pdf;
     pageCount1 = pdf.numPages;
+    // Mark the container as loaded so we don't load again on button click
+    pdfViewer.dataset.loaded = "true";
     renderPage(pageNum1);
   }).catch((error) => {
     console.error("Error loading PDF:", error);
@@ -422,7 +424,10 @@ const renderPage = (num) => {
   });
 }
 
-
+// Preload the PDF when the DOM is ready
+document.addEventListener("DOMContentLoaded", function() {
+  loadPDF1();
+});
 
 
 // Functions to toggle and navigate Cluster 6 PDF
@@ -440,10 +445,7 @@ function showPDFWithSlides1() {
     navContainer.style.display = "flex";
     absContainer.style.display = "none";
     presContainer.style.display = "none"; 
-    if (!pdfContainer.dataset.loaded) {
-      loadPDF1();
-      pdfContainer.dataset.loaded = "true";
-    }
+    // No need to call loadPDF1() here because it is already preloaded
   }
 }
 
