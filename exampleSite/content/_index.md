@@ -1,7 +1,6 @@
 ---
 date: "2017-06-26T18:27:58+01:00"
 title: 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
 ---
 ## Working Papers 
 
