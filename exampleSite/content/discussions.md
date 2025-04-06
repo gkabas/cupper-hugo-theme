@@ -3,6 +3,13 @@ date: "2014-04-09"
 title: "Discussions"
 ---
 
+**The Impact of Climate Engagement: A Field Experiment**<br>
+by <u>Heeb</u>, <u>Kölbel</u>, <i>Swiss Society for Financial Market Research Conference</i>, April 2025
+
+<buttonPDF onclick="dis4()">Slides</buttonPDF>
+
+<br><br />
+
 **Stranded in the ICE: Bank Lending and the Transition to Electric Vehicles**<br>
 by <u>Fabiani</u>, <u>Federico</u>, <i>Durham-Bristol Banking Policy Forum</i>, October 2024
 
