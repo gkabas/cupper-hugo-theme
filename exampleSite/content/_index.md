@@ -25,8 +25,6 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
   <button onclick="nextSlide5()">Next ❯</button>
 </div>
 
-<br>
-
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
 
@@ -66,7 +64,6 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
   <button onclick="nextSlide2()">Next ❯</button>
 </div>
 
-<br><br />
 <hr class="solid">
 
  ## Publications
@@ -113,8 +110,6 @@ Does population aging affect bank lending? To answer this question we exploit ge
 </div>
 
 <div class="clear"></div>
-<br><br />
-<br><br />
 <hr class="solid">
 
 ## In Progress
