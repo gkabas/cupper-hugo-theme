@@ -8,21 +8,15 @@ by <u>Heeb</u>, <u>Kölbel</u>, <i>Swiss Society for Financial Market Research C
 
 <buttonPDF onclick="dis4()">Slides</buttonPDF>
 
-<br><br />
-
 **Stranded in the ICE: Bank Lending and the Transition to Electric Vehicles**<br>
 by <u>Fabiani</u>, <u>Federico</u>, <i>Durham-Bristol Banking Policy Forum</i>, October 2024
 
 <buttonPDF onclick="dis3()">Slides</buttonPDF>
 
-<br><br />
-
 **Bank Financing of Global Supply Chains**<br>
 by <u>Alfaro</u>, <u>Brussevich</u>, <u>Minoiu</u>, <u>Presbitero</u>, <i>Tilburg Finance Summit</i>, June 2024
 
 <buttonPDF onclick="dis2()">Slides</buttonPDF>
-
-<br><br />
 
 **Financial Constraints and Emission Intensity**<br>
 by <u>Sfrappini</u>, <i>Norges Bank Research Workshop: Women in Central Banking</i>, November 2023
