@@ -1,5 +1,5 @@
 ### Files 
-<u>[Poster](https://gkabas.netlify.app/files/TFS_2025.pdf)</u> <br>
+<u>[Slides](https://gkabas.netlify.app/files/TFS_2025.pdf)</u> <br>
 
 
 <script type="module">
