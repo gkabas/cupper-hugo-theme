@@ -98,7 +98,7 @@ function dis4() {
     window.open("https://gkabas.netlify.app/files/KabasDiscussion_SGF2025.pdf", "_blank");
     }
 
-function dis45) {
+function dis5() {
     window.open("https://gkabas.netlify.app/files/KabasDiscussion_TFS2025.pdf", "_blank");
     }
 
