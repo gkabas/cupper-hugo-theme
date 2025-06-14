@@ -2,6 +2,10 @@
 date: "2014-04-09"
 title: "Discussions"
 ---
+**The Housing Wealth Eﬀect: Quasi-Experimental Evidence**<br>
+by <u>Bojeryd</u>, <u>Tyrefors</u>, <u>Vestman</u>, <u>Kessel</u>, <i>Tilburg Finance Summit</i>, June 2025
+
+<buttonPDF onclick="dis5()">Slides</buttonPDF>
 
 **The Impact of Climate Engagement: A Field Experiment**<br>
 by <u>Heeb</u>, <u>Kölbel</u>, <i>Swiss Society for Financial Market Research Conference</i>, April 2025
