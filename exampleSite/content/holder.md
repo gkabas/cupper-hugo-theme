@@ -1,5 +1,5 @@
 ### Files 
-<u>[DESIGN](https://gkabas.netlify.app/files/Design.pdf)</u> <br>
+<u>[DESIGN](https://gkabas.netlify.app/files/Discussions.pdf)</u> <br>
 
 
 <script type="module">
