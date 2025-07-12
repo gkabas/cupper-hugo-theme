@@ -102,6 +102,10 @@ function dis5() {
     window.open("https://gkabas.netlify.app/files/KabasDiscussion_TFS2025.pdf", "_blank");
     }
 
+function dis6() {
+    window.open("https://gkabas.netlify.app/files/KabasDiscussion_RSCF2025.pdf", "_blank");
+    }
+
 function abs1() {
   const absContainer = document.getElementById("abs1");
   const pdfContainer = document.getElementById("pdf1");
