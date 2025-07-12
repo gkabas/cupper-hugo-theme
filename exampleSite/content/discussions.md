@@ -2,6 +2,11 @@
 date: "2014-04-09"
 title: "Discussions"
 ---
+**Big Bad Banks? Shock Propagation When Workers and Firms Share the Same Bank**<br>
+by <u>Huylebroek</u>, <u>Cao</u>, <i>Rising Scholar Conference on Finance</i>, July 2025
+
+<buttonPDF onclick="dis6()">Slides</buttonPDF>
+
 **The Housing Wealth Eﬀect: Quasi-Experimental Evidence**<br>
 by <u>Bojeryd</u>, <u>Tyrefors</u>, <u>Vestman</u>, <u>Kessel</u>, <i>Tilburg Finance Summit</i>, June 2025
 
