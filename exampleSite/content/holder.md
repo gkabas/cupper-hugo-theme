@@ -1,5 +1,6 @@
 ### Files 
-<u>[Slides](https://gkabas.netlify.app/files/Discussions.pdf)</u> <br>
+<u>[Slides](https://gkabas.netlify.app/files/Kabas.pdf)</u> <br>
+<u>[Slides](https://gkabas.netlify.app/files/Kabas_discussion.pdf)</u> <br>
 
 
 <script type="module">
