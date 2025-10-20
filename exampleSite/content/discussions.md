@@ -2,6 +2,11 @@
 date: "2014-04-09"
 title: "Discussions"
 ---
+**House on Fire: Climate Risk, Mortgages, and Monetary Policy**<br>
+by <u>Bonfim</u>, <u>Zhao</u>, <i>International Banking Research Network Workshop</i>, October 2025
+
+<buttonPDF onclick="dis7()">Slides</buttonPDF>
+
 **Big Bad Banks? Shock Propagation When Workers and Firms Share the Same Bank**<br>
 by <u>Huylebroek</u>, <u>Cao</u>, <i>Rising Scholar Conference on Finance</i>, July 2025
 
