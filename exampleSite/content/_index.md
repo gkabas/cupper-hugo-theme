@@ -64,8 +64,10 @@ Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Centr
   <button onclick="nextSlide1()">Next ❯</button>
 </div>
 
+<div class="clear"></div>
 <br><br />
 <hr class="solid">
+
  ## Publications
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
