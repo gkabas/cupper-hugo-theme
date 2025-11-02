@@ -43,10 +43,8 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
   <button onclick="prevSlide2()">❮ Previous</button>
   <button onclick="nextSlide2()">Next ❯</button>
 </div>
-<br><br />
-<hr class="solid">
 
-**"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br> R&R@Management Science
+**"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br> R&R@<i>Management Science</i> 
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
 
 <button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="showPDFWithSlides1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <buttonPDF onclick="pdf1()">PDF</buttonPDF> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
@@ -66,6 +64,8 @@ Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Centr
   <button onclick="nextSlide1()">Next ❯</button>
 </div>
 
+<br><br />
+<hr class="solid">
  ## Publications
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
