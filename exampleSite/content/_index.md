@@ -25,26 +25,6 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
   <button onclick="nextSlide5()">Next ❯</button>
 </div>
 
-**"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br>
-with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
-
-<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="showPDFWithSlides1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <buttonPDF onclick="pdf1()">PDF</buttonPDF> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
-
-
-<div id="abs1"><TT>
-We document that banks react to domestic climate policy stringency by increasing cross-border lending. We use loan fixed effects to control for loan demand and an instrumental variable strategy to establish causality. Consistent with a race to the bottom, the positive effect increases as the borrower country becomes less stringent and is absent if the borrower country is more stringent. Furthermore, climate policy stringency decreases loan supply to domestic borrowers with high carbon risk while increasing loan supply to high-risk borrowers abroad. Our results suggest that cross-border lending enables lenders to exploit the lack of global coordination in climate policies.</TT>
-</div>
-
-<div id="pres1"><TT>
-Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Central Bank,  ECB Banking Supervision Research Conference, FRBSF Climate Risks Workshop, GRASFI, NEOMA Sustainable Finance Conference, Norges Bank, SFI Research Days, SFS NA Cavalcade, SGF Conference, Western Finance Association Conference, Workshop on Environmental Finance for the Common Good at Birkbeck College, Audencia Business School, Bangor Business School, Bundesbank, ESSEC, Montpellier Business School, NTNU Business School, Reserve Bank of Australia, University of Edinburgh, University of Liverpool, University of Luxembourg, University of Manchester, University of Naples Federico II, University of New South Wales, Sydney Business School, University of Technology Sydney, University of Zurich</TT>
-</div>
-
-<div id="pdf1"></div>
-<div id="pdf-navigation1">
-  <button onclick="prevSlide1()">❮ Previous</button>
-  <button onclick="nextSlide1()">Next ❯</button>
-</div>
-
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
 
@@ -65,6 +45,26 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
 </div>
 <br><br />
 <hr class="solid">
+
+**"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br> R&R@Management Science
+with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u> 
+
+<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="showPDFWithSlides1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <buttonPDF onclick="pdf1()">PDF</buttonPDF> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
+
+
+<div id="abs1"><TT>
+We document that banks react to domestic climate policy stringency by increasing cross-border lending. We use loan fixed effects to control for loan demand and an instrumental variable strategy to establish causality. Consistent with a race to the bottom, the positive effect increases as the borrower country becomes less stringent and is absent if the borrower country is more stringent. Furthermore, climate policy stringency decreases loan supply to domestic borrowers with high carbon risk while increasing loan supply to high-risk borrowers abroad. Our results suggest that cross-border lending enables lenders to exploit the lack of global coordination in climate policies.</TT>
+</div>
+
+<div id="pres1"><TT>
+Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Central Bank,  ECB Banking Supervision Research Conference, FRBSF Climate Risks Workshop, GRASFI, NEOMA Sustainable Finance Conference, Norges Bank, SFI Research Days, SFS NA Cavalcade, SGF Conference, Western Finance Association Conference, Workshop on Environmental Finance for the Common Good at Birkbeck College, Audencia Business School, Bangor Business School, Bundesbank, ESSEC, Montpellier Business School, NTNU Business School, Reserve Bank of Australia, University of Edinburgh, University of Liverpool, University of Luxembourg, University of Manchester, University of Naples Federico II, University of New South Wales, Sydney Business School, University of Technology Sydney, University of Zurich</TT>
+</div>
+
+<div id="pdf1"></div>
+<div id="pdf-navigation1">
+  <button onclick="prevSlide1()">❮ Previous</button>
+  <button onclick="nextSlide1()">Next ❯</button>
+</div>
 
  ## Publications
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
