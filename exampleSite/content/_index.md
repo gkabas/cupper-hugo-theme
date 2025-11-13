@@ -70,7 +70,7 @@ Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Centr
 
  ## Publications
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
-with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i> 
+with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i>, 2025 
 
 <button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="showPDFWithSlides3()">Main Results</button> <button id="main-results-pres3" onclick="pres3()">Presentations</button> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
 
@@ -93,7 +93,7 @@ BIS, European Finance Association, Federal Reserve Board Brownbag, Fuqua Finance
 
 
 **Population Aging and Bank Risk-Taking**<br>
-with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>
+with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>, 2024
 
 <button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="showPDFWithSlides4()">Main Results</button> <button id="main-results-pres4" onclick="pres4()">Presentations</button> <buttonPDF onclick="pdf4()">PDF</buttonPDF> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>  
 
