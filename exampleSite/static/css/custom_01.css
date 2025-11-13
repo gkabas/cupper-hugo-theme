@@ -1,436 +1,518 @@
-const yourCustomFunction01 = (message) => {
-  console.log(message);
-};
-
-// This function turns off all buttons at the beginning
-function initializeDisplay() {
-  const ids = [
-    "abs1", "pdf1", "pres1", "pdf-navigation1",
-    "abs2", "pdf2", "pres2", "pdf-navigation2",
-    "abs3", "pdf3", "pres3", "pdf-navigation3",
-    "abs4", "pdf4", "pres4", "pdf-navigation4",
-    "abs5", "pdf5", "pres5", "pdf-navigation5",
-    "abs6", "pdf6", "pres6", "pdf-navigation6",
-    "abs7", "pdf7", "pres7", "pdf-navigation7",
-  ];
-
-  ids.forEach((id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.style.display = "none";
-    }
-  });
+ /*.your-custom-class-01 { */
+ /*  display: inline; */
+ /*} */
+ /* For CV icon */
+.icon {
+  background: url('https://gazikabas.netlify.app/nasa-images/CV.png');
+  padding: 0px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-size: 100%;
+  border: none;
+  /* Other styles here */
 }
 
-// Call initializeDisplay when the page loads and queue Main Results preloading
-window.addEventListener("load", () => {
-  initializeDisplay();
-  schedulePdfPreload();
-});
+ /* Style all font awesome icons */
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.ai {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-size: 100%;
+}
+
+/* Add a hover effect if you want */
+.ai:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border: none;
+  background-size: 100%;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: white;
+  color: #55ACEE;
+  border-radius: 50%;
+  background-size: 0px;
+  border: none;
+  background-size: 100%;
+} 
+
+.fa-linkedin {
+  background: white;
+  color: #007bb5;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-solid {
+  background: #007bb5;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-envelope {
+  background: white;
+  color: #007bb5;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-download {
+  background: #007bb5;
+  color: white;
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-file-pdf {
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+  border: none;
+}
+
+.ai-file-pdf {
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+}
+
+.ai-cv-square {
+  background: white;
+  color: #3B5998;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.ai-ssrn {
+  background: #3B5998;
+  color: white;
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+}
+
+#accordion{
+    width: 700px;
+    white-space: nowrap;
+}
+
+p {
+  margin-top: 1em ;
+  margin-bottom: 0em ;
+  padding: 0em;
+  line-height: 1.5em;
+} 
+
+br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 0.25em; /* change this to whatever height you want it */
+  margin-bottom: 0em ;
+  padding: 0em;
+  line-height: 1.5em;
+}
+
+hr {
+  max-width: 52em;
+}
+
+h1  {
+   padding: 0px;
+   margin: 0px;
+}
+h2  {
+   padding: 0px;
+  margin: 0px;
+
+}
+h3  {
+   padding: 0px;
+  margin: 0px;
+}
+h4  {
+   padding: 0px;
+  margin: 0px;
+}
+
+h5  {
+   padding: 0px;
+  margin: 0px;
+}
+
+h6  {
+   padding: 0px;
+  margin: 0px;
+}
 
 
-function pdf1() {
-    window.open("https://gkabas.netlify.app/files/BenincasaKabasOngena.pdf", "_blank");
-    }
+details {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 2px 6px;
+  /*background-color: #ddd;*/
+  border: none;
+  /*box-shadow: 3px 3px 4px black;*/
+}
 
-function ssrn1() {
-    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4075737", "_blank");
-    }
+details > summary {
+  display: block;
+  cursor: pointer;
+}
 
-function pdf2() {
-    window.open("https://gkabas.netlify.app/files/KabasRoszbach.pdf", "_blank");
-    }
+details>summary::before { 
+  content: '▷'; 
+ } 
 
-function ssrn2() {
-    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3835232", "_blank");
-    }
+details[open]>summary::before { 
+  content: '▽';
+}
 
-function pdf3() {
-    window.open("https://gkabas.netlify.app/files/ArslanDegerliKabas.pdf", "_blank");
-    }
+.contents {
+  display: flex;
+  margin-top: 1em;
+  gap: 1em;
+}
 
-function ssrn3() {
-    window.open("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3280437", "_blank");
-    }
-@@ -353,890 +356,381 @@ function pres6() {
-    presContainer.style.display = "block";
-    pdfContainer.style.display = "none";
-    absContainer.style.display = "none";
-    navContainer.style.display = "none"; // Hide navigation buttons
+.content {
+  display: none; /*hidden by default*/
+  min-height: 50px;
+}
+
+details[data-for="first"][open] ~ .contents #first,
+details[data-for="second"][open] ~ .contents #second {
+  display: block;
+}
+
+.after-content {
+  margin-top: 1em;
+}
+
+#fig1 {
+  max-width: calc(1200px - 15rem);
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+ /* details > summary::-webkit-details-marker {  */
+ /*   display: contents; */
+ /* } */
+
+#abs1, #abs2, #abs3, #abs4, #abs5, #abs6, #abs7 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: calc(1200px - 15rem);
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#pres1, #pres2, #pres3, #pres4, #pres5, #pres6, #pres7 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: calc(1200px - 15rem);
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+
+#pdf1, #pdf2, #pdf3, #pdf4, #pdf5, #pdf6, #pdf7 {
+  max-width: calc(1200px - 15rem);
+  margin-top: 10px;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border: 1px dashed gray;
+  overflow: hidden; /* Hide any overflow */
+  text-align: center; /* Center align content */
+  position: relative; /* Set relative positioning for child elements */
+}
+
+#pdf1 canvas, #pdf2 canvas, #pdf3 canvas, #pdf4 canvas, #pdf5 canvas, #pdf6 canvas, #pdf7 canvas {
+  max-width: 100%; /* Ensure canvas fits within the container */
+  height: auto;     /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center align canvas */
+}
+
+#pdf-navigation1, #pdf-navigation2, #pdf-navigation3, #pdf-navigation4, #pdf-navigation5, #pdf-navigation6, #pdf-navigation7 {
+  position: relative; /* Position navigation buttons absolutely within #pdf */
+  bottom: -5px; /* Adjust this value to control vertical placement */
+  left: min(600px - 7.5rem, 50%);; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for horizontal centering */
+  display: flex;
+  justify-content: center; /* Center align buttons horizontally */
+  align-items: center;
+  margin-top: 5px; /* Space between canvas and buttons */
+  background: transparent;
+  z-index: 1;
+}
+
+#pdf-navigation1 button, #pdf-navigation2 button, #pdf-navigation3 button, #pdf-navigation4 button, #pdf-navigation5 button, #pdf-navigation6 button, #pdf-navigation7 button {
+  margin: 0 10px; /* Add spacing between the buttons */
+  font-size: 1rem;
+  border-radius: 0.03em;
+  font-family: inherit;
+  background: #fefefe;
+  color: #000000;
+  padding: 0.05rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border: 1px dashed gray;
+  border-color: #001F3F;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#pdf-navigation1 button:hover, #pdf-navigation2 button:hover, #pdf-navigation3 button:hover, #pdf-navigation4 button:hover, #pdf-navigation5 button:hover, #pdf-navigation6 button:hover, #pdf-navigation7 button:hover  {
+  color: #fff;
+  background-color: #001F3F;
+}
+
+button {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-family: inherit;
+    background: #fefefe;
+    color: #000000;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed gray;
+    border-color: #001F3F;
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #001F3F;
+}
+
+buttonSSRN {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-color: #3B5998;
+    font-family: inherit;
+    background: #fefefe;
+    color: #3B5998;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed gray;
+    border-color: #3B5998;
+}
+
+buttonSSRN{
+  cursor: pointer;
+  position: inline-block;
+  transition: 0.5s;
+}
+
+buttonSSRN:hover {
+    color: #fff;
+    background-color: #3B5998;
+}
+
+buttonPDF {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-color: #3B5998;
+    font-family: inherit;
+    background: #fefefe;
+    color: #4C0000;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed gray;
+    border-color: #4C0000;
+}
+
+buttonPDF{
+  cursor: pointer;
+  position: inline-block;
+  transition: 0.5s;
+}
+
+buttonPDF:hover {
+    color: #fff;
+    background-color: #4C0000;
+}
+
+.hide-on-small-screen {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-family: inherit;
+    background: #fefefe;
+    color: #38471f;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed #38471f;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+/* Hover effect for the button */
+.hide-on-small-screen:hover {
+    color: #fff;
+    background-color: #38471f;
+}
+
+@media (max-width: 500px) {
+  .hide-on-small-screen {
+    display: none !important; /* Ensures styles are applied */
   }
 }
 
-function pres7() {
-  const presContainer = document.getElementById("pres7");
-  const pdfContainer = document.getElementById("pdf7");
-  const absContainer = document.getElementById("abs7");
-  const navContainer = document.getElementById("pdf-navigation7");
 
-  // Toggle Abstract visibility
-  if (presContainer.style.display === "block") {
-    presContainer.style.display = "none";
-  } else {
-    presContainer.style.display = "block";
-    pdfContainer.style.display = "none";
-    absContainer.style.display = "none";
-    navContainer.style.display = "none"; // Hide navigation buttons
-  }
+.mySlides {
+ display: none
 }
 
-//////////////////////////////////////////////////////////////
-// Main Results PDF viewer helpers
-//////////////////////////////////////////////////////////////
-
-const pdfViewerConfigs = [
-  {
-    key: 1,
-    url: "https://gazikabas.netlify.app/files/BKO.pdf",
-    containerId: "pdf1",
-    navId: "pdf-navigation1",
-    absId: "abs1",
-    presId: "pres1",
-  },
-  {
-    key: 2,
-    url: "https://gazikabas.netlify.app/files/KR.pdf",
-    containerId: "pdf2",
-    navId: "pdf-navigation2",
-    absId: "abs2",
-    presId: "pres2",
-  },
-  {
-    key: 3,
-    url: "https://gazikabas.netlify.app/files/ADK.pdf",
-    containerId: "pdf3",
-    navId: "pdf-navigation3",
-    absId: "abs3",
-    presId: "pres3",
-  },
-  {
-    key: 4,
-    url: "https://gazikabas.netlify.app/files/DKO.pdf",
-    containerId: "pdf4",
-    navId: "pdf-navigation4",
-    absId: "abs4",
-    presId: "pres4",
-  },
-  {
-    key: 5,
-    url: "https://gazikabas.netlify.app/files/ADGKK.pdf",
-    containerId: "pdf5",
-    navId: "pdf-navigation5",
-    absId: "abs5",
-    presId: "pres5",
-  },
-  {
-    key: 7,
-    url: "https://gazikabas.netlify.app/files/ETS_2.pdf",
-    containerId: "pdf7",
-    navId: "pdf-navigation7",
-    absId: "abs7",
-    presId: "pres7",
-  },
-];
-
-const pdfConfigMap = {};
-const pdfViewerState = {};
-
-pdfViewerConfigs.forEach((config) => {
-  pdfConfigMap[config.key] = config;
-  pdfViewerState[config.key] = {
-    pageNum: 1,
-    pageCount: 0,
-    pdfDoc: null,
-    loadingPromise: null,
-  };
-});
-
-function getPdfElements(config) {
-  return {
-    pdfContainer: document.getElementById(config.containerId),
-    navContainer: document.getElementById(config.navId),
-    absContainer: document.getElementById(config.absId),
-    presContainer: document.getElementById(config.presId),
-  };
+img {
+ vertical-align: middle;
+ width: 80%;
 }
 
-function getEffectiveContainerWidth(container) {
-  if (!container) {
-    return 0;
-  }
-
-  const visibleWidth = container.getBoundingClientRect().width;
-  if (visibleWidth > 0) {
-    return visibleWidth;
-  }
-
-  if (container.parentElement) {
-    const parentWidth = container.parentElement.getBoundingClientRect().width;
-    if (parentWidth > 0) {
-      return parentWidth;
-    }
-  }
-
-  return Math.min(Math.max(window.innerWidth || 800, 320), 1200);
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
 }
 
-function ensurePdfLoaded(key) {
-  const config = pdfConfigMap[key];
-  const state = pdfViewerState[key];
-  if (!config || !state) {
-    return Promise.resolve(null);
-  }
-
-  const { pdfContainer } = getPdfElements(config);
-  if (!pdfContainer) {
-    return Promise.resolve(null);
-  }
-
-  if (state.pdfDoc) {
-    return Promise.resolve(state.pdfDoc);
-  }
-
-  if (!state.loadingPromise) {
-    const isVisible = window.getComputedStyle(pdfContainer).display !== "none";
-    if (isVisible) {
-      pdfContainer.innerHTML = "<p>Loading figures…</p>";
-    }
-
-    state.loadingPromise = pdfjsLib
-      .getDocument(config.url)
-      .promise.then((pdf) => {
-        state.pdfDoc = pdf;
-        state.pageCount = pdf.numPages;
-        return pdf;
-      })
-      .catch((error) => {
-        console.error(`Error loading PDF for paper ${key}:`, error);
-        pdfContainer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-        state.loadingPromise = null;
-        throw error;
-      });
-  }
-
-  return state.loadingPromise;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-function renderPdfPage(key) {
-  const config = pdfConfigMap[key];
-  const state = pdfViewerState[key];
-  if (!config || !state || !state.pdfDoc) {
-    return Promise.resolve();
-  }
-
-  const { pdfContainer } = getPdfElements(config);
-  if (!pdfContainer) {
-    return Promise.resolve();
-  }
-
-  const safePageNum = Math.min(Math.max(state.pageNum, 1), state.pageCount || 1);
-  state.pageNum = safePageNum;
-
-  return state.pdfDoc
-    .getPage(state.pageNum)
-    .then((page) => {
-      const canvas = document.createElement("canvas");
-      const context = canvas.getContext("2d");
-      const containerWidth = getEffectiveContainerWidth(pdfContainer) || 800;
-      const viewport = page.getViewport({ scale: 1 });
-      const scale = containerWidth / viewport.width;
-      const devicePixelRatio = window.devicePixelRatio || 1;
-      const scaledViewport = page.getViewport({ scale });
-      canvas.width = scaledViewport.width * devicePixelRatio;
-      canvas.height = scaledViewport.height * devicePixelRatio;
-      canvas.style.width = `${scaledViewport.width}px`;
-      canvas.style.height = `${scaledViewport.height}px`;
-      context.scale(devicePixelRatio, devicePixelRatio);
-      pdfContainer.innerHTML = "";
-      pdfContainer.appendChild(canvas);
-
-      const renderContext = {
-        canvasContext: context,
-        viewport: scaledViewport,
-      };
-
-      return page.render(renderContext).promise;
-    })
-    .catch((error) => {
-      console.error(`Error rendering PDF page for paper ${key}:`, error);
-      pdfContainer.innerHTML = "<p>Error rendering this page.</p>";
-    });
+/* Position the "next button" to the right */
+.next {
+  right: -1.5em;
+  border-radius: 3px 0 0 3px;
 }
 
-function togglePdfVisibility(key) {
-  const config = pdfConfigMap[key];
-  if (!config) {
-    return;
-  }
-
-  const { pdfContainer, navContainer, absContainer, presContainer } = getPdfElements(config);
-  if (!pdfContainer) {
-    return;
-  }
-
-  const isVisible = window.getComputedStyle(pdfContainer).display !== "none";
-
-  if (isVisible) {
-    pdfContainer.style.display = "none";
-    if (navContainer) {
-      navContainer.style.display = "none";
-    }
-    return;
-  }
-
-  pdfContainer.style.display = "block";
-  if (navContainer) {
-    navContainer.style.display = "flex";
-  }
-  if (absContainer) {
-    absContainer.style.display = "none";
-  }
-  if (presContainer) {
-    presContainer.style.display = "none";
-  }
-
-  ensurePdfLoaded(key).then(() => {
-    renderPdfPage(key);
-  });
-}
-
-function changePdfSlide(key, delta) {
-  const state = pdfViewerState[key];
-  if (!state) {
-    return;
-  }
-
-  ensurePdfLoaded(key).then(() => {
-    if (!state.pdfDoc) {
-      return;
-    }
-
-    const targetPage = state.pageNum + delta;
-    if (targetPage < 1 || targetPage > state.pageCount) {
-      return;
-    }
-
-    state.pageNum = targetPage;
-    renderPdfPage(key);
-  });
-}
-
-function schedulePdfPreload() {
-  const startPreload = () => {
-    pdfViewerConfigs.forEach((config, index) => {
-      const { pdfContainer } = getPdfElements(config);
-      if (!pdfContainer) {
-        return;
-      }
-
-      setTimeout(() => {
-        ensurePdfLoaded(config.key).catch(() => {});
-      }, index * 300);
-    });
-  };
-
-  if ("requestIdleCallback" in window) {
-    requestIdleCallback(startPreload, { timeout: 2000 });
-  } else {
-    setTimeout(startPreload, 1200);
-  }
-}
-
-function showPDFWithSlides1() {
-  togglePdfVisibility(1);
-}
-
-function nextSlide1() {
-  changePdfSlide(1, 1);
-}
-
-function prevSlide1() {
-  changePdfSlide(1, -1);
-}
-
-function showPDFWithSlides2() {
-  togglePdfVisibility(2);
-}
-
-function nextSlide2() {
-  changePdfSlide(2, 1);
-}
-
-function prevSlide2() {
-  changePdfSlide(2, -1);
-}
-
-function showPDFWithSlides3() {
-  togglePdfVisibility(3);
-}
-
-function nextSlide3() {
-  changePdfSlide(3, 1);
-}
-
-function prevSlide3() {
-  changePdfSlide(3, -1);
-}
-
-function showPDFWithSlides4() {
-  togglePdfVisibility(4);
-}
-
-function nextSlide4() {
-  changePdfSlide(4, 1);
-}
-
-function prevSlide4() {
-  changePdfSlide(4, -1);
-}
-
-function showPDFWithSlides5() {
-  togglePdfVisibility(5);
-}
-
-function nextSlide5() {
-  changePdfSlide(5, 1);
-}
-
-function prevSlide5() {
-  changePdfSlide(5, -1);
-}
-
-function showPDFWithSlides7() {
-  togglePdfVisibility(7);
-}
-
-function nextSlide7() {
-  changePdfSlide(7, 1);
-}
-
-function prevSlide7() {
-  changePdfSlide(7, -1);
+.prev {
+  left: -1.5em;
+  border-radius: 3px 0 0 3px;
 }
 
 
-function updateButtonText() {
-  const buttons = [
-    {
-      id: "main-results-fig1",
-      smallText: "Abs.",
-      largeText: "Abstract",
-    },
-     {
-      id: "main-results-fig2",
-      smallText: "Abs.",
-      largeText: "Abstract",
-    },
-     {
-      id: "main-results-fig3",
-      smallText: "Abs.",
-      largeText: "Abstract",
-    },
-     {
-      id: "main-results-fig4",
-      smallText: "Abs.",
-      largeText: "Abstract",
-    },
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text2 {
+  color: #000000;
+  font-size: 1em;
+  padding: 8px 8px;
+  position: absolute;
+  bottom: -4em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 0.5em;
+  padding: 1px 1px;
+  position: absolute;
+  top: 0.2em;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.5em;
+  width: 0.5em;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  bottom: 0em;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
