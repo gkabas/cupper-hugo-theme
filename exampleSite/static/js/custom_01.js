@@ -1,6 +1,46 @@
+// Global cache for preloaded PDF documents (promises)
+const pdfPreloadCache = {};
+
 const yourCustomFunction01 = (message) => {
-  console.log(message);
+  console.log(message);
 };
+
+// --- PDF Preloading Function (New Section) ---
+function preloadAllPDFs() {
+    // List of PDF URLs used for the Main Results sections
+    // The keys (1, 2, 3, 4, 5, 7) correspond to the respective loadPDFX functions.
+    const pdfUrls = [
+        { key: 1, url: "https://gazikabas.netlify.app/files/BKO.pdf" },
+        { key: 2, url: "https://gazikabas.netlify.app/files/KR.pdf" },
+        { key: 3, url: "https://gazikabas.netlify.app/files/ADK.pdf" },
+        { key: 4, url: "https://gazikabas.netlify.app/files/DKO.pdf" },
+        { key: 5, url: "https://gazikabas.netlify.app/files/ADGKK.pdf" },
+        { key: 7, url: "https://gazikabas.netlify.app/files/ETS_2.pdf" },
+    ];
+
+    // Check if pdfjsLib is loaded before continuing
+    if (typeof pdfjsLib === 'undefined' || !pdfjsLib.getDocument) {
+        console.warn("PDF.js library is not loaded. PDF preloading skipped.");
+        return;
+    }
+
+    console.log("Starting PDF preloading for Main Results...");
+
+    pdfUrls.forEach(({ key, url }) => {
+        const loadingTask = pdfjsLib.getDocument(url);
+        // Store the promise in the cache
+        pdfPreloadCache[key] = loadingTask.promise;
+
+        loadingTask.promise.then(() => {
+            console.log(`Preload successful for PDF ${key}`);
+        }).catch((error) => {
+            console.error(`Error during preloading for PDF ${key}:`, error);
+            // If preloading fails, remove it so loadPDFX can try again on click
+            delete pdfPreloadCache[key]; 
+        });
+    });
+}
+// ------------------------------------
 
 // This function turns off all buttons at the beginning
 function initializeDisplay() {
@@ -22,8 +62,11 @@ function initializeDisplay() {
   });
 }
 
-// Call initializeDisplay when the page loads
-window.onload = initializeDisplay;
+// Call initialization and PDF preloading when the page loads (MODIFIED)
+window.onload = function() {
+    initializeDisplay();
+    preloadAllPDFs();
+};
 
 
 function pdf1() {
@@ -376,7 +419,6 @@ function pres7() {
 
 //////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
-// Copy-paste the part between the comments for a new paper
 
 // Variables for first PDF
 let pdfDoc1 = null; // Holds the PDF document
@@ -427,15 +469,35 @@ const renderPage = (num) => {
   });
 };
 
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then((pdf) => {
-    pdfDoc1 = pdf;
-    pageCount1 = pdf.numPages;
-    renderPage(pageNum1);
-  }).catch((error) => {
-    console.error("Error loading PDF:", error);
-    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-  });
+  // --- MODIFIED LOGIC START ---
+  const loadAndRender = (pdf) => {
+      pdfDoc1 = pdf;
+      pageCount1 = pdf.numPages;
+      renderPage(pageNum1);
+  };
+  
+  // Check if PDF is already downloading/parsed in the cache
+  if (pdfPreloadCache[1]) {
+      pdfPreloadCache[1].then(loadAndRender).catch((error) => {
+          console.error("Error using preloaded PDF 1:", error);
+          pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
+          // Fallback to direct load
+          pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
+              console.error("Error loading PDF 1 (fallback):", fallbackError);
+              pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+          });
+      });
+  } else {
+      // Original load mechanism: initiate download and update cache
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(loadAndRender).catch((error) => {
+          console.error("Error loading PDF 1:", error);
+          pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+      });
+      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      pdfPreloadCache[1] = loadingTask.promise;
+  }
+  // --- MODIFIED LOGIC END ---
 }
 
 
@@ -523,7 +585,6 @@ function loadSlide1() {
 
 //////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
-// Copy-paste the part between the comments for a new paper
 
 // Variables for first PDF
 let pdfDoc2 = null; // Holds the PDF document
@@ -574,15 +635,35 @@ const renderPage = (num) => {
   });
 };
 
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then((pdf) => {
-    pdfDoc2 = pdf;
-    pageCount2 = pdf.numPages;
-    renderPage(pageNum2);
-  }).catch((error) => {
-    console.error("Error loading PDF:", error);
-    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-  });
+  // --- MODIFIED LOGIC START ---
+  const loadAndRender = (pdf) => {
+      pdfDoc2 = pdf;
+      pageCount2 = pdf.numPages;
+      renderPage(pageNum2);
+  };
+  
+  // Check if PDF is already downloading/parsed in the cache
+  if (pdfPreloadCache[2]) {
+      pdfPreloadCache[2].then(loadAndRender).catch((error) => {
+          console.error("Error using preloaded PDF 2:", error);
+          pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
+          // Fallback to direct load
+          pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
+              console.error("Error loading PDF 2 (fallback):", fallbackError);
+              pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+          });
+      });
+  } else {
+      // Original load mechanism: initiate download and update cache
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(loadAndRender).catch((error) => {
+          console.error("Error loading PDF 2:", error);
+          pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+      });
+      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      pdfPreloadCache[2] = loadingTask.promise;
+  }
+  // --- MODIFIED LOGIC END ---
 }
 
 
@@ -667,7 +748,6 @@ function loadSlide2() {
 
 //////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
-// Copy-paste the part between the comments for a new paper
 
 // Variables for first PDF
 let pdfDoc3 = null; // Holds the PDF document
@@ -717,15 +797,35 @@ const renderPage = (num) => {
     pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
   });
 };
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then((pdf) => {
-    pdfDoc3 = pdf;
-    pageCount3 = pdf.numPages;
-    renderPage(pageNum3);
-  }).catch((error) => {
-    console.error("Error loading PDF:", error);
-    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-  });
+  // --- MODIFIED LOGIC START ---
+  const loadAndRender = (pdf) => {
+      pdfDoc3 = pdf;
+      pageCount3 = pdf.numPages;
+      renderPage(pageNum3);
+  };
+  
+  // Check if PDF is already downloading/parsed in the cache
+  if (pdfPreloadCache[3]) {
+      pdfPreloadCache[3].then(loadAndRender).catch((error) => {
+          console.error("Error using preloaded PDF 3:", error);
+          pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
+          // Fallback to direct load
+          pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
+              console.error("Error loading PDF 3 (fallback):", fallbackError);
+              pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+          });
+      });
+  } else {
+      // Original load mechanism: initiate download and update cache
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(loadAndRender).catch((error) => {
+          console.error("Error loading PDF 3:", error);
+          pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+      });
+      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      pdfPreloadCache[3] = loadingTask.promise;
+  }
+  // --- MODIFIED LOGIC END ---
 }
 
 
@@ -809,7 +909,6 @@ function loadSlide3() {
 
 //////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
-// Copy-paste the part between the comments for a new paper
 
 // Variables for first PDF
 let pdfDoc4 = null; // Holds the PDF document
@@ -860,15 +959,35 @@ const renderPage = (num) => {
   });
 };
 
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then((pdf) => {
-    pdfDoc4 = pdf;
-    pageCount4 = pdf.numPages;
-    renderPage(pageNum4);
-  }).catch((error) => {
-    console.error("Error loading PDF:", error);
-    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-  });
+  // --- MODIFIED LOGIC START ---
+  const loadAndRender = (pdf) => {
+      pdfDoc4 = pdf;
+      pageCount4 = pdf.numPages;
+      renderPage(pageNum4);
+  };
+  
+  // Check if PDF is already downloading/parsed in the cache
+  if (pdfPreloadCache[4]) {
+      pdfPreloadCache[4].then(loadAndRender).catch((error) => {
+          console.error("Error using preloaded PDF 4:", error);
+          pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
+          // Fallback to direct load
+          pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
+              console.error("Error loading PDF 4 (fallback):", fallbackError);
+              pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+          });
+      });
+  } else {
+      // Original load mechanism: initiate download and update cache
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(loadAndRender).catch((error) => {
+          console.error("Error loading PDF 4:", error);
+          pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+      });
+      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      pdfPreloadCache[4] = loadingTask.promise;
+  }
+  // --- MODIFIED LOGIC END ---
 }
 
 
@@ -952,7 +1071,6 @@ function loadSlide4() {
 
 //////////////////////////////////////////////////////////////
 // This part onwards is for the Main Results button with PDFs
-// Copy-paste the part between the comments for a new paper
 
 // Variables for first PDF
 let pdfDoc5 = null; // Holds the PDF document
@@ -1003,15 +1121,35 @@ const renderPage = (num) => {
   });
 };
 
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then((pdf) => {
-    pdfDoc5 = pdf;
-    pageCount5 = pdf.numPages;
-    renderPage(pageNum5);
-  }).catch((error) => {
-    console.error("Error loading PDF:", error);
-    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-  });
+  // --- MODIFIED LOGIC START ---
+  const loadAndRender = (pdf) => {
+      pdfDoc5 = pdf;
+      pageCount5 = pdf.numPages;
+      renderPage(pageNum5);
+  };
+  
+  // Check if PDF is already downloading/parsed in the cache
+  if (pdfPreloadCache[5]) {
+      pdfPreloadCache[5].then(loadAndRender).catch((error) => {
+          console.error("Error using preloaded PDF 5:", error);
+          pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
+          // Fallback to direct load
+          pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
+              console.error("Error loading PDF 5 (fallback):", fallbackError);
+              pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+          });
+      });
+  } else {
+      // Original load mechanism: initiate download and update cache
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(loadAndRender).catch((error) => {
+          console.error("Error loading PDF 5:", error);
+          pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+      });
+      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      pdfPreloadCache[5] = loadingTask.promise;
+  }
+  // --- MODIFIED LOGIC END ---
 }
 
 
@@ -1141,15 +1279,35 @@ const renderPage = (num) => {
   });
 };
 
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then((pdf) => {
-    pdfDoc7 = pdf;
-    pageCount7 = pdf.numPages;
-    renderPage(pageNum7);
-  }).catch((error) => {
-    console.error("Error loading PDF:", error);
-    pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
-  });
+  // --- MODIFIED LOGIC START ---
+  const loadAndRender = (pdf) => {
+      pdfDoc7 = pdf;
+      pageCount7 = pdf.numPages;
+      renderPage(pageNum7);
+  };
+  
+  // Check if PDF is already downloading/parsed in the cache
+  if (pdfPreloadCache[7]) {
+      pdfPreloadCache[7].then(loadAndRender).catch((error) => {
+          console.error("Error using preloaded PDF 7:", error);
+          pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
+          // Fallback to direct load
+          pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
+              console.error("Error loading PDF 7 (fallback):", fallbackError);
+              pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+          });
+      });
+  } else {
+      // Original load mechanism: initiate download and update cache
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(loadAndRender).catch((error) => {
+          console.error("Error loading PDF 7:", error);
+          pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+      });
+      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      pdfPreloadCache[7] = loadingTask.promise;
+  }
+  // --- MODIFIED LOGIC END ---
 }
 
 function showPDFWithSlides7() {
