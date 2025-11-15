@@ -46,7 +46,7 @@ function stagedPreloadAllPDFs() {
     }
 
     const BATCH_SIZE = 5;
-    const DELAY_MS = 1000; // 2 seconds between batches
+    const DELAY_MS = 750; // 0,75 seconds between batches
 
     function loadBatch(startIndex) {
         const endIndex = Math.min(startIndex + BATCH_SIZE, pdfUrlMap.length);
