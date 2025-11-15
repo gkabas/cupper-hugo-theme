@@ -5,42 +5,86 @@ const yourCustomFunction01 = (message) => {
   console.log(message);
 };
 
-// --- PDF Preloading Function (New Section) ---
-function preloadAllPDFs() {
-    // List of PDF URLs used for the Main Results sections
-    // The keys (1, 2, 3, 4, 5, 7) correspond to the respective loadPDFX functions.
-    const pdfUrls = [
-        { key: 1, url: "https://gazikabas.netlify.app/files/BKO.pdf" },
-        { key: 2, url: "https://gazikabas.netlify.app/files/KR.pdf" },
-        { key: 3, url: "https://gazikabas.netlify.app/files/ADK.pdf" },
-        { key: 4, url: "https://gazikabas.netlify.app/files/DKO.pdf" },
-        { key: 5, url: "https://gazikabas.netlify.app/files/ADGKK.pdf" },
-        { key: 7, url: "https://gazikabas.netlify.app/files/ETS_2.pdf" },
-    ];
+// --- PDF Data Map for Staged Loading (Extensible up to 25 papers) ---
+// IMPORTANT: Extend this map when you add papers 8 through 25.
+const pdfUrlMap = [
+    // Existing Papers (1-7)
+    { key: 1, url: "https://gazikabas.netlify.app/files/BKO.pdf" },
+    { key: 2, url: "https://gazikabas.netlify.app/files/KR.pdf" },
+    { key: 3, url: "https://gazikabas.netlify.app/files/ADK.pdf" },
+    { key: 4, url: "https://gazikabas.netlify.app/files/DKO.pdf" },
+    { key: 5, url: "https://gazikabas.netlify.app/files/ADGKK.pdf" }, 
+    { key: 6, url: "https://gazikabas.netlify.app/files/Paper06_MainResults.pdf" }, 
+    { key: 7, url: "https://gazikabas.netlify.app/files/Paper07_MainResults.pdf" },
+    
+    // Placeholder for new papers (ADD 18 MORE PAPERS HERE)
+    { key: 8, url: "https://gazikabas.netlify.app/files/Paper08_MainResults.pdf" }, 
+    { key: 9, url: "https://gazikabas.netlify.app/files/Paper09_MainResults.pdf" },
+    { key: 10, url: "https://gazikabas.netlify.app/files/Paper10_MainResults.pdf" },
+    { key: 11, url: "https://gazikabas.netlify.app/files/Paper11_MainResults.pdf" },
+    { key: 12, url: "https://gazikabas.netlify.app/files/Paper12_MainResults.pdf" },
+    { key: 13, url: "https://gazikabas.netlify.app/files/Paper13_MainResults.pdf" },
+    { key: 14, url: "https://gazikabas.netlify.app/files/Paper14_MainResults.pdf" },
+    { key: 15, url: "https://gazikabas.netlify.app/files/Paper15_MainResults.pdf" },
+    { key: 16, url: "https://gazikabas.netlify.app/files/Paper16_MainResults.pdf" },
+    { key: 17, url: "https://gazikabas.netlify.app/files/Paper17_MainResults.pdf" },
+    { key: 18, url: "https://gazikabas.netlify.app/files/Paper18_MainResults.pdf" },
+    { key: 19, url: "https://gazikabas.netlify.app/files/Paper19_MainResults.pdf" },
+    { key: 20, url: "https://gazikabas.netlify.app/files/Paper20_MainResults.pdf" },
+    { key: 21, url: "https://gazikabas.netlify.app/files/Paper21_MainResults.pdf" },
+    { key: 22, url: "https://gazikabas.netlify.app/files/Paper22_MainResults.pdf" },
+    { key: 23, url: "https://gazikabas.netlify.app/files/Paper23_MainResults.pdf" },
+    { key: 24, url: "https://gazikabas.netlify.app/files/Paper24_MainResults.pdf" },
+    { key: 25, url: "https://gazikabas.netlify.app/files/Paper25_MainResults.pdf" },
+];
 
-    // Check if pdfjsLib is loaded before continuing
+// --- Staged Preload Function ---
+function stagedPreloadAllPDFs() {
     if (typeof pdfjsLib === 'undefined' || !pdfjsLib.getDocument) {
         console.warn("PDF.js library is not loaded. PDF preloading skipped.");
         return;
     }
 
-    console.log("Starting PDF preloading for Main Results...");
+    const BATCH_SIZE = 5;
+    const DELAY_MS = 1000; // 2 seconds between batches
 
-    pdfUrls.forEach(({ key, url }) => {
-        const loadingTask = pdfjsLib.getDocument(url);
-        // Store the promise in the cache
-        pdfPreloadCache[key] = loadingTask.promise;
+    function loadBatch(startIndex) {
+        const endIndex = Math.min(startIndex + BATCH_SIZE, pdfUrlMap.length);
+        
+        if (startIndex >= endIndex) {
+            console.log("PDF Staged Preloading Complete.");
+            return;
+        }
 
-        loadingTask.promise.then(() => {
-            console.log(`Preload successful for PDF ${key}`);
-        }).catch((error) => {
-            console.error(`Error during preloading for PDF ${key}:`, error);
-            // If preloading fails, remove it so loadPDFX can try again on click
-            delete pdfPreloadCache[key]; 
-        });
-    });
+        console.log(`Starting PDF Preload Batch: ${startIndex + 1} to ${endIndex}`);
+
+        for (let i = startIndex; i < endIndex; i++) {
+            const { key, url } = pdfUrlMap[i];
+            
+            if (pdfPreloadCache[key]) {
+                 continue; // Skip if already started/finished
+            }
+
+            const loadingTask = pdfjsLib.getDocument(url);
+            pdfPreloadCache[key] = loadingTask.promise; // Store the promise
+            
+            loadingTask.promise.catch((error) => {
+                console.error(`Error during preloading for PDF ${key}:`, error);
+                delete pdfPreloadCache[key]; 
+            });
+        }
+
+        // Schedule the next batch load after the delay
+        if (endIndex < pdfUrlMap.length) {
+            setTimeout(() => loadBatch(endIndex), DELAY_MS);
+        }
+    }
+
+    // Start the first batch
+    loadBatch(0);
 }
 // ------------------------------------
+
 
 // This function turns off all buttons at the beginning
 function initializeDisplay() {
@@ -62,10 +106,11 @@ function initializeDisplay() {
   });
 }
 
-// Call initialization and PDF preloading when the page loads (MODIFIED)
+// Call initialization immediately and DEFER PDF preloading by 500ms (BEST PRACTICE)
 window.onload = function() {
     initializeDisplay();
-    preloadAllPDFs();
+    // Defer staged loading to ensure main page elements load first.
+    setTimeout(stagedPreloadAllPDFs, 500);
 };
 
 
@@ -469,7 +514,7 @@ const renderPage = (num) => {
   });
 };
 
-  // --- MODIFIED LOGIC START ---
+  // --- MODIFIED LOGIC START: Use Cache First ---
   const loadAndRender = (pdf) => {
       pdfDoc1 = pdf;
       pageCount1 = pdf.numPages;
@@ -478,23 +523,24 @@ const renderPage = (num) => {
   
   // Check if PDF is already downloading/parsed in the cache
   if (pdfPreloadCache[1]) {
+      // Use the cached promise (instant download/parse if already done by staged load)
       pdfPreloadCache[1].then(loadAndRender).catch((error) => {
           console.error("Error using preloaded PDF 1:", error);
           pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
-          // Fallback to direct load
+          // Fallback to direct load if preloading failed
           pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
               console.error("Error loading PDF 1 (fallback):", fallbackError);
               pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
           });
       });
   } else {
-      // Original load mechanism: initiate download and update cache
+      // If user clicked before staged load reached this paper, start loading now
       const loadingTask = pdfjsLib.getDocument(url);
       loadingTask.promise.then(loadAndRender).catch((error) => {
-          console.error("Error loading PDF 1:", error);
+          console.error("Error loading PDF 1 (direct load):", error);
           pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
       });
-      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      // Update cache in case staged loading or other interaction uses it later
       pdfPreloadCache[1] = loadingTask.promise;
   }
   // --- MODIFIED LOGIC END ---
@@ -635,7 +681,7 @@ const renderPage = (num) => {
   });
 };
 
-  // --- MODIFIED LOGIC START ---
+  // --- MODIFIED LOGIC START: Use Cache First ---
   const loadAndRender = (pdf) => {
       pdfDoc2 = pdf;
       pageCount2 = pdf.numPages;
@@ -644,23 +690,24 @@ const renderPage = (num) => {
   
   // Check if PDF is already downloading/parsed in the cache
   if (pdfPreloadCache[2]) {
+      // Use the cached promise (instant download/parse if already done by staged load)
       pdfPreloadCache[2].then(loadAndRender).catch((error) => {
           console.error("Error using preloaded PDF 2:", error);
           pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
-          // Fallback to direct load
+          // Fallback to direct load if preloading failed
           pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
               console.error("Error loading PDF 2 (fallback):", fallbackError);
               pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
           });
       });
   } else {
-      // Original load mechanism: initiate download and update cache
+      // If user clicked before staged load reached this paper, start loading now
       const loadingTask = pdfjsLib.getDocument(url);
       loadingTask.promise.then(loadAndRender).catch((error) => {
-          console.error("Error loading PDF 2:", error);
+          console.error("Error loading PDF 2 (direct load):", error);
           pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
       });
-      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      // Update cache in case staged loading or other interaction uses it later
       pdfPreloadCache[2] = loadingTask.promise;
   }
   // --- MODIFIED LOGIC END ---
@@ -797,7 +844,7 @@ const renderPage = (num) => {
     pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
   });
 };
-  // --- MODIFIED LOGIC START ---
+  // --- MODIFIED LOGIC START: Use Cache First ---
   const loadAndRender = (pdf) => {
       pdfDoc3 = pdf;
       pageCount3 = pdf.numPages;
@@ -806,23 +853,24 @@ const renderPage = (num) => {
   
   // Check if PDF is already downloading/parsed in the cache
   if (pdfPreloadCache[3]) {
+      // Use the cached promise (instant download/parse if already done by staged load)
       pdfPreloadCache[3].then(loadAndRender).catch((error) => {
           console.error("Error using preloaded PDF 3:", error);
           pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
-          // Fallback to direct load
+          // Fallback to direct load if preloading failed
           pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
               console.error("Error loading PDF 3 (fallback):", fallbackError);
               pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
           });
       });
   } else {
-      // Original load mechanism: initiate download and update cache
+      // If user clicked before staged load reached this paper, start loading now
       const loadingTask = pdfjsLib.getDocument(url);
       loadingTask.promise.then(loadAndRender).catch((error) => {
-          console.error("Error loading PDF 3:", error);
+          console.error("Error loading PDF 3 (direct load):", error);
           pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
       });
-      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      // Update cache in case staged loading or other interaction uses it later
       pdfPreloadCache[3] = loadingTask.promise;
   }
   // --- MODIFIED LOGIC END ---
@@ -959,7 +1007,7 @@ const renderPage = (num) => {
   });
 };
 
-  // --- MODIFIED LOGIC START ---
+  // --- MODIFIED LOGIC START: Use Cache First ---
   const loadAndRender = (pdf) => {
       pdfDoc4 = pdf;
       pageCount4 = pdf.numPages;
@@ -968,23 +1016,24 @@ const renderPage = (num) => {
   
   // Check if PDF is already downloading/parsed in the cache
   if (pdfPreloadCache[4]) {
+      // Use the cached promise (instant download/parse if already done by staged load)
       pdfPreloadCache[4].then(loadAndRender).catch((error) => {
           console.error("Error using preloaded PDF 4:", error);
           pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
-          // Fallback to direct load
+          // Fallback to direct load if preloading failed
           pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
               console.error("Error loading PDF 4 (fallback):", fallbackError);
               pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
           });
       });
   } else {
-      // Original load mechanism: initiate download and update cache
+      // If user clicked before staged load reached this paper, start loading now
       const loadingTask = pdfjsLib.getDocument(url);
       loadingTask.promise.then(loadAndRender).catch((error) => {
-          console.error("Error loading PDF 4:", error);
+          console.error("Error loading PDF 4 (direct load):", error);
           pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
       });
-      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      // Update cache in case staged loading or other interaction uses it later
       pdfPreloadCache[4] = loadingTask.promise;
   }
   // --- MODIFIED LOGIC END ---
@@ -1121,7 +1170,7 @@ const renderPage = (num) => {
   });
 };
 
-  // --- MODIFIED LOGIC START ---
+  // --- MODIFIED LOGIC START: Use Cache First ---
   const loadAndRender = (pdf) => {
       pdfDoc5 = pdf;
       pageCount5 = pdf.numPages;
@@ -1130,23 +1179,24 @@ const renderPage = (num) => {
   
   // Check if PDF is already downloading/parsed in the cache
   if (pdfPreloadCache[5]) {
+      // Use the cached promise (instant download/parse if already done by staged load)
       pdfPreloadCache[5].then(loadAndRender).catch((error) => {
           console.error("Error using preloaded PDF 5:", error);
           pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
-          // Fallback to direct load
+          // Fallback to direct load if preloading failed
           pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
               console.error("Error loading PDF 5 (fallback):", fallbackError);
               pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
           });
       });
   } else {
-      // Original load mechanism: initiate download and update cache
+      // If user clicked before staged load reached this paper, start loading now
       const loadingTask = pdfjsLib.getDocument(url);
       loadingTask.promise.then(loadAndRender).catch((error) => {
-          console.error("Error loading PDF 5:", error);
+          console.error("Error loading PDF 5 (direct load):", error);
           pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
       });
-      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      // Update cache in case staged loading or other interaction uses it later
       pdfPreloadCache[5] = loadingTask.promise;
   }
   // --- MODIFIED LOGIC END ---
@@ -1231,6 +1281,154 @@ function loadSlide5() {
 //////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
 
+// Paper 6 PDF functions (Added to support the staged loading map and existing HTML placeholders)
+let pdfDoc6 = null;
+let pageNum6 = 1;
+let pageCount6 = 0;
+
+function loadPDF6() {
+  const url = "https://gazikabas.netlify.app/files/UI_ADGKK.pdf"; // Assumed URL based on pdf6() link
+  const pdfViewer = document.getElementById("pdf6");
+
+const renderPage = (num) => {
+  pdfDoc6.getPage(num).then((page) => {
+        const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    
+    // Get the actual width of the container (excluding menu width)
+    const containerWidth = pdfViewer.getBoundingClientRect().width;
+
+    // Calculate scale based on the container width
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = containerWidth / viewport.width;
+
+    // Adjust for device pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    const scaledViewport = page.getViewport({ scale });
+
+    canvas.width = scaledViewport.width * devicePixelRatio;
+    canvas.height = scaledViewport.height * devicePixelRatio;
+    canvas.style.width = `${scaledViewport.width}px`; // CSS width
+    canvas.style.height = `${scaledViewport.height}px`; // CSS height
+
+    // Set the canvas context scale for high DPI rendering
+    context.scale(devicePixelRatio, devicePixelRatio);
+
+    // Render the page on the canvas
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
+
+    pdfViewer.innerHTML = ""; // Clear previous slide
+    pdfViewer.appendChild(canvas);
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering page:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this page.</p>";
+  });
+};
+  // --- MODIFIED LOGIC START: Use Cache First ---
+  const loadAndRender = (pdf) => {
+      pdfDoc6 = pdf;
+      pageCount6 = pdf.numPages;
+      renderPage(pageNum6);
+  };
+  
+  // Check if PDF is already downloading/parsed in the cache
+  if (pdfPreloadCache[6]) {
+      // Use the cached promise (instant download/parse if already done by staged load)
+      pdfPreloadCache[6].then(loadAndRender).catch((error) => {
+          console.error("Error using preloaded PDF 6:", error);
+          pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
+          // Fallback to direct load if preloading failed
+          pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
+              console.error("Error loading PDF 6 (fallback):", fallbackError);
+              pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+          });
+      });
+  } else {
+      // If user clicked before staged load reached this paper, start loading now
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(loadAndRender).catch((error) => {
+          console.error("Error loading PDF 6 (direct load):", error);
+          pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
+      });
+      // Update cache in case staged loading or other interaction uses it later
+      pdfPreloadCache[6] = loadingTask.promise;
+  }
+  // --- MODIFIED LOGIC END ---
+}
+
+function showPDFWithSlides6() {
+  const pdfContainer = document.getElementById("pdf6");
+  const navContainer = document.getElementById("pdf-navigation6");
+  const absContainer = document.getElementById("abs6");
+  const presContainer = document.getElementById("pres6");
+
+  if (pdfContainer.style.display === "block") {
+    pdfContainer.style.display = "none";
+    navContainer.style.display = "none";
+  } else {
+    pdfContainer.style.display = "block";
+    navContainer.style.display = "flex";
+    absContainer.style.display = "none";
+    presContainer.style.display = "none";
+    if (!pdfContainer.dataset.loaded) {
+      loadPDF6();
+      pdfContainer.dataset.loaded = "true";
+    }
+  }
+}
+
+function nextSlide6() {
+  if (pageNum6 < pageCount6) {
+    pageNum6++;
+    loadPDF6();
+  }
+}
+
+function prevSlide6() {
+  if (pageNum6 > 1) {
+    pageNum6--;
+    loadPDF6();
+  }
+}
+
+function loadSlide6() {
+  const pdfViewer = document.getElementById("pdf6");
+
+  pdfDoc6.getPage(pageNum6).then((page) => {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    const containerWidth = pdfViewer.offsetWidth;
+
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = containerWidth / viewport.width;
+    const scaledViewport = page.getViewport({ scale });
+
+    canvas.width = scaledViewport.width;
+    canvas.height = scaledViewport.height;
+
+    pdfViewer.innerHTML = "";
+    pdfViewer.appendChild(canvas);
+
+    const renderContext = {
+      canvasContext: context,
+      viewport: scaledViewport,
+    };
+
+    page.render(renderContext);
+  }).catch((error) => {
+    console.error("Error rendering slide:", error);
+    pdfViewer.innerHTML = "<p>Error rendering this slide.</p>";
+  });
+}
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
 let pdfDoc7 = null;
 let pageNum7 = 1;
 let pageCount7 = 0;
@@ -1279,7 +1477,7 @@ const renderPage = (num) => {
   });
 };
 
-  // --- MODIFIED LOGIC START ---
+  // --- MODIFIED LOGIC START: Use Cache First ---
   const loadAndRender = (pdf) => {
       pdfDoc7 = pdf;
       pageCount7 = pdf.numPages;
@@ -1288,23 +1486,24 @@ const renderPage = (num) => {
   
   // Check if PDF is already downloading/parsed in the cache
   if (pdfPreloadCache[7]) {
+      // Use the cached promise (instant download/parse if already done by staged load)
       pdfPreloadCache[7].then(loadAndRender).catch((error) => {
           console.error("Error using preloaded PDF 7:", error);
           pdfViewer.innerHTML = "<p>Error loading PDF from cache. Falling back.</p>";
-          // Fallback to direct load
+          // Fallback to direct load if preloading failed
           pdfjsLib.getDocument(url).promise.then(loadAndRender).catch((fallbackError) => {
               console.error("Error loading PDF 7 (fallback):", fallbackError);
               pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
           });
       });
   } else {
-      // Original load mechanism: initiate download and update cache
+      // If user clicked before staged load reached this paper, start loading now
       const loadingTask = pdfjsLib.getDocument(url);
       loadingTask.promise.then(loadAndRender).catch((error) => {
-          console.error("Error loading PDF 7:", error);
+          console.error("Error loading PDF 7 (direct load):", error);
           pdfViewer.innerHTML = "<p>Unable to load PDF. Please check the file URL.</p>";
       });
-      // Store the promise in case the user rapidly clicks another button before the first call finishes
+      // Update cache in case staged loading or other interaction uses it later
       pdfPreloadCache[7] = loadingTask.promise;
   }
   // --- MODIFIED LOGIC END ---
