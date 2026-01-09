@@ -354,7 +354,7 @@ buttonSSRN {
 buttonSSRN{
   cursor: pointer;
   display: inline-block;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 buttonSSRN:hover {
@@ -379,7 +379,7 @@ buttonPDF {
 buttonPDF{
   cursor: pointer;
   display: inline-block;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 buttonPDF:hover {
