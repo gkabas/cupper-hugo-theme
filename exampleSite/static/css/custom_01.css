@@ -353,7 +353,7 @@ buttonSSRN {
 
 buttonSSRN{
   cursor: pointer;
-  position: inline-block;
+  display: inline-block;
   transition: 0.5s;
 }
 
@@ -378,7 +378,7 @@ buttonPDF {
 
 buttonPDF{
   cursor: pointer;
-  position: inline-block;
+  display: inline-block;
   transition: 0.5s;
 }
 
