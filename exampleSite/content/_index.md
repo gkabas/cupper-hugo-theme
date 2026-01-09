@@ -8,7 +8,7 @@ title:
 **Unemployment Insurance and Macro-Financial (In)Stability**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u>, <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <u>[Bulent Guler](https://bguler.pages.iu.edu/)</u>, and <u>[Burhan Kuruscu](https://sites.google.com/site/bkuruscu/research)</u>
 
-<button id="main-results-fig5" onclick="abs5()">Abstract</button> <button id="main-results-res5" onclick="showPDFWithSlides5()">Main Results</button> <button id="main-results-pres5" onclick="pres5()">Presentations</button> <buttonPDF onclick="pdf5()">PDF</buttonPDF> <buttonSSRN onclick="ssrn5()">SSRN</buttonSSRN>
+<button id="main-results-fig5" onclick="abs5()">Abstract</button> <button id="main-results-res5" onclick="showPDFWithSlides5()">Main Results</button> <button id="main-results-pres5" onclick="pres5()">Presentations</button> <button class="button-pdf" onclick="pdf5()">PDF</button> <button class="button-ssrn" onclick="ssrn5()">SSRN</button>
 
 <div id="abs5"><TT>
 Do unemployment insurance (UI) policies always stabilize the macroeconomy? This paper highlights a key trade-off between two opposing channels. Ex post, UI acts as a liquidity provider by offering income support that sustains consumption among the unemployed during downturns. Ex ante, however, more generous UI alters the balance sheets of households and banks in ways that heighten systemic vulnerability. On the household side, more generous UI reduces precautionary savings and increases household mortgage debt. On the banking side, higher mortgage debt raises the share of long-term assets on bank balance sheets. These shifts increase the vulnerability of households and banks to adverse aggregate shocks. We quantify these mechanisms using a quantitative heterogeneous-agent general equilibrium model with housing and banking sectors and provide loan- and county-level empirical evidence from U.S. housing and mortgage markets.</TT>
@@ -28,7 +28,7 @@ Bank of Canada, BIS, Ghent University, Indiana University, Lancaster University,
 **The Price of Leverage: Learning from the Effect of LTV Constraints on Job Search and Wages**<br>
 with <u>[Kasper Roszbach](https://sites.google.com/view/kasperroszbach)</u> 
 
-<button id="main-results-fig2" onclick="abs2()">Abstract</button> <button id="main-results-res2" onclick="showPDFWithSlides2()">Main Results</button> <button id="main-results-pres2" onclick="pres2()">Presentations</button> <buttonPDF onclick="pdf2()">PDF</buttonPDF> <buttonSSRN onclick="ssrn2()">SSRN</buttonSSRN> 
+<button id="main-results-fig2" onclick="abs2()">Abstract</button> <button id="main-results-res2" onclick="showPDFWithSlides2()">Main Results</button> <button id="main-results-pres2" onclick="pres2()">Presentations</button> <button class="button-pdf" onclick="pdf2()">PDF</button> <button class="button-ssrn" onclick="ssrn2()">SSRN</button>  
 
 <div id="abs2"><TT>
 Does household leverage matter for job search, labor market matching, and wages? Exploiting the introduction of a macroprudential borrowing restriction, we study how a forced reduction in leverage affects displaced homeowners and find that it raises wages by 3.9 percentage points following an unemployment spell. Lower leverage enables longer job search, leading workers to switch to other occupations and industries and take jobs in firms offering higher wage premia. Wage improvements are stronger among individuals who benefit more from improved job search, such as the young. Our findings highlight that policies limiting household leverage generate positive unintended labor market outcomes.</TT>
@@ -47,7 +47,7 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
 **"There is No Planet B", but for Banks There are "Countries B to Z": Domestic Climate Policy and Cross-Border Lending**<br> 
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, R&R@<i>Management Science</i>  
 
-<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="showPDFWithSlides1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <buttonPDF onclick="pdf1()">PDF</buttonPDF> <buttonSSRN onclick="ssrn1()">SSRN</buttonSSRN>
+<button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="showPDFWithSlides1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <button class="button-pdf" onclick="pdf1()">PDF</button> <button class="button-ssrn" onclick="ssrn1()">SSRN</button>
 
 
 <div id="abs1"><TT>
@@ -72,7 +72,7 @@ Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Centr
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i>, 2025 
 
-<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="showPDFWithSlides3()">Main Results</button> <button id="main-results-pres3" onclick="pres3()">Presentations</button> <buttonPDF onclick="pdf3()">PDF</buttonPDF>  <buttonSSRN onclick="ssrn3()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
+<button id="main-results-fig3" onclick="abs3()">Abstract</button> <button id="main-results-res3" onclick="showPDFWithSlides3()">Main Results</button> <button id="main-results-pres3" onclick="pres3()">Presentations</button> <button class="button-pdf" onclick="pdf3()">PDF</button>  <button class="button-ssrn" onclick="ssrn3()">SSRN</button> <button class="hide-on-small-screen" onclick="published3()">Published Version</button>     
 
 <div id="abs3"><TT>
 We use disaggregated U.S. data and a border discontinuity design to show that more generous unemployment insurance (UI) policies lower bank deposits. We test several channels that could explain this decline and find evidence consistent with households lowering their precautionary savings. Since deposits are the largest and most stable source of funding for banks, the decrease in deposits affects bank lending. Banks that raise deposits in states with generous UI policies squeeze their small business lending. Furthermore, counties that are served by these banks experience a higher unemployment rate and lower wage growth.</TT>
@@ -95,7 +95,7 @@ BIS, European Finance Association, Federal Reserve Board Brownbag, Fuqua Finance
 **Population Aging and Bank Risk-Taking**<br>
 with <u>[Sebastian Doerr](https://www.bis.org/author/sebastian_doerr.htm)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Journal of Financial and Quantitative Analysis</i>, 2024
 
-<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="showPDFWithSlides4()">Main Results</button> <button id="main-results-pres4" onclick="pres4()">Presentations</button> <buttonPDF onclick="pdf4()">PDF</buttonPDF> <buttonSSRN onclick="ssrn4()">SSRN</buttonSSRN> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>  
+<button id="main-results-fig4" onclick="abs4()">Abstract</button> <button id="main-results-res4" onclick="showPDFWithSlides4()">Main Results</button> <button id="main-results-pres4" onclick="pres4()">Presentations</button> <button class="button-pdf" onclick="pdf4()">PDF</button> <button class="button-ssrn" onclick="ssrn4()">SSRN</button> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>  
 
 <div id="abs4"><TT>
 Does population aging affect bank lending? To answer this question we exploit geographic variation in population aging across U.S. counties to provide the first evidence on its impact on bank risk-taking. We find that banks more exposed to aging counties experience deposit inflows due to seniors' higher savings rate. They consequently extend more credit, but relax lending standards: Loan-to-income ratios increase and application rejection rates decline. Exposed banks also see a sharper rise in nonperforming loans during downturns, suggesting that population aging may lead to financial instability. These results are in line with an increase in savings and a decline in investment opportunities induced by population aging.</TT>
