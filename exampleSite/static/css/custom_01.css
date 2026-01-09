@@ -337,7 +337,7 @@ button:hover {
     background-color: #001F3F;
 }
 
-buttonSSRN {
+.button-ssrn {
     font-size: 1rem;
     border-radius: 0.03em;
     font-color: #3B5998;
@@ -351,18 +351,18 @@ buttonSSRN {
     border-color: #3B5998;
 }
 
-buttonSSRN{
+.button-ssrn {
   cursor: pointer;
   display: inline-block;
   transition: 0.3s;
 }
 
-buttonSSRN:hover {
+.button-ssrn:hover {
     color: #fff;
     background-color: #3B5998;
 }
 
-buttonPDF {
+.button-pdf {
     font-size: 1rem;
     border-radius: 0.03em;
     font-color: #3B5998;
@@ -376,13 +376,13 @@ buttonPDF {
     border-color: #4C0000;
 }
 
-buttonPDF{
+.button-pdf {
   cursor: pointer;
   display: inline-block;
   transition: 0.3s;
 }
 
-buttonPDF:hover {
+.button-pdf:hover {
     color: #fff;
     background-color: #4C0000;
 }
