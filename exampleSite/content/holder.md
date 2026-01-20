@@ -1,5 +1,6 @@
 ### Files 
-<u>[SEA](https://gkabas.netlify.app/files/Liverpool_Kabas.pdf)</u> <br>
+<u>[ETS](https://gkabas.netlify.app/files/ETS-12.pdf)</u> <br>
+<u>[ETS-Phone](https://gkabas.netlify.app/files/ETS-13.pdf)</u> <br>
 
 
 <script type="module">
