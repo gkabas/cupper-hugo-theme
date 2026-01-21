@@ -1,6 +1,5 @@
 ### Files 
-<u>[ETS](https://gkabas.netlify.app/files/ETS-12.pdf)</u> <br>
-<u>[ETS-Phone](https://gkabas.netlify.app/files/ETS-13.pdf)</u> <br>
+<u>[ETS](https://gkabas.netlify.app/files/Kabas_Presentation.pdf)</u> <br>
 
 
 <script type="module">
