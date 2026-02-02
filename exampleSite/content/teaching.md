@@ -11,7 +11,7 @@
 <u>[Investors](https://gkabas.netlify.app/files/GSL_Investors.pdf)</u> <br>
 <u>[Banks](https://gkabas.netlify.app/files/GSL_Banks.pdf)</u> <be>
 ### Advanced Topics in Finance-2
-<u>[Introduction](https://gkabas.netlify.app/files/Assessment.pdf)</u> <br>
-<u>[Investors](https://gkabas.netlify.app/files/Banking.pdf)</u> <br>
+<u>[Assessment](https://gkabas.netlify.app/files/Assessment.pdf)</u> <br>
+<u>[Banking](https://gkabas.netlify.app/files/Banking.pdf)</u> <br>
 
 
