@@ -8,9 +8,8 @@
 <u>[Sample Questions](https://gkabas.netlify.app/files/SampleQuestions.pdf)</u> <br>
 
 ### Global Sustainable Leadership
-<u>[Introduction](https://gkabas.netlify.app/files/GSL_Intro.pdf)</u> <br>
-<u>[Investors](https://gkabas.netlify.app/files/GSL_Investors.pdf)</u> <br>
-<u>[Banks](https://gkabas.netlify.app/files/GSL_Banks.pdf)</u> <br>
+<u>[Introduction&Investors](https://gkabas.netlify.app/files/Intro_Investors.pdf)</u> <br>
+<u>[Banks](https://gkabas.netlify.app/files/Banks.pdf)</u> <br>
 
 ### Advanced Topics in Finance-2
 <u>[Assessment](https://gkabas.netlify.app/files/Assessment.pdf)</u> <br>
