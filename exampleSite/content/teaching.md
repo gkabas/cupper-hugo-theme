@@ -10,7 +10,7 @@
 ### Global Sustainable Leadership
 <u>[Introduction&Investors](https://gkabas.netlify.app/files/Intro_Investors.pdf)</u> <br>
 <u>[Banks](https://gkabas.netlify.app/files/Banks.pdf)</u> <br>
-<u>[Impact Venture](https://gkabas.netlify.app/files/Global Sustainable Leadership_Pieter Wijffels_V1_Nov 2025.pptx.pdf)</u> <br>
+<u>[Impact Venture](https://gkabas.netlify.app/files/Impact.pptx)</u> <br>
 
 ### Advanced Topics in Finance-2
 <u>[Assessment](https://gkabas.netlify.app/files/Assessment.pdf)</u> <br>
