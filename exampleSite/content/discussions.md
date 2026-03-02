@@ -3,6 +3,11 @@ date: "2014-04-09"
 title: "Discussions"
 ---
 **House on Fire: Climate Risk, Mortgages, and Monetary Policy**<br>
+by <u>Fecht</u>, <u>Greppmair</u>, , <u>Imbierowicz</u> <i>Benelux Banking Research Day</i>, March 2026
+
+<button class="button-pdf" onclick="dis8()">Slides</button>
+
+**House on Fire: Climate Risk, Mortgages, and Monetary Policy**<br>
 by <u>Bonfim</u>, <u>Zhao</u>, <i>International Banking Research Network Workshop</i>, October 2025
 
 <button class="button-pdf" onclick="dis7()">Slides</button>
