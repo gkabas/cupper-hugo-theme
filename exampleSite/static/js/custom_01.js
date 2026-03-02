@@ -198,6 +198,10 @@ function dis7() {
     window.open("https://gkabas.netlify.app/files/KabasDiscussion_IBRN2025.pdf", "_blank");
     }
 
+function dis8() {
+    window.open("https://gkabas.netlify.app/files/KabasDiscussion_Benelux.pdf", "_blank");
+    }
+
 function abs1() {
   const absContainer = document.getElementById("abs1");
   const pdfContainer = document.getElementById("pdf1");
