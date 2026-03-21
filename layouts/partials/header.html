@@ -20,6 +20,9 @@
       </p>
     </div>
     {{ partial "nav.html" . }}
+    {{ with .Site.Params.navContactHtml }}
+    <div class="nav-contact-links-wrapper">{{ . | safeHTML }}</div>
+    {{ end }}
     {{ if eq .Site.Params.moveFooterToHeader true }}
       {{ partial "footer.html" . }}
     {{ end }}
