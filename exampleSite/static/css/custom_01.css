@@ -297,7 +297,7 @@ details[data-for="second"][open] ~ .contents #second {
   font-size: 1rem;
   border-radius: 0.03em;
   font-family: inherit;
-  background: #fefefe;
+  background: var(--page-bg, #f4efe2);
   color: #000000;
   padding: 0.05rem;
   padding-left: 0.1rem;
@@ -317,7 +317,7 @@ button {
     font-size: 1rem;
     border-radius: 0.03em;
     font-family: inherit;
-    background: #fefefe;
+    background: var(--page-bg, #f4efe2);
     color: #000000;
     padding: 0.05rem;
     padding-left: 0.1rem;
@@ -342,7 +342,7 @@ button:hover {
     border-radius: 0.03em;
     font-color: #3B5998;
     font-family: inherit;
-    background: #fefefe;
+    background: var(--page-bg, #f4efe2);
     color: #3B5998;
     padding: 0.05rem;
     padding-left: 0.1rem;
@@ -367,7 +367,7 @@ button:hover {
     border-radius: 0.03em;
     font-color: #3B5998;
     font-family: inherit;
-    background: #fefefe;
+    background: var(--page-bg, #f4efe2);
     color: #4C0000;
     padding: 0.05rem;
     padding-left: 0.1rem;
@@ -391,7 +391,7 @@ button:hover {
     font-size: 1rem;
     border-radius: 0.03em;
     font-family: inherit;
-    background: #fefefe;
+    background: var(--page-bg, #f4efe2);
     color: #38471f;
     padding: 0.05rem;
     padding-left: 0.1rem;
