@@ -21,8 +21,18 @@
   text-align: left;
 }
 
+.nav-contact-links-wrapper {
+  margin-top: auto;
+}
+
+.nav-contact-links {
+  border-left: 1px solid rgba(17, 17, 17, 0.25);
+  margin-top: 1.25rem;
+  padding-left: 0.85rem;
+}
+
 .email-contact-wrap {
-  margin-top: 0;
+  margin: 0 0 0.85rem;
 }
 
 .profile-action-button {
@@ -30,11 +40,8 @@
   display: inline-flex;
   gap: 0.35rem;
   justify-content: center;
-  padding: 0.005rem 0.25rem;
+  padding: 0.2rem 0.45rem;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 0.72rem;
   border: 1px solid;
 }
 
@@ -42,12 +49,18 @@
   background: #001F3F;
   border-color: #001F3F;
   color: #fff;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .email-contact-button {
   background: #ebe4d3;
   border-color: #ebe4d3;
   color: #111;
+  font-size: 0.58rem;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .cv-download-button:hover {
@@ -61,20 +74,40 @@
   color: #fff;
   opacity: 1;
 }
-
-.profile-action-button .fa {
+.profile-action-button .fa,
+.profile-icons .fa,
+.profile-icons .ai {
   background: transparent;
   border: none;
   color: inherit;
-  font-size: 0.85rem;
   padding: 0;
   width: auto;
 }
 
-.profile-icons {
-  text-align: center;
+.profile-action-button .fa {
+  font-size: 0.85rem;
 }
 
+.profile-icons {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  text-align: left;
+}
+
+.profile-icons a {
+  color: #111;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.profile-icons .fa-twitter,
+.profile-icons .fa-linkedin,
+.profile-icons .fa-university,
+.profile-icons .ai-google-scholar {
+  background: transparent;
+  border-radius: 0;
+}
 
  /* Style all font awesome icons */
 .fa {
