@@ -15,12 +15,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --page-bg: #f4efe2;
+    --sidebar-bg: #ebe4d3;
+}
 html {
     font-size: calc(1em + 0.33vw);
     font-family: "Times New Roman", Times, serif;
     line-height: 1.2;
     color: #111;
-    background-color: #fefefe;
+        background-color: var(--page-bg);
+}
+body {
+    background-color: var(--page-bg);
 }
 template {
   display: none !important;
@@ -38,6 +45,7 @@ option,
 li + li,
 body,
 .main-and-footer {
+    background-color: var(--page-bg);
     margin-top: 0;
 }
 p + p {
@@ -330,6 +338,7 @@ caption {
     overflow-x: hidden;
 }
 .intro-and-nav {
+    background-color: var(--sidebar-bg);
     font-size: 0.9rem;
     width: 15rem;
     height: 100vh;
@@ -340,6 +349,7 @@ caption {
     font-family: "Times New Roman", Times, serif;
 }
 .intro-and-nav > div {
+    background-color: var(--sidebar-bg);
     padding: 2.25rem;
     padding-right: 1.25rem;
     display: flex;
@@ -366,11 +376,13 @@ caption {
     max-width: 25rem;
 }
 .main-and-footer {
+    background-color: var(--page-bg);
     margin-left: 15rem;
     padding-left: 0.5rem;
     padding-left: 0rem;
 }
 .main-and-footer > div {
+    background-color: var(--page-bg);
     /*max-width: 42rem;*/
     width: 100%;
     margin: 0 auto;
@@ -566,6 +578,7 @@ figcaption {
 }
 main {
     display: block;
+    background-color: var(--page-bg);
     counter-reset: fig;
     min-height: 100vh;
 }
