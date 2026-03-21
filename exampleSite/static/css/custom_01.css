@@ -17,12 +17,7 @@
 
 .cv-download-wrap {
   margin: 1.5rem 0 0.75rem;
-  text-align: center;
-}
-
-.cv-download-wrap {
-  margin: 1.5rem 0 0.75rem;
-  text-align: center;
+  text-align: left;
 }
 
 .cv-download-button {
@@ -33,7 +28,7 @@
   display: inline-flex;
   gap: 0.35rem;
   justify-content: center;
-  padding: 0.2rem 0.45rem;
+  padding: 0.1rem 0.35rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.04em;
