@@ -15,24 +15,39 @@
   /* Other styles here */
 }
 
-.cv-download-wrap {
+.cv-download-wrap,
+.email-contact-wrap {
   margin: 1.5rem 0 0.75rem;
   text-align: left;
 }
 
-.cv-download-button {
+.email-contact-wrap {
+  margin-top: 0;
+}
+
+.profile-action-button {
   align-items: center;
-  background: #001F3F;
-  border: 1px solid #001F3F;
-  color: #fff;
   display: inline-flex;
   gap: 0.35rem;
   justify-content: center;
-  padding: 0.025rem 0.3rem;
+  padding: 0.025rem 0.25rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-size: 0.72rem;
+  border: 1px solid;
+}
+
+.cv-download-button {
+  background: #001F3F;
+  border-color: #001F3F;
+  color: #fff;
+}
+
+.email-contact-button {
+  background: #ebe4d3;
+  border-color: #ebe4d3;
+  color: #111;
 }
 
 .cv-download-button:hover {
@@ -40,8 +55,14 @@
   background-color: #001F3F;
   opacity: 0.9;
 }
+.email-contact-button:hover {
+  background: #001F3F;
+  border-color: #001F3F;
+  color: #fff;
+  opacity: 1;
+}
 
-.cv-download-button .fa {
+.profile-action-button .fa {
   background: transparent;
   border: none;
   color: inherit;
