@@ -28,7 +28,7 @@
   display: inline-flex;
   gap: 0.35rem;
   justify-content: center;
-  padding: 0.05rem 0.3rem;
+  padding: 0.025rem 0.3rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -36,7 +36,8 @@
 }
 
 .cv-download-button:hover {
-  color: #4C0000;
+  color: #fff;
+  background-color: #001F3F;
   opacity: 0.9;
 }
 
