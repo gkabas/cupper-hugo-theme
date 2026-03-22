@@ -111,14 +111,6 @@ Does population aging affect bank lending? To answer this question we exploit ge
   <button onclick="nextSlide4()">Next ❯</button>
 </div>
 
-<div class="clear"></div>
-<br><br />
-<hr class="solid">
-
-## In Progress
-
-Available upon request
-
 <script type="module">
   import * as pdfjsLib from '/js/pdfjs/pdf.mjs';
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdfjs/pdf.worker.mjs';
