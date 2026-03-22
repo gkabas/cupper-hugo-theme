@@ -26,9 +26,7 @@
 }
 
 .nav-contact-links {
-  border-left: 1px solid rgba(17, 17, 17, 0.25);
   margin-top: 1.25rem;
-  padding-left: 0.85rem;
 }
 
 .email-contact-wrap {
@@ -101,9 +99,10 @@
   font-size: 1.15rem;
 }
 
-.profile-icons .fa-twitter,
 .profile-icons .fa-linkedin,
 .profile-icons .fa-university,
+.profile-icons .fa-camera,
+.profile-icons .fa-x-twitter,
 .profile-icons .ai-google-scholar {
   background: transparent;
   border-radius: 0;
@@ -148,15 +147,19 @@
   background-size: 100%;
 }
 
-/* Twitter */
-.fa-twitter {
+.fa-x-twitter {
   background: white;
-  color: #55ACEE;
-  border-radius: 50%;
-  background-size: 0px;
+  color: #111;
   border: none;
   background-size: 100%;
-} 
+}
+
+.fa-camera {
+  background: white;
+  color: #111;
+  border: none;
+  background-size: 100%;
+}
 
 .fa-linkedin {
   background: white;
@@ -609,4 +612,28 @@ img {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 45em) {
+  .cv-download-wrap,
+  .email-contact-wrap,
+  .nav-contact-links,
+  .profile-icons,
+  .patterns {
+    text-align: center;
+  }
+
+  .cv-download-wrap,
+  .email-contact-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-icons {
+    justify-content: center;
+  }
+
+  .pattern a {
+    justify-content: center;
+  }
 }
