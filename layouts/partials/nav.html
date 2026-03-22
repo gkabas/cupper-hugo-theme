@@ -14,10 +14,14 @@
       {{ $active = or $active (eq .Name $current.Title) }}
       {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
       {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+      {{ $iconClass := "fa-regular fa-bookmark" }}
+      {{ if eq .Name "Working Papers" }}{{ $iconClass = "fa-regular fa-file-lines" }}{{ end }}
+      {{ if eq .Name "Publications" }}{{ $iconClass = "fa-regular fa-book-open" }}{{ end }}
+      {{ if eq .Name "In progress" }}{{ $iconClass = "fa-regular fa-folder-open" }}{{ end }}
+      {{ if eq .Name "Discussions" }}{{ $iconClass = "fa-regular fa-message" }}{{ end }}
+      {{ if eq .Name "Personal" }}{{ $iconClass = "fa-regular fa-user" }}{{ end }}
       <a href="{{ .URL }}" {{ if $active }}aria-current="page"{{ end }}>
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use href="#bookmark"></use>
-        </svg>
+      <i class="nav-menu-icon {{ $iconClass }}" aria-hidden="true"></i>
         <span class="text">{{ .Name }}</span>
       </a>
     </li>
