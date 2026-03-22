@@ -108,6 +108,23 @@
   border-radius: 0;
 }
 
+.pattern a {
+  justify-content: flex-start;
+}
+
+.nav-menu-icon {
+  width: 1.1rem;
+  min-width: 1.1rem;
+  margin-right: 0.55rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.pattern [aria-current] .nav-menu-icon {
+  color: #0b45d8;
+}
+
+
  /* Style all font awesome icons */
 .fa {
   padding: 0px;
