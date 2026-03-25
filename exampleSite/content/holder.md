@@ -1,5 +1,5 @@
 ### Files 
-<u>[Reading group](https://gkabas.netlify.app/files/ppt_BB_reading_group_HF2.pdf)</u> <br>
+<u>[Reading group](https://gkabas.netlify.app/files/KabasDiscussion_SGF2026.pdf)</u> <br>
 
 
 <script type="module">
