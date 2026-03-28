@@ -157,7 +157,7 @@
 
 @media screen and (max-height: 880px), screen and (max-width: 1366px) {
   .intro-and-nav > div {
-    padding-top: 1.5rem;
+    padding-top: 2.25rem;
     padding-bottom: 1rem;
   }
 
