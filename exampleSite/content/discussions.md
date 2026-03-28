@@ -2,6 +2,11 @@
 date: "2014-04-09"
 title: "Discussions"
 ---
+**Banking on Bundles: The Eﬀect of Cross-Selling on Household Credit**<br>
+by <u>Adip</u>, <u>Andersen</u>, <u>Nielsen</u>, <u>Qi</u>, <i>Swiss Society for Financial Market Research Conference</i>, March 2026
+
+<button class="button-pdf" onclick="dis9()">Slides</button>
+
 **House on Fire: Climate Risk, Mortgages, and Monetary Policy**<br>
 by <u>Fecht</u>, <u>Greppmair</u>, <u>Imbierowicz</u>, <i>Benelux Banking Research Day</i>, March 2026
 
