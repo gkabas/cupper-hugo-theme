@@ -25,13 +25,19 @@
   text-align: center;
 }
 
+.intro-and-nav {
+  height: 100vh;
+  height: 100svh;
+}
+
 .cv-download-wrap,
 .email-contact-wrap {
-  margin: 1.5rem 0 0.75rem;
+  margin: clamp(0.7rem, 1.2vh, 1.5rem) 0 clamp(0.4rem, 0.75vh, 0.75rem);
 }
 
 .nav-contact-links-wrapper {
   margin-top: auto;
+  padding-bottom: max(0.25rem, env(safe-area-inset-bottom));
 }
 
 .patterns,
@@ -43,11 +49,11 @@
 
 
 .nav-contact-links {
-  margin-top: 1.25rem;
+  margin-top: clamp(0.5rem, 1vh, 1.25rem);
 }
 
 .email-contact-wrap {
-  margin: 0 0 0.85rem;
+  margin: 0 0 clamp(0.35rem, 0.8vh, 0.85rem);
 }
 
 .profile-action-button {
@@ -55,16 +61,17 @@
   display: inline-flex;
   gap: 0.1rem;
   justify-content: center;
-  padding: 0.2rem 0.45rem;
+  padding: clamp(0.15rem, 0.35vh, 0.2rem) clamp(0.35rem, 0.6vw, 0.45rem);
   text-decoration: none;
   border: 1px solid;
+  white-space: nowrap;
 }
 
 .cv-download-button {
   background: #001F3F;
   border-color: #001F3F;
   color: #fff;
-  font-size: 0.72rem;
+  font-size: clamp(0.62rem, 0.63rem + 0.08vw, 0.72rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -73,7 +80,7 @@
   background: #ebe4d3;
   border-color: #ebe4d3;
   color: #111;
-  font-size: 0.58rem;
+  font-size: clamp(0.5rem, 0.5rem + 0.08vw, 0.58rem);
   letter-spacing: 0;
   text-transform: none;
 }
@@ -101,13 +108,13 @@
 
 .profile-action-button .fa {
   display: block;
-  font-size: 0.85rem;
+  font-size: clamp(0.72rem, 0.76rem + 0.1vw, 0.85rem);
   line-height: 1;
 }
 
 .profile-icons {
   display: flex;
-  gap: 0.4rem;
+  gap: clamp(0.2rem, 0.4vw, 0.4rem);
   align-items: center;
   justify-content: center;
 }
@@ -115,7 +122,7 @@
 .profile-icons a {
   color: #111;
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: clamp(0.95rem, 0.95rem + 0.28vw, 1.15rem);
 }
 
 .profile-icons .fa-linkedin,
@@ -134,17 +141,39 @@
   width: 100%;
   background: var(--sidebar-bg);
   text-align: center;
+  padding-top: clamp(0.35rem, 0.52vh, 0.5rem);
+  padding-bottom: clamp(0.35rem, 0.52vh, 0.5rem);
 }
 
 .nav-menu-icon {
   display: block;
-  width: 1rem;
-  min-width: 1rem;
-  height: 1rem;
+  width: clamp(0.85rem, 0.85rem + 0.15vw, 1rem);
+  min-width: clamp(0.85rem, 0.85rem + 0.15vw, 1rem);
+  height: clamp(0.85rem, 0.85rem + 0.15vw, 1rem);
   margin-right: 0.55rem;
   margin-right: 0;
   color: #4a4a4a;
 }
+
+@media screen and (max-height: 880px), screen and (max-width: 1366px) {
+  .intro-and-nav > div {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .library-desc {
+    margin-top: 0.25rem;
+  }
+
+  .patterns {
+    margin-top: 0.85rem;
+  }
+
+  .pattern {
+    font-size: 0.95rem;
+  }
+}
+
 
 .pattern [aria-current] {
   clip-path: none;
