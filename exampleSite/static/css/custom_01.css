@@ -705,6 +705,24 @@ img {
 }
 
 @media screen and (max-width: 45em) {
+ .intro-and-nav {
+    height: auto;
+    min-height: 0;
+  }
+
+  .intro-and-nav > div {
+    height: auto;
+  }
+
+  .patterns {
+    flex: 0 0 auto;
+  }
+
+  .nav-contact-links-wrapper {
+    margin-top: 0.5rem;
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+
   .cv-download-wrap,
   .email-contact-wrap {
     display: flex;
